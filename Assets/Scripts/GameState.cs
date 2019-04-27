@@ -163,6 +163,27 @@ public class GameState {
 		if ( WorkPlace != null ) {
 			AddAchievement($"{WorkPlace.Position.Name} at '{WorkPlace.Company.Name}'");
 		}
+		if ( Get(Trait.Walker) > 50 ) {
+			AddAchievement("Inborn walker");
+		}
+		if ( Get(Trait.DishWasher) > 25 ) {
+			AddAchievement("Professional dish washer");
+		}
+		if ( Get(Trait.Bodybuilder) > 10 ) {
+			AddAchievement("Bodybuilder");
+		}
+		if ( Get(Trait.Alcohol) > 25 ) {
+			AddAchievement("Alcoholic");
+		}
+		if ( Get(Trait.Alcohol) > 25 ) {
+			AddAchievement("Freelancer");
+		}
+		if ( Get(Trait.GameJammer) > 15 ) {
+			AddAchievement("Game Jam enthusiast");
+		}
+		if ( Get(Trait.PoppularPerson) > 15 ) {
+			AddAchievement("Popular person");
+		}
 	}
 	
 	void UpdateNotices() {

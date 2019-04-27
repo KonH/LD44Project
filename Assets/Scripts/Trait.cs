@@ -10,4 +10,8 @@
 	Alcohol,
 	Disease,
 	Mad,
+	Bodybuilder,
+	DishWasher,
+	GameJammer,
+	PoppularPerson,
 }
