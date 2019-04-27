@@ -16,8 +16,29 @@ MonoBehaviour:
   - Decision:
       Name: 
       Id: 0
-      Days: 7
+      Days: 4
       Min: []
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 500
+      - Trait: 1
+        Value: 10
+      - Trait: 6
+        Value: 5
+      - Trait: 3
+        Value: 5
+    Title: New email!
+    Content: 'Hello, long time no see! What about freelance job? It''s paid nice,
+      but needs to be done ASAP. '
+    Cancelable: 1
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 6
+        Value: 5
       Max: []
       Changes:
       - Trait: 0
@@ -26,9 +47,31 @@ MonoBehaviour:
         Value: 20
       - Trait: 3
         Value: 10
+      - Trait: 6
+        Value: 5
     Title: New email!
-    Content: 'Hello, long time no see! What about freelance job? It''s paid great,
-      but needs to be done ASAP. '
+    Content: 'Hi! I have another freelance work. Of course, ASAP. '
+    Cancelable: 1
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 6
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 1500
+      - Trait: 1
+        Value: 25
+      - Trait: 3
+        Value: 10
+      - Trait: 6
+        Value: 10
+    Title: New email!
+    Content: Hi, now we really need help! All deadlines are failed, only you can help
+      with this work!
     Cancelable: 1
   - Decision:
       Name: 
@@ -60,7 +103,9 @@ MonoBehaviour:
       Name: 
       Id: 0
       Days: 0
-      Min: []
+      Min:
+      - Trait: 7
+        Value: 5
       Max: []
       Changes:
       - Trait: 0

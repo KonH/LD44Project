@@ -5,4 +5,6 @@
 	Skill,
 	Resume,
 	Talking,
+	Freelance,
+	Walker,
 }

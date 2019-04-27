@@ -375,6 +375,8 @@ MonoBehaviour:
       Changes:
       - Trait: 1
         Value: -5
+      - Trait: 7
+        Value: 1
     - Name: Play game
       Id: 0
       Days: 1
