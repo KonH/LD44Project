@@ -369,7 +369,7 @@ MonoBehaviour:
     Decisions:
     - Name: Walking
       Id: 0
-      Days: 1
+      Days: 0.5
       Min: []
       Max: []
       Changes:

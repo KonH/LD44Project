@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class GameState {
 	class DelayedNotice {
@@ -27,15 +28,19 @@ public class GameState {
 
 	readonly Messages _messages;
 	readonly Parameters _parameters;
+	readonly Events _events;
 	readonly DecisionLogic _decisionLogic;
 
 	DateTime _startDate;
 	DateTime _lastPayDate;
 	List<DelayedNotice> _delayedNotices = new List<DelayedNotice>();
+	List<RandomEvent> _usedEvents = new List<RandomEvent>();
 
-	public GameState(Messages messges, Environment environment, Parameters parameters) {
+	public GameState(Messages messges, Environment environment, Parameters parameters, Events events) {
 		_messages = messges;
 		_parameters = parameters;
+		_events = events;
+		
 		_decisionLogic = new DecisionLogic(_messages, environment, _parameters, this);
 
 		_startDate = DateTime.MinValue.AddDays(_parameters.StartDay);
@@ -61,6 +66,7 @@ public class GameState {
 		Date = Date.Add(span);
 		UpdatePayment();
 		UpdateTraits();
+		UpdateEvents();
 		UpdateAchievements();
 		UpdateNotices();
 	}
@@ -85,6 +91,38 @@ public class GameState {
 			EnqueNotice(new NoticeAction(_messages.HeartAttack));
 			Finish();
 		}
+	}
+
+	void UpdateEvents() {
+		if ( UnityEngine.Random.value > _parameters.RanomEventChance ) {
+			return;
+		}
+		var availableEvents = GetAvailableEvents();
+		if ( availableEvents.Count > 0 ) {
+			var ev = availableEvents[UnityEngine.Random.Range(0, availableEvents.Count)];
+			_usedEvents.Add(ev);
+			var msg = new Message(ev.Title, ev.Content);
+			var act = new NoticeAction(msg, ev.Cancelable, ok => {
+				if ( ok ) {
+					ApplyDecision(ev.Decision);
+				}
+			});
+			EnqueNotice(act);
+		}
+	}
+
+	List<RandomEvent> GetAvailableEvents() {
+		var result = new List<RandomEvent>();
+		foreach ( var ev in _events.RandomEvents ) {
+			if ( _usedEvents.Contains(ev) ) {
+				continue;
+			}
+			var dec = ev.Decision;
+			if ( IsDecisionAvailable(dec) && IsDecisionActive(dec) ) {
+				result.Add(ev);
+			}
+		}
+		return result;
 	}
 
 	void UpdateAchievements() {

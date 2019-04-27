@@ -315,6 +315,7 @@ MonoBehaviour:
   Environment: {fileID: 11400000, guid: 3177e550358c84e659887d43b30e8c9f, type: 2}
   Messages: {fileID: 11400000, guid: 4dcaf47e1577f4de3a160a3cc961df80, type: 2}
   Parameters: {fileID: 11400000, guid: 2a38558b885ef4ee4aba34d0b818cd43, type: 2}
+  Events: {fileID: 11400000, guid: 1dea54d9f0af9438990e273c213093d1, type: 2}
   MainUI: {fileID: 750759360}
   Notice: {fileID: 1270747745}
   Decide: {fileID: 1756634691}

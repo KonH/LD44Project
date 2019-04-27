@@ -10,4 +10,5 @@ public class Parameters : ScriptableObject {
 	public int LowMoneyStress;
 	public int MinPromotionDays;
 	public int MinRecommendDays;
+	public float RanomEventChance;
 }

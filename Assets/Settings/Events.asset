@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb34b215a1a94a419fbc6df6d4d6790, type: 3}
+  m_Name: Events
+  m_EditorClassIdentifier: 
+  RandomEvents:
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 1000
+      - Trait: 1
+        Value: 20
+      - Trait: 3
+        Value: 10
+    Title: New email!
+    Content: 'Hello, long time no see! What about freelance job? It''s paid great,
+      but needs to be done ASAP. '
+    Cancelable: 1
+  - Decision:
+      Name: 
+      Id: 2
+      Days: 0
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 15
+    Title: New email!
+    Content: On this weekend we need onvertime work. No additional payment, of course.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 3
+        Value: 20
+      - Trait: 1
+        Value: 20
+    Title: New email!
+    Content: What about participation on next game jam? It will be fun!
+    Cancelable: 1
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -250
+      - Trait: 1
+        Value: 5
+    Title: Ouch...
+    Content: You've been robed on the street.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -1500
+    Title: New email!
+    Content: Hello, dear friend! I'm from Nigeria and I want your help for some financial
+      operations. For good profit in future.
+    Cancelable: 1

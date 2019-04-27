@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	public Environment Environment;
 	public Messages Messages;
 	public Parameters Parameters;
+	public Events Events;
 	public MainUI MainUI;
 	public NoticeWindow Notice;
 	public DecideWindow Decide;
@@ -21,7 +22,7 @@ public class GameManager : MonoBehaviour {
 	DecisionTree.Category _selectedCategory = null;
 
 	void Start() {
-		_state = new GameState(Messages, Environment, Parameters);
+		_state = new GameState(Messages, Environment, Parameters, Events);
 		UpdateView();
 	}
 
