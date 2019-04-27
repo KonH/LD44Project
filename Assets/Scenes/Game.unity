@@ -1061,6 +1061,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 484668723567024334, guid: 1b64bbc3e45be4a47adb3091975fd34e,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 484668723133567183, guid: 1b64bbc3e45be4a47adb3091975fd34e,
         type: 3}
       propertyPath: m_AnchorMin.y

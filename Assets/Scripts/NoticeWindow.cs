@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NoticeWindow : MonoBehaviour {
 	public TMP_Text Header;
 	public TMP_Text Content;
+	public TypingEffect ContentEffect;
 	public Button OkButton;
 	public Button CancelButton;
 	public UnityEvent Show;
@@ -16,10 +17,10 @@ public class NoticeWindow : MonoBehaviour {
 	
 	public void Init(NoticeAction action) {
 		Header.text = action.Title;
-		Content.text = action.Content;
 		_callback = action.Callback;
 		CancelButton.gameObject.SetActive(action.Cancelable);
 		Show.Invoke();
+		ContentEffect.SetupText(action.Content);
 	}
 
 	public void OnOkay() {
