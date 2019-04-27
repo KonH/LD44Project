@@ -873,11 +873,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 252126760622904054, guid: 4903ac3e8b6824ed79e31298c59880f1,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 400
-      objectReference: {fileID: 0}
     - target: {fileID: 252126760622904055, guid: 4903ac3e8b6824ed79e31298c59880f1,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -895,6 +890,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245869850833107656, guid: 4903ac3e8b6824ed79e31298c59880f1,
         type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093229086, guid: 4903ac3e8b6824ed79e31298c59880f1, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093229086, guid: 4903ac3e8b6824ed79e31298c59880f1, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835248288, guid: 4903ac3e8b6824ed79e31298c59880f1, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835248288, guid: 4903ac3e8b6824ed79e31298c59880f1, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577563386, guid: 4903ac3e8b6824ed79e31298c59880f1, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577563386, guid: 4903ac3e8b6824ed79e31298c59880f1, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}

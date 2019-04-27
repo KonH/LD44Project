@@ -54,7 +54,7 @@ MonoBehaviour:
       - Trait: 1
         Value: 20
     Title: New email!
-    Content: What about participation on next game jam? It will be fun!
+    Content: What about participation in next game jam? It will be fun!
     Cancelable: 1
   - Decision:
       Name: 
@@ -68,7 +68,7 @@ MonoBehaviour:
       - Trait: 1
         Value: 5
     Title: Ouch...
-    Content: You've been robed on the street.
+    Content: You've been robbed on the street.
     Cancelable: 0
   - Decision:
       Name: 

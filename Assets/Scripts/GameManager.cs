@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
 
 	void Start() {
 		_state = new GameState(Messages, Environment, Parameters, Events);
-		UpdateView();
+		MainUI.UpdateState(_state.Date, _state.Money, initial: true);
 	}
 
 	void Update() {
