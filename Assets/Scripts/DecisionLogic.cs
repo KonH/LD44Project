@@ -4,14 +4,31 @@ using System.Collections.Generic;
 public class DecisionLogic {
 	readonly Messages _messages;
 	readonly Environment _environment;
+	readonly Parameters _parameters;
 	readonly GameState _state;
 	
-	public DecisionLogic(Messages messages, Environment environment, GameState state) {
+	public DecisionLogic(Messages messages, Environment environment, Parameters parameters, GameState state) {
 		_messages = messages;
 		_environment = environment;
+		_parameters = parameters;
 		_state = state;
 	}
 
+	public bool IsDecisionAvailable(DecisionId id) {
+		switch ( id ) {
+			case DecisionId.Work:          return (_state.WorkPlace != null);
+			case DecisionId.WorkPromotion: return (_state.WorkPlace?.Days > _parameters.MinPromotionDays) && (GetNextPosition() != null);
+		}
+		return true;
+	}
+
+	Company.Position GetNextPosition() {
+		var position = _state.WorkPlace.Position;
+		var positions = _state.WorkPlace.Company.Positions;
+		var nextPositionIndex = (positions.IndexOf(position) + 1);
+		return nextPositionIndex < positions.Count ? positions[nextPositionIndex] : null;
+	}
+	
 	public void Apply(DecisionId id) {
 		switch ( id ) {
 			case DecisionId.PublishResume: 
@@ -19,6 +36,9 @@ public class DecisionLogic {
 				break;
 			case DecisionId.Work:
 				OnWork();
+				break;
+			case DecisionId.WorkPromotion:
+				OnWorkPromotion();
 				break;
 		}
 	}
@@ -35,18 +55,32 @@ public class DecisionLogic {
 	}
 
 	void OnWork() {
-		var (_, position) = _state.WorkPlace;
+		var position = _state.WorkPlace.Position;
 		_state.Inc(Trait.Money, position.Payment);
+		_state.WorkPlace.Days++;
+	}
+
+	void OnWorkPromotion() {
+		Message msg;
+		var nextPosition = GetNextPosition();
+		if ( IsApplyablePosition(nextPosition) ) {
+			msg = _messages.PromotionOk.Format(nextPosition.Name);
+			_state.WorkPlace = new GameState.WorkState { Company = _state.WorkPlace.Company, Position = nextPosition };
+		} else {
+			msg = _messages.PromotionNone;
+		}
+		_state.EnqueNotice(new NoticeAction(msg));
 	}
 
 	(Company, Company.Position) FindSuitablePosition() {
-		var (currentCompany, _) = _state.WorkPlace;
+		var currentCompany = _state.WorkPlace?.Company;
 		var positions = new List<(Company, Company.Position)>();
 		foreach ( var company in _environment.Companies ) {
 			if ( company == currentCompany ) {
 				continue;
 			}
-			foreach ( var position in company.Positions ) {
+			for ( var i = company.Positions.Count - 1; i >= 0; i-- ) {
+				var position = company.Positions[i];
 				var satisfied = true;
 				foreach ( var precond in position.Preconditions ) {
 					if ( _state.Get(precond.Trait) < precond.Value ) {
@@ -70,7 +104,10 @@ public class DecisionLogic {
 		}
 		var applied = IsApplyablePosition(position);
 		if ( applied ) {
-			_state.WorkPlace = (company, position);
+			_state.WorkPlace = new GameState.WorkState {
+				Company = company,
+				Position = position
+			};
 		}
 		var msg = (applied ? _messages.NewJob : _messages.InterviewFailed).Format(company.Name, position.Name);
 		var delay = TimeSpan.FromDays(applied ? 1 : 3);

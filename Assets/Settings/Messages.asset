@@ -44,3 +44,12 @@ MonoBehaviour:
   NewJob:
     Title: New email!
     Content: Congratulations! Now you're working in company '{0}' on position {1}.
+  StressWarning:
+    Title: You're tired
+    Content: You need attention to your condition and rest sometimes.
+  PromotionOk:
+    Title: New email!
+    Content: Congratulations! You're promoted to position {0}.
+  PromotionNone:
+    Title: New email!
+    Content: Sorry, you level is not enough to promote you to the next level.

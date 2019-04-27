@@ -43,6 +43,12 @@ MonoBehaviour:
       Changes:
       - Trait: 1
         Value: 2
+    - Name: Request promotion
+      Id: 3
+      Days: 0.1
+      Changes:
+      - Trait: 1
+        Value: 1
   - Name: Study
     Decisions:
     - Name: Learn Math
@@ -59,6 +65,14 @@ MonoBehaviour:
       Changes:
       - Trait: 3
         Value: 1
+    - Name: Buy & read tech book
+      Id: 0
+      Days: 3
+      Changes:
+      - Trait: 3
+        Value: 5
+      - Trait: 0
+        Value: -5
     - Name: Preparing for interview
       Id: 0
       Days: 0.5

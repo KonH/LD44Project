@@ -17,4 +17,5 @@ MonoBehaviour:
   StartMoney: 5
   MonthMoney: -30
   StressLimit: 10
-  LowMoneyStress: 2
+  LowMoneyStress: -2
+  MinPromotionDays: 3

@@ -93,9 +93,18 @@ public class GameManager : MonoBehaviour {
 		var result    = new Dictionary<string, Action>();
 		foreach ( var decision in decisions ) {
 			if ( _state.IsDecisionAvailable(decision) ) {
-				result.Add(decision.Name, () => ApplyDecision(decision));
+				var suffix = "";
+				var money = decision.Changes.Find(t => t.Trait == Trait.Money)?.Value;
+				if ( decision.Id == DecisionId.Work ) {
+					money = _state.WorkPlace.Position.Payment;
+				}
+				if ( money.HasValue ) {
+					suffix += $" ({money.Value}$)";
+				}
+				result.Add(decision.Name + suffix, () => ApplyDecision(decision));
 			}
 		}
+		result.Add("Back", TryResetDecideWindow);
 		return result;
 	}
 

@@ -16,7 +16,7 @@ MonoBehaviour:
   - Name: Galley, Inc
     Positions:
     - Name: Junior Developer
-      Payment: 20
+      Payment: 5
       Preconditions:
       - Trait: 4
         Value: 1
@@ -25,3 +25,23 @@ MonoBehaviour:
         Value: 1
       - Trait: 5
         Value: 1
+    - Name: Middle Developer
+      Payment: 10
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 5
+        Value: 5
+    - Name: Senior Developer
+      Payment: 15
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10

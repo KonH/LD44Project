@@ -11,4 +11,7 @@ public class Messages : ScriptableObject {
 	public Message NoWorkInvites;
 	public Message InterviewFailed;
 	public Message NewJob;
+	public Message StressWarning;
+	public Message PromotionOk;
+	public Message PromotionNone;
 }

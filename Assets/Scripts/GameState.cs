@@ -8,6 +8,12 @@ public class GameState {
 		public DateTime Time;
 		public NoticeAction Action;
 	}
+
+	public class WorkState {
+		public Company Company;
+		public Company.Position Position;
+		public int Days;
+	}
 	
 	static HashSet<string> _oneTimeNotices = new HashSet<string>();
 	
@@ -16,7 +22,7 @@ public class GameState {
 	public int Money => Get(Trait.Money);
 	public Queue<NoticeAction> Notices = new Queue<NoticeAction>();
 	public Dictionary<Trait, int> Traits = new Dictionary<Trait, int>();
-	public (Company, Company.Position) WorkPlace = default;
+	public WorkState WorkPlace = null;
 	public HashSet<string> Achievements = new HashSet<string>();
 
 	readonly Messages _messages;
@@ -30,7 +36,7 @@ public class GameState {
 	public GameState(Messages messges, Environment environment, Parameters parameters) {
 		_messages = messges;
 		_parameters = parameters;
-		_decisionLogic = new DecisionLogic(_messages, environment, this);
+		_decisionLogic = new DecisionLogic(_messages, environment, _parameters, this);
 
 		_startDate = DateTime.MinValue.AddDays(_parameters.StartDay);
 		Date = _startDate;
@@ -69,19 +75,21 @@ public class GameState {
 
 	void UpdateTraits() {
 		if ( Get(Trait.Money) == 0 ) {
-			EnqueNotice(new NoticeAction(_messages.LowMoney));
-			Inc(Trait.Money, _parameters.LowMoneyStress);
+			EnqueNoticeOnce(new NoticeAction(_messages.LowMoney));
+			Inc(Trait.Stress, _parameters.LowMoneyStress);
+		}
+		if ( Get(Trait.Stress) > _parameters.StressLimit * 0.6f ) {
+			EnqueNoticeOnce(new NoticeAction(_messages.StressWarning));
 		}
 		if ( Get(Trait.Stress) > _parameters.StressLimit ) {
-			EnqueNoticeOnce(new NoticeAction(_messages.HeartAttack));
+			EnqueNotice(new NoticeAction(_messages.HeartAttack));
 			Finish();
 		}
 	}
 
 	void UpdateAchievements() {
-		var (company, position) = WorkPlace;
-		if ( company != null ) {
-			AddAchievement($"{position.Name} at '{company.Name}'");
+		if ( WorkPlace != null ) {
+			AddAchievement($"{WorkPlace.Position.Name} at '{WorkPlace.Company.Name}'");
 		}
 	}
 	
@@ -122,6 +130,7 @@ public class GameState {
 			newValue = 0;
 		}
 		Traits[trait] = newValue;
+		Debug.LogFormat("Traits[{0}] + {1} = {2}", trait, inc, newValue);
 	}
 
 	public void EnqueNotice(NoticeAction act) {
@@ -145,10 +154,12 @@ public class GameState {
 		if ( _delayedNotices.Find(n => n.Id == decision.Id) != null ) {
 			return false;
 		}
-		switch ( decision.Id ) {
-			case DecisionId.Work: return (WorkPlace.Item1 != null);
+		foreach ( var ch in decision.Changes ) {
+			if ( (ch.Trait == Trait.Money) && ((Money + ch.Value) < 0) ) {
+				return false;
+			}
 		}
-		return true;
+		return _decisionLogic.IsDecisionAvailable(decision.Id);
 	}
 
 	void AddAchievement(string value) {

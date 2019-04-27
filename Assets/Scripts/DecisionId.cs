@@ -2,4 +2,5 @@
 	Simple,
 	PublishResume,
 	Work,
+	WorkPromotion,
 }
