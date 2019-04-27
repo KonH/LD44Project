@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 397600027}
   - component: {fileID: 397600029}
   - component: {fileID: 397600028}
+  - component: {fileID: 397600030}
   m_Layer: 5
   m_Name: Screen
   m_TagString: Untagged
@@ -262,6 +263,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397600026}
   m_CullTransparentMesh: 0
+--- !u!95 &397600030
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397600026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 009fbb8632dde4f91b306ea3c506a914, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &421023554
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +319,7 @@ MonoBehaviour:
   Notice: {fileID: 1270747745}
   Decide: {fileID: 1756634691}
   Result: {fileID: 994420627}
+  StressAnim: {fileID: 397600030}
 --- !u!4 &421023556
 Transform:
   m_ObjectHideFlags: 0
@@ -1219,6 +1240,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2414338370308971160, guid: 356293381fd364f4586af4bf5ec3f768,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414338370308971160, guid: 356293381fd364f4586af4bf5ec3f768,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2414338369283628695, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1237,7 +1268,7 @@ PrefabInstance:
     - target: {fileID: 2414338370366085550, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000082528995
+      value: 0.00090339454
       objectReference: {fileID: 0}
     - target: {fileID: 2414338370777232386, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
@@ -1247,7 +1278,7 @@ PrefabInstance:
     - target: {fileID: 2414338370777232386, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.99999714
+      value: 0.9994496
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 356293381fd364f4586af4bf5ec3f768, type: 3}

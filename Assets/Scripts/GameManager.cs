@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+	static readonly int Property = Animator.StringToHash("Stress");
+	
 	public DecisionTree DecisionTree;
 	public Environment Environment;
 	public Messages Messages;
@@ -12,6 +14,7 @@ public class GameManager : MonoBehaviour {
 	public NoticeWindow Notice;
 	public DecideWindow Decide;
 	public ResultWindow Result;
+	public Animator StressAnim;
 	
 	GameState _state = null;
 	
@@ -23,6 +26,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update() {
+		StressAnim.SetFloat(Property, (float)_state.Get(Trait.Stress) / Parameters.StressLimit);
 		if ( Notice.isActiveAndEnabled ) {
 			return;
 		}
