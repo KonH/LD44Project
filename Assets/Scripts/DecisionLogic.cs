@@ -18,6 +18,7 @@ public class DecisionLogic {
 		switch ( id ) {
 			case DecisionId.Work:          return (_state.WorkPlace != null);
 			case DecisionId.WorkPromotion: return (_state.WorkPlace?.Days > _parameters.MinPromotionDays) && (GetNextPosition() != null);
+			case DecisionId.WorkRecommend: return (_state.WorkPlace?.Days > _parameters.MinRecommendDays);
 		}
 		return true;
 	}
@@ -34,11 +35,17 @@ public class DecisionLogic {
 			case DecisionId.PublishResume: 
 				OnPublishResume();
 				break;
+			
 			case DecisionId.Work:
 				OnWork();
 				break;
+			
 			case DecisionId.WorkPromotion:
 				OnWorkPromotion();
+				break;
+			
+			case DecisionId.WorkRecommend:
+				OnWorkRecommend();
 				break;
 		}
 	}
@@ -58,6 +65,7 @@ public class DecisionLogic {
 		var position = _state.WorkPlace.Position;
 		_state.Inc(Trait.Money, position.Payment);
 		_state.WorkPlace.Days++;
+		_state.EnqueNoticeOnce(new NoticeAction(_messages.WorkProgressNotice));
 	}
 
 	void OnWorkPromotion() {
@@ -68,8 +76,13 @@ public class DecisionLogic {
 			_state.WorkPlace = new GameState.WorkState { Company = _state.WorkPlace.Company, Position = nextPosition };
 		} else {
 			msg = _messages.PromotionNone;
+			_state.WorkPlace.Days = 0;
 		}
 		_state.EnqueNotice(new NoticeAction(msg));
+	}
+	
+	void OnWorkRecommend() {
+		_state.Inc(Trait.Resume, 5);
 	}
 
 	(Company, Company.Position) FindSuitablePosition() {

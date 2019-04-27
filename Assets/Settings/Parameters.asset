@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartAge: 16
   StartDay: 737175
-  StartMoney: 5
-  MonthMoney: -30
-  StressLimit: 10
+  StartMoney: 10
+  MonthMoney: -100
+  StressLimit: 25
   LowMoneyStress: -2
-  MinPromotionDays: 3
+  MinPromotionDays: 15
+  MinRecommendDays: 30

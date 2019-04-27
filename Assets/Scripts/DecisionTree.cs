@@ -15,6 +15,8 @@ public class DecisionTree : ScriptableObject {
 		public string Name;
 		public DecisionId Id;
 		public double Days;
+		public List<TraitValue> Min;
+		public List<TraitValue> Max;
 		public List<TraitValue> Changes;
 	}
 

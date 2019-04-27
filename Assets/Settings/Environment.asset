@@ -45,3 +45,165 @@ MonoBehaviour:
         Value: 10
       - Trait: 5
         Value: 10
+  - Name: Bloody enterprise, LLC
+    Positions:
+    - Name: Junior Developer
+      Payment: 7
+      Preconditions:
+      - Trait: 4
+        Value: 3
+      Requirements:
+      - Trait: 3
+        Value: 3
+      - Trait: 5
+        Value: 3
+    - Name: Middle Developer
+      Payment: 12
+      Preconditions:
+      - Trait: 4
+        Value: 7
+      Requirements:
+      - Trait: 3
+        Value: 7
+      - Trait: 5
+        Value: 7
+    - Name: Senior Developer
+      Payment: 17
+      Preconditions:
+      - Trait: 4
+        Value: 12
+      Requirements:
+      - Trait: 3
+        Value: 12
+      - Trait: 5
+        Value: 12
+  - Name: Fancy startup
+    Positions:
+    - Name: Junior Developer
+      Payment: 20
+      Preconditions:
+      - Trait: 4
+        Value: 13
+      Requirements:
+      - Trait: 3
+        Value: 3
+      - Trait: 5
+        Value: 3
+    - Name: Middle Developer
+      Payment: 35
+      Preconditions:
+      - Trait: 4
+        Value: 17
+      Requirements:
+      - Trait: 3
+        Value: 7
+      - Trait: 5
+        Value: 7
+      - Trait: 2
+        Value: 2
+    - Name: Senior Developer
+      Payment: 55
+      Preconditions:
+      - Trait: 4
+        Value: 22
+      Requirements:
+      - Trait: 3
+        Value: 12
+      - Trait: 5
+        Value: 12
+      - Trait: 2
+        Value: 5
+    - Name: CTO
+      Payment: 80
+      Preconditions:
+      - Trait: 4
+        Value: 22
+      Requirements:
+      - Trait: 3
+        Value: 15
+      - Trait: 5
+        Value: 15
+      - Trait: 2
+        Value: 10
+  - Name: Galley, Inc
+    Positions:
+    - Name: Junior Developer
+      Payment: 5
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+    - Name: Middle Developer
+      Payment: 10
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 5
+        Value: 5
+    - Name: Senior Developer
+      Payment: 15
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+  - Name: Hoogle, LLC
+    Positions:
+    - Name: Junior Developer
+      Payment: 10
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 2
+        Value: 10
+    - Name: Middle Developer
+      Payment: 25
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 25
+      - Trait: 5
+        Value: 15
+      - Trait: 2
+        Value: 15
+    - Name: Senior Developer
+      Payment: 40
+      Preconditions:
+      - Trait: 4
+        Value: 15
+      Requirements:
+      - Trait: 3
+        Value: 40
+      - Trait: 5
+        Value: 20
+      - Trait: 2
+        Value: 20
+    - Name: Software Architect
+      Payment: 60
+      Preconditions:
+      - Trait: 4
+        Value: 20
+      Requirements:
+      - Trait: 3
+        Value: 50
+      - Trait: 5
+        Value: 30
+      - Trait: 2
+        Value: 30

@@ -9,4 +9,5 @@ public class Parameters : ScriptableObject {
 	public int StressLimit;
 	public int LowMoneyStress;
 	public int MinPromotionDays;
+	public int MinRecommendDays;
 }

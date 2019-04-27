@@ -154,6 +154,16 @@ public class GameState {
 		if ( _delayedNotices.Find(n => n.Id == decision.Id) != null ) {
 			return false;
 		}
+		foreach ( var ch in decision.Min ) {
+			if ( Get(ch.Trait) < ch.Value ) {
+				return false;
+			}
+		}
+		foreach ( var ch in decision.Max ) {
+			if ( Get(ch.Trait) > ch.Value ) {
+				return false;
+			}
+		}
 		foreach ( var ch in decision.Changes ) {
 			if ( (ch.Trait == Trait.Money) && ((Money + ch.Value) < 0) ) {
 				return false;

@@ -53,3 +53,7 @@ MonoBehaviour:
   PromotionNone:
     Title: New email!
     Content: Sorry, you level is not enough to promote you to the next level.
+  WorkProgressNotice:
+    Title: Promotions & recommendation
+    Content: If you working often, you can request promotion for better position.
+      Also, you can get recommendation to improve your resume.

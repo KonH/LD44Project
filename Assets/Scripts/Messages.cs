@@ -14,4 +14,5 @@ public class Messages : ScriptableObject {
 	public Message StressWarning;
 	public Message PromotionOk;
 	public Message PromotionNone;
+	public Message WorkProgressNotice;
 }

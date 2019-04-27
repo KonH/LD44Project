@@ -3,4 +3,5 @@
 	PublishResume,
 	Work,
 	WorkPromotion,
+	WorkRecommend,
 }
