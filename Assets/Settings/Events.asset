@@ -128,3 +128,39 @@ MonoBehaviour:
     Content: Hello, dear friend! I'm from Nigeria and I want your help for some financial
       operations. For good profit in future.
     Cancelable: 1
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 1
+      Min:
+      - Trait: 8
+        Value: 5
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -10
+      - Trait: 8
+        Value: 5
+      - Trait: 1
+        Value: 5
+    Title: Hm...
+    Content: You're accedentally go to a bar and drink additional beer.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 8
+        Value: 15
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -200
+      - Trait: 8
+        Value: 10
+      - Trait: 1
+        Value: -20
+    Title: Hm...
+    Content: You don't remember last week. You've drinking all the time.
+    Cancelable: 0

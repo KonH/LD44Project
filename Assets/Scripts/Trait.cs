@@ -7,4 +7,5 @@
 	Talking,
 	Freelance,
 	Walker,
+	Alcohol
 }

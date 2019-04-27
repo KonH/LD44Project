@@ -415,3 +415,15 @@ MonoBehaviour:
         Value: -100
       - Trait: 0
         Value: -2500
+    - Name: Go to the bar
+      Id: 0
+      Days: 0.5
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: -15
+      - Trait: 0
+        Value: -10
+      - Trait: 8
+        Value: 10
