@@ -90,7 +90,7 @@ MonoBehaviour:
       Days: 7
       Min:
       - Trait: 3
-        Value: 20
+        Value: 40
       Max: []
       Changes:
       - Trait: 1

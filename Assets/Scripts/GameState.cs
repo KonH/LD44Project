@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class GameState {
 	class DelayedNotice {
@@ -53,6 +54,9 @@ public class GameState {
 		
 		var startAct = new NoticeAction(_messages.Welcome);
 		EnqueNoticeOnce(startAct);
+
+		Analytics.enabled = !Application.isEditor;
+		AnalyticsEvent.GameStart();
 	}
 	
 	public void ApplyDecision(DecisionTree.Decision decision) {
@@ -104,7 +108,7 @@ public class GameState {
 		}
 		if ( Get(Trait.Stress) > _parameters.StressLimit ) {
 			EnqueNotice(new NoticeAction(_messages.HeartAttack));
-			Finish();
+			Finish(Trait.Stress.ToString());
 		}
 	}
 
@@ -159,7 +163,7 @@ public class GameState {
 		}
 	}
 
-	void Finish() {
+	void Finish(string reason) {
 		var age = _parameters.StartAge + (Date - _startDate).TotalDays / 365;
 		age = Math.Round(age);
 		var msg = _messages.Finish.Format(age);
@@ -169,6 +173,8 @@ public class GameState {
 			Achievements.Add("Nothing");
 		}
 		_onUpdated.Invoke();
+
+		AnalyticsEvent.GameOver(reason);
 	}
 
 	public int Get(Trait trait) {
@@ -231,7 +237,9 @@ public class GameState {
 	}
 
 	void AddAchievement(string value) {
-		Achievements.Add(value);
+		if ( Achievements.Add(value) ) {
+			AnalyticsEvent.AchievementUnlocked(value);
+		}
 	}
 	
 	public override string ToString() {

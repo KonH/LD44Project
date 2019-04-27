@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update() {
-		StressAnim.SetFloat(Property, (float)_state.Get(Trait.Stress) / Parameters.StressLimit);
+		var normalizedStress = !_state.Finished ? (float)_state.Get(Trait.Stress) / Parameters.StressLimit : 0;
+		StressAnim.SetFloat(Property, normalizedStress);
 		if ( Notice.isActiveAndEnabled ) {
 			return;
 		}

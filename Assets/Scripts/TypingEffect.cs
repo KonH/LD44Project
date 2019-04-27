@@ -18,7 +18,7 @@ public class TypingEffect : MonoBehaviour {
 		while ( _text.text != _fullLine ) {
 			var nextChar = _fullLine[_text.text.Length];
 			_text.text += nextChar;
-			yield return new WaitForSeconds(0.025f);
+			yield return new WaitForSeconds(0.015f);
 		}
 	}
 }
