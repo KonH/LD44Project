@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour {
 		Decide.Init(GetCurrentActions());
 	}
 
-	Dictionary<string, Action> GetCurrentActions() {
+	Dictionary<string, (Action, bool)> GetCurrentActions() {
 		var isCategorySelected = (_selectedCategory != null);
 		if ( isCategorySelected ) {
 			return GetActionsForCategory(_selectedCategory);
@@ -83,18 +83,18 @@ public class GameManager : MonoBehaviour {
 		return GetCategories();
 	}
 
-	Dictionary<string, Action> GetCategories() {
+	Dictionary<string, (Action, bool)> GetCategories() {
 		var categiries = DecisionTree.Categories;
-		var result = new Dictionary<string, Action>();
+		var result = new Dictionary<string, (Action, bool)>();
 		foreach ( var cat in categiries ) {
-			result.Add(cat.Name, () => _selectedCategory = cat);
+			result.Add(cat.Name, (() => _selectedCategory = cat, true));
 		}
 		return result;
 	}
 	
-	public Dictionary<string, Action> GetActionsForCategory(DecisionTree.Category category) {
+	public Dictionary<string, (Action, bool)> GetActionsForCategory(DecisionTree.Category category) {
 		var decisions = category.Decisions;
-		var result    = new Dictionary<string, Action>();
+		var result    = new Dictionary<string, (Action, bool)>();
 		foreach ( var decision in decisions ) {
 			if ( _state.IsDecisionAvailable(decision) ) {
 				var suffix = "";
@@ -105,10 +105,10 @@ public class GameManager : MonoBehaviour {
 				if ( money.HasValue ) {
 					suffix += $" ({money.Value}$)";
 				}
-				result.Add(decision.Name + suffix, () => ApplyDecision(decision));
+				result.Add(decision.Name + suffix, (() => ApplyDecision(decision), _state.IsDecisionActive(decision)));
 			}
 		}
-		result.Add("Back", TryResetDecideWindow);
+		result.Add("Back", (TryResetDecideWindow, true));
 		return result;
 	}
 

@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -474,6 +474,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2414338370366085550, guid: 340b12648b48d42658b798f2a299da51,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2414338369283628695, guid: 340b12648b48d42658b798f2a299da51,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -498,11 +503,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2414338370777232386, guid: 340b12648b48d42658b798f2a299da51,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.050000012
       objectReference: {fileID: 0}
     - target: {fileID: 2414338370777232386, guid: 340b12648b48d42658b798f2a299da51,
         type: 3}
@@ -871,6 +871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252126760622904054, guid: 4903ac3e8b6824ed79e31298c59880f1,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 252126760622904055, guid: 4903ac3e8b6824ed79e31298c59880f1,
         type: 3}
@@ -1267,8 +1272,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414338370366085550, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.00090339454
+      propertyPath: m_SizeDelta.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2414338370777232386, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
@@ -1278,7 +1283,7 @@ PrefabInstance:
     - target: {fileID: 2414338370777232386, guid: 356293381fd364f4586af4bf5ec3f768,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.9994496
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 356293381fd364f4586af4bf5ec3f768, type: 3}

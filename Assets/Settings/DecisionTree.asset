@@ -31,7 +31,7 @@ MonoBehaviour:
       Min: []
       Max:
       - Trait: 4
-        Value: 0
+        Value: 1
       Changes:
       - Trait: 1
         Value: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
       - Trait: 1
         Value: 1
       - Trait: 4
-        Value: 1
+        Value: 5
     - Name: Update resume design
       Id: 0
       Days: 3
@@ -66,7 +66,7 @@ MonoBehaviour:
       - Trait: 4
         Value: 5
       - Trait: 0
-        Value: 50
+        Value: -50
     - Name: Publish resume
       Id: 1
       Days: 0.5
@@ -79,7 +79,7 @@ MonoBehaviour:
         Value: 1
     - Name: Work in office
       Id: 2
-      Days: 1
+      Days: 7
       Min: []
       Max: []
       Changes:
@@ -87,7 +87,7 @@ MonoBehaviour:
         Value: 3
     - Name: Work remotely
       Id: 2
-      Days: 1
+      Days: 7
       Min:
       - Trait: 3
         Value: 20
@@ -126,14 +126,14 @@ MonoBehaviour:
         Value: 5
       Changes:
       - Trait: 0
-        Value: 15
+        Value: -15
       - Trait: 2
         Value: 5
       - Trait: 1
         Value: 1
-    - Name: Take algorythms course
+    - Name: Read algorythms book
       Id: 0
-      Days: 10
+      Days: 3
       Min:
       - Trait: 2
         Value: 5
@@ -142,7 +142,23 @@ MonoBehaviour:
         Value: 10
       Changes:
       - Trait: 0
-        Value: 40
+        Value: -35
+      - Trait: 2
+        Value: 10
+      - Trait: 1
+        Value: 1
+    - Name: Take algorythms course
+      Id: 0
+      Days: 10
+      Min:
+      - Trait: 2
+        Value: 15
+      Max:
+      - Trait: 2
+        Value: 25
+      Changes:
+      - Trait: 0
+        Value: -40
       - Trait: 2
         Value: 5
     - Name: Create custom algorythm
@@ -150,7 +166,7 @@ MonoBehaviour:
       Days: 14
       Min:
       - Trait: 2
-        Value: 10
+        Value: 25
       Max:
       - Trait: 2
         Value: 30
@@ -172,7 +188,7 @@ MonoBehaviour:
       - Trait: 1
         Value: 5
       - Trait: 0
-        Value: 1500
+        Value: -1500
     - Name: Read programming book for dummies
       Id: 0
       Days: 3
@@ -182,7 +198,7 @@ MonoBehaviour:
         Value: 5
       Changes:
       - Trait: 0
-        Value: 10
+        Value: -10
       - Trait: 3
         Value: 5
       - Trait: 1
@@ -198,7 +214,7 @@ MonoBehaviour:
         Value: 10
       Changes:
       - Trait: 0
-        Value: 25
+        Value: -25
       - Trait: 3
         Value: 5
       - Trait: 1
@@ -214,7 +230,7 @@ MonoBehaviour:
         Value: 15
       Changes:
       - Trait: 0
-        Value: 45
+        Value: -45
       - Trait: 3
         Value: 10
       - Trait: 1
@@ -230,7 +246,7 @@ MonoBehaviour:
         Value: 30
       Changes:
       - Trait: 0
-        Value: 80
+        Value: -80
       - Trait: 3
         Value: 10
       - Trait: 1
@@ -246,7 +262,7 @@ MonoBehaviour:
         Value: 40
       Changes:
       - Trait: 0
-        Value: 250
+        Value: -250
       - Trait: 3
         Value: 10
       - Trait: 1
@@ -257,7 +273,9 @@ MonoBehaviour:
       Min:
       - Trait: 3
         Value: 40
-      Max: []
+      Max:
+      - Trait: 3
+        Value: 50
       Changes:
       - Trait: 3
         Value: 10
@@ -268,11 +286,11 @@ MonoBehaviour:
       Days: 30
       Min:
       - Trait: 3
-        Value: 40
+        Value: 50
       Max: []
       Changes:
       - Trait: 0
-        Value: 2000
+        Value: -2000
       - Trait: 3
         Value: 15
       - Trait: 1
@@ -286,7 +304,7 @@ MonoBehaviour:
         Value: 5
       Changes:
       - Trait: 5
-        Value: 1
+        Value: 5
       - Trait: 1
         Value: 1
     - Name: Take interview course
@@ -302,10 +320,10 @@ MonoBehaviour:
       - Trait: 5
         Value: 5
       - Trait: 0
-        Value: 300
+        Value: -150
       - Trait: 1
         Value: 2
-    - Name: Take interview expert course
+    - Name: Take expert interview course
       Id: 0
       Days: 12
       Min:
@@ -318,7 +336,7 @@ MonoBehaviour:
       - Trait: 5
         Value: 10
       - Trait: 0
-        Value: 1500
+        Value: -1500
       - Trait: 1
         Value: 2
     - Name: Participate in coding challenge
@@ -351,12 +369,12 @@ MonoBehaviour:
     Decisions:
     - Name: Walking
       Id: 0
-      Days: 0.5
+      Days: 1
       Min: []
       Max: []
       Changes:
       - Trait: 1
-        Value: -1
+        Value: -5
     - Name: Play game
       Id: 0
       Days: 1
@@ -364,7 +382,7 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -5
+        Value: -15
       - Trait: 0
         Value: -60
     - Name: Explore internet
@@ -374,7 +392,7 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -1
+        Value: -4
     - Name: Go to the wild nature
       Id: 0
       Days: 3
@@ -382,9 +400,9 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -20
+        Value: -25
       - Trait: 0
-        Value: 250
+        Value: -250
     - Name: Take vacation
       Id: 0
       Days: 14
@@ -394,4 +412,4 @@ MonoBehaviour:
       - Trait: 1
         Value: -100
       - Trait: 0
-        Value: 2500
+        Value: -2500

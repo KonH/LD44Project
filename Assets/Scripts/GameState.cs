@@ -96,7 +96,7 @@ public class GameState {
 	void UpdateNotices() {
 		var usedNotices = new List<DelayedNotice>();
 		foreach ( var notice in _delayedNotices ) {
-			if ( notice.Time <= Date ) {
+			if ( Date >= notice.Time ) {
 				EnqueNotice(notice.Action);
 				usedNotices.Add(notice);
 			}
@@ -160,16 +160,20 @@ public class GameState {
 			}
 		}
 		foreach ( var ch in decision.Max ) {
-			if ( Get(ch.Trait) > ch.Value ) {
+			if ( Get(ch.Trait) >= ch.Value ) {
 				return false;
 			}
 		}
+		return _decisionLogic.IsDecisionAvailable(decision.Id);
+	}
+
+	public bool IsDecisionActive(DecisionTree.Decision decision) {
 		foreach ( var ch in decision.Changes ) {
 			if ( (ch.Trait == Trait.Money) && ((Money + ch.Value) < 0) ) {
 				return false;
 			}
 		}
-		return _decisionLogic.IsDecisionAvailable(decision.Id);
+		return true;
 	}
 
 	void AddAchievement(string value) {

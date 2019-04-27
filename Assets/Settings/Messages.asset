@@ -33,7 +33,7 @@ MonoBehaviour:
   WorkInvite:
     Title: New email!
     Content: Your resume is interesting! We're invite you for interview in '{0}' for
-      position {1}.
+      position {1} ({2}$).
   NoWorkInvites:
     Title: Inbox is emply
     Content: Nobody cares about your resume.
@@ -54,6 +54,6 @@ MonoBehaviour:
     Title: New email!
     Content: Sorry, you level is not enough to promote you to the next level.
   WorkProgressNotice:
-    Title: Promotions & recommendation
+    Title: Promotions
     Content: If you working often, you can request promotion for better position.
       Also, you can get recommendation to improve your resume.

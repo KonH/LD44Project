@@ -13,18 +13,20 @@ public class DecideWindow : MonoBehaviour {
 	
 	List<Button> _buttons = new List<Button>();
 	
-	public void Init(Dictionary<string, Action> actions) {
+	public void Init(Dictionary<string, (Action, bool)> actions) {
 		while ( _buttons.Count < actions.Count ) {
 			var button = Instantiate(ActionPrefab, ActionRoot);
 			_buttons.Add(button);
 		}
 		var index = 0;
 		foreach ( var action in actions ) {
+			var (callback, active) = action.Value;
 			var button = _buttons[index];
+			button.interactable = active;
 			button.gameObject.SetActive(true);
 			button.onClick.RemoveAllListeners();
 			button.onClick.AddListener(() => {
-				action.Value();
+				callback();
 				ClearListeners();
 				Hide.Invoke();
 			});

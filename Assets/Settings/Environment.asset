@@ -16,7 +16,7 @@ MonoBehaviour:
   - Name: Galley, Inc
     Positions:
     - Name: Junior Developer
-      Payment: 5
+      Payment: 20
       Preconditions:
       - Trait: 4
         Value: 1
@@ -26,7 +26,7 @@ MonoBehaviour:
       - Trait: 5
         Value: 1
     - Name: Middle Developer
-      Payment: 10
+      Payment: 40
       Preconditions:
       - Trait: 4
         Value: 5
@@ -36,7 +36,7 @@ MonoBehaviour:
       - Trait: 5
         Value: 5
     - Name: Senior Developer
-      Payment: 15
+      Payment: 60
       Preconditions:
       - Trait: 4
         Value: 10
@@ -48,7 +48,7 @@ MonoBehaviour:
   - Name: Bloody enterprise, LLC
     Positions:
     - Name: Junior Developer
-      Payment: 7
+      Payment: 20
       Preconditions:
       - Trait: 4
         Value: 3
@@ -58,7 +58,7 @@ MonoBehaviour:
       - Trait: 5
         Value: 3
     - Name: Middle Developer
-      Payment: 12
+      Payment: 50
       Preconditions:
       - Trait: 4
         Value: 7
@@ -68,7 +68,7 @@ MonoBehaviour:
       - Trait: 5
         Value: 7
     - Name: Senior Developer
-      Payment: 17
+      Payment: 80
       Preconditions:
       - Trait: 4
         Value: 12
@@ -80,7 +80,7 @@ MonoBehaviour:
   - Name: Fancy startup
     Positions:
     - Name: Junior Developer
-      Payment: 20
+      Payment: 80
       Preconditions:
       - Trait: 4
         Value: 13
@@ -90,7 +90,7 @@ MonoBehaviour:
       - Trait: 5
         Value: 3
     - Name: Middle Developer
-      Payment: 35
+      Payment: 140
       Preconditions:
       - Trait: 4
         Value: 17
@@ -102,7 +102,7 @@ MonoBehaviour:
       - Trait: 2
         Value: 2
     - Name: Senior Developer
-      Payment: 55
+      Payment: 220
       Preconditions:
       - Trait: 4
         Value: 22
@@ -114,7 +114,7 @@ MonoBehaviour:
       - Trait: 2
         Value: 5
     - Name: CTO
-      Payment: 80
+      Payment: 320
       Preconditions:
       - Trait: 4
         Value: 22
@@ -125,42 +125,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 2
         Value: 10
-  - Name: Galley, Inc
-    Positions:
-    - Name: Junior Developer
-      Payment: 5
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      Requirements:
-      - Trait: 3
-        Value: 1
-      - Trait: 5
-        Value: 1
-    - Name: Middle Developer
-      Payment: 10
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      Requirements:
-      - Trait: 3
-        Value: 5
-      - Trait: 5
-        Value: 5
-    - Name: Senior Developer
-      Payment: 15
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      Requirements:
-      - Trait: 3
-        Value: 10
-      - Trait: 5
-        Value: 10
   - Name: Hoogle, LLC
     Positions:
     - Name: Junior Developer
-      Payment: 10
+      Payment: 40
       Preconditions:
       - Trait: 4
         Value: 10
@@ -172,7 +140,7 @@ MonoBehaviour:
       - Trait: 2
         Value: 10
     - Name: Middle Developer
-      Payment: 25
+      Payment: 100
       Preconditions:
       - Trait: 4
         Value: 10
@@ -184,7 +152,7 @@ MonoBehaviour:
       - Trait: 2
         Value: 15
     - Name: Senior Developer
-      Payment: 40
+      Payment: 160
       Preconditions:
       - Trait: 4
         Value: 15
@@ -196,7 +164,7 @@ MonoBehaviour:
       - Trait: 2
         Value: 20
     - Name: Software Architect
-      Payment: 60
+      Payment: 240
       Preconditions:
       - Trait: 4
         Value: 20

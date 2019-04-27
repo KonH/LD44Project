@@ -43,10 +43,6 @@ public class DecisionLogic {
 			case DecisionId.WorkPromotion:
 				OnWorkPromotion();
 				break;
-			
-			case DecisionId.WorkRecommend:
-				OnWorkRecommend();
-				break;
 		}
 	}
 
@@ -54,7 +50,10 @@ public class DecisionLogic {
 		var (company, positon) = FindSuitablePosition();
 		NoticeAction act;
 		if ( positon != null ) {
-			act = new NoticeAction(_messages.WorkInvite.Format(company.Name, positon.Name), true, b => OnInviteConfirm(company, positon, b));
+			var curPayment = (_state.WorkPlace != null) ? _state.WorkPlace.Position.Payment : 0;
+			var addCount = (positon.Payment - curPayment);
+			var add = (addCount >= 0) ? "+" + addCount.ToString() : addCount.ToString();  
+			act = new NoticeAction(_messages.WorkInvite.Format(company.Name, positon.Name, add), true, b => OnInviteConfirm(company, positon, b));
 		} else {
 			act = new NoticeAction(_messages.NoWorkInvites);
 		}
@@ -80,10 +79,6 @@ public class DecisionLogic {
 		}
 		_state.EnqueNotice(new NoticeAction(msg));
 	}
-	
-	void OnWorkRecommend() {
-		_state.Inc(Trait.Resume, 5);
-	}
 
 	(Company, Company.Position) FindSuitablePosition() {
 		var currentCompany = _state.WorkPlace?.Company;
@@ -102,6 +97,7 @@ public class DecisionLogic {
 				}
 				if ( satisfied ) {
 					positions.Add((company, position));
+					break;
 				}
 			}
 		}
