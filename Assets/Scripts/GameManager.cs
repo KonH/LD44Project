@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
-	static readonly int Property = Animator.StringToHash("Stress");
+	static readonly int StressProperty = Animator.StringToHash("Stress");
+	static readonly int DiseaseProperty = Animator.StringToHash("Disease");
+	static readonly int MadProperty = Animator.StringToHash("Mad");
 	
 	public DecisionTree DecisionTree;
 	public Environment Environment;
@@ -16,6 +18,8 @@ public class GameManager : MonoBehaviour {
 	public DecideWindow Decide;
 	public ResultWindow Result;
 	public Animator StressAnim;
+	public Animator DiseaseAnim;
+	public Animator MadAnim;
 	
 	GameState _state = null;
 	
@@ -28,7 +32,14 @@ public class GameManager : MonoBehaviour {
 
 	void Update() {
 		var normalizedStress = !_state.Finished ? (float)_state.Get(Trait.Stress) / Parameters.StressLimit : 0;
-		StressAnim.SetFloat(Property, normalizedStress);
+		StressAnim.SetFloat(StressProperty, normalizedStress);
+		
+		var normalizedDisease = !_state.Finished ? (float)_state.Get(Trait.Disease) / Parameters.DiseaseLimit : 0;
+		DiseaseAnim.SetFloat(DiseaseProperty, normalizedDisease);
+		
+		var normalizedMad = !_state.Finished ? (float)_state.Get(Trait.Mad) / Parameters.MadLimit : 0;
+		MadAnim.SetFloat(MadProperty, normalizedMad);
+		
 		if ( Notice.isActiveAndEnabled ) {
 			return;
 		}

@@ -16,4 +16,8 @@ public class Messages : ScriptableObject {
 	public Message PromotionNone;
 	public Message WorkProgressNotice;
 	public Message LostJob;
+	public Message DiseaseWarning;
+	public Message DiseaseDeath;
+	public Message MadWarning;
+	public Message MadDeath;
 }

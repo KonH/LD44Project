@@ -18,7 +18,7 @@ MonoBehaviour:
       All the possibilities of this world are available! You don't have any visible
       parameters of your character, because you don't have it in real life.
   HeartAttack:
-    Title: Heart Attack
+    Title: Heart attack
     Content: Your stress is too hard, you've experienced a heart attack.
   Finish:
     Title: Rest in peace
@@ -59,5 +59,18 @@ MonoBehaviour:
       Also, you can get recommendation to improve your resume.
   LostJob:
     Title: New email!
-    Content: We're not satisfied by your work for for our company. It's sad to say,
-      but you're fired and in our black list now.
+    Content: We're not satisfied by your work for our company. It's sad to say, but
+      you're fired and in our black list now.
+  DiseaseWarning:
+    Title: You're sick
+    Content: You feel yourself unhealthy. Sometimes it's nice to take medical examination.
+  DiseaseDeath:
+    Title: Fall dead
+    Content: Medics don't know what exactly happens to you, but your health condition
+      was very bad and this is expected.
+  MadWarning:
+    Title: Cockroaches in your head
+    Content: You obsessed by strange thoughts. Maybe you need take care about it.
+  MadDeath:
+    Title: You're commited suicide
+    Content: This world is useless, you need another one.

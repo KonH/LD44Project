@@ -113,6 +113,18 @@ public class GameState {
 		if ( Get(Trait.Stress) > _parameters.StressLimit ) {
 			Finish(_messages.HeartAttack, Trait.Stress.ToString());
 		}
+		if ( Get(Trait.Disease) > _parameters.DiseaseLimit * 0.6f ) {
+			EnqueNoticeOnce(new NoticeAction(_messages.DiseaseWarning, HighPriority));
+		}
+		if ( Get(Trait.Disease) > _parameters.DiseaseLimit ) {
+			Finish(_messages.DiseaseDeath, Trait.Disease.ToString());
+		}
+		if ( Get(Trait.Mad) > _parameters.MadLimit * 0.6f ) {
+			EnqueNoticeOnce(new NoticeAction(_messages.MadWarning, HighPriority));
+		}
+		if ( Get(Trait.Mad) > _parameters.MadLimit ) {
+			Finish(_messages.MadDeath, Trait.Mad.ToString());
+		}
 	}
 
 	void UpdateEvents() {

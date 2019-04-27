@@ -15,15 +15,19 @@ MonoBehaviour:
   Categories:
   - Name: Work
     Decisions:
-    - Name: Clean dishes
+    - Name: Wash dishes
       Id: 0
       Days: 1
       Min: []
       Max: []
       Changes:
       - Trait: 0
-        Value: 2
+        Value: 5
       - Trait: 1
+        Value: 2
+      - Trait: 9
+        Value: 2
+      - Trait: 10
         Value: 2
     - Name: Write resume
       Id: 0
@@ -85,6 +89,10 @@ MonoBehaviour:
       Changes:
       - Trait: 1
         Value: 3
+      - Trait: 9
+        Value: 2
+      - Trait: 10
+        Value: 2
     - Name: Work remotely
       Id: 2
       Days: 7
@@ -94,6 +102,10 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
+        Value: 1
+      - Trait: 9
+        Value: 1
+      - Trait: 10
         Value: 1
     - Name: Request promotion
       Id: 3
@@ -186,6 +198,8 @@ MonoBehaviour:
       - Trait: 2
         Value: 10
       - Trait: 1
+        Value: 5
+      - Trait: 10
         Value: 5
       - Trait: 0
         Value: -1500
@@ -281,6 +295,8 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: 10
+      - Trait: 10
+        Value: 5
     - Name: Take expert programming course
       Id: 0
       Days: 10
@@ -294,6 +310,8 @@ MonoBehaviour:
       - Trait: 3
         Value: 15
       - Trait: 1
+        Value: 5
+      - Trait: 10
         Value: 5
     - Name: Prepare for interview at home
       Id: 0
@@ -339,6 +357,8 @@ MonoBehaviour:
         Value: -1500
       - Trait: 1
         Value: 2
+      - Trait: 10
+        Value: 5
     - Name: Participate in coding challenge
       Id: 0
       Days: 3
@@ -365,18 +385,38 @@ MonoBehaviour:
         Value: 5
       - Trait: 1
         Value: 5
+      - Trait: 10
+        Value: 5
   - Name: Rest
     Decisions:
     - Name: Walking
       Id: 0
       Days: 0.5
       Min: []
+      Max:
+      - Trait: 9
+        Value: 25
+      Changes:
+      - Trait: 1
+        Value: -3
+      - Trait: 7
+        Value: 1
+      - Trait: 9
+        Value: -3
+      - Trait: 10
+        Value: -3
+    - Name: Go to the gym
+      Id: 0
+      Days: 0.5
+      Min: []
       Max: []
       Changes:
       - Trait: 1
-        Value: -5
-      - Trait: 7
-        Value: 1
+        Value: -2
+      - Trait: 9
+        Value: -10
+      - Trait: 0
+        Value: -25
     - Name: Play game
       Id: 0
       Days: 1
@@ -387,6 +427,8 @@ MonoBehaviour:
         Value: -15
       - Trait: 0
         Value: -60
+      - Trait: 9
+        Value: 1
     - Name: Explore internet
       Id: 0
       Days: 0.5
@@ -394,7 +436,11 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -4
+        Value: -8
+      - Trait: 9
+        Value: 2
+      - Trait: 10
+        Value: 2
     - Name: Go to the wild nature
       Id: 0
       Days: 3
@@ -405,6 +451,10 @@ MonoBehaviour:
         Value: -25
       - Trait: 0
         Value: -250
+      - Trait: 9
+        Value: -15
+      - Trait: 10
+        Value: -10
     - Name: Take vacation
       Id: 0
       Days: 7
@@ -415,6 +465,10 @@ MonoBehaviour:
         Value: -100
       - Trait: 0
         Value: -2500
+      - Trait: 9
+        Value: -50
+      - Trait: 10
+        Value: -25
     - Name: Go to the bar
       Id: 0
       Days: 0.5
@@ -427,3 +481,31 @@ MonoBehaviour:
         Value: -10
       - Trait: 8
         Value: 10
+      - Trait: 9
+        Value: 5
+      - Trait: 10
+        Value: 10
+    - Name: Take medical examination
+      Id: 0
+      Days: 2
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -1000
+      - Trait: 9
+        Value: -100
+    - Name: Take psychotherapist session
+      Id: 0
+      Days: 1
+      Min: []
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -500
+      - Trait: 10
+        Value: -100

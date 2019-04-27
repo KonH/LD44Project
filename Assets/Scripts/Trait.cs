@@ -7,5 +7,7 @@
 	Talking,
 	Freelance,
 	Walker,
-	Alcohol
+	Alcohol,
+	Disease,
+	Mad,
 }

@@ -24,6 +24,10 @@ MonoBehaviour:
         Value: 500
       - Trait: 1
         Value: 10
+      - Trait: 10
+        Value: 5
+      - Trait: 9
+        Value: 5
       - Trait: 6
         Value: 5
       - Trait: 3
@@ -45,6 +49,10 @@ MonoBehaviour:
         Value: 1000
       - Trait: 1
         Value: 20
+      - Trait: 10
+        Value: 10
+      - Trait: 9
+        Value: 10
       - Trait: 3
         Value: 10
       - Trait: 6
@@ -65,6 +73,10 @@ MonoBehaviour:
         Value: 1500
       - Trait: 1
         Value: 25
+      - Trait: 10
+        Value: 15
+      - Trait: 9
+        Value: 15
       - Trait: 3
         Value: 10
       - Trait: 6
@@ -82,6 +94,8 @@ MonoBehaviour:
       Changes:
       - Trait: 1
         Value: 15
+      - Trait: 9
+        Value: 10
     Title: New email!
     Content: On this weekend we need onvertime work. No additional payment, of course.
     Cancelable: 0
@@ -143,8 +157,30 @@ MonoBehaviour:
         Value: 5
       - Trait: 1
         Value: 5
+      - Trait: 9
+        Value: 10
     Title: Hm...
     Content: You're accedentally go to a bar and drink additional beer.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 8
+        Value: 15
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -200
+      - Trait: 8
+        Value: 10
+      - Trait: 1
+        Value: 20
+      - Trait: 9
+        Value: 20
+    Title: Hm...
+    Content: You don't remember last week. You've drinking all the time.
     Cancelable: 0
   - Decision:
       Name: 
@@ -163,4 +199,88 @@ MonoBehaviour:
         Value: -20
     Title: Hm...
     Content: You don't remember last week. You've drinking all the time.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min:
+      - Trait: 9
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -5
+      - Trait: 1
+        Value: 5
+      - Trait: 9
+        Value: 5
+    Title: Bad feelings
+    Content: Your stomach worries you. Yoghurt, which you use in such cases, doesn't
+      help.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min:
+      - Trait: 9
+        Value: 15
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -50
+      - Trait: 1
+        Value: 5
+      - Trait: 9
+        Value: 5
+    Title: Bad feelings
+    Content: Headache is annoying. You're going to internet to find pills, but it
+      only leads to harder pain.
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min:
+      - Trait: 9
+        Value: 25
+      Max: []
+      Changes:
+      - Trait: 9
+        Value: 10
+      - Trait: 1
+        Value: 10
+    Title: Bad feelings
+    Content: Pain is real strong. It seems like you really need a doctor!
+    Cancelable: 0
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min:
+      - Trait: 10
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 10
+      - Trait: 10
+        Value: 25
+    Title: Strange sounds
+    Content: Something is scrapping in your door. Do you like to inspect it?
+    Cancelable: 1
+  - Decision:
+      Name: 
+      Id: 0
+      Days: 0
+      Min:
+      - Trait: 10
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 10
+        Value: 15
+    Title: Sweet dreams
+    Content: You've see beautiful dream at night. Why do you need all this crazy world?
     Cancelable: 0

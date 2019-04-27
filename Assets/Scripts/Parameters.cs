@@ -7,6 +7,8 @@ public class Parameters : ScriptableObject {
 	public int StartMoney;
 	public int MonthMoney;
 	public int StressLimit;
+	public int DiseaseLimit;
+	public int MadLimit;
 	public int LowMoneyStress;
 	public int MinPromotionDays;
 	public int MinRecommendDays;
