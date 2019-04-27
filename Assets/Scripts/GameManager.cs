@@ -66,7 +66,8 @@ public class GameManager : MonoBehaviour {
 			return false;
 		}
 		TryResetDecideWindow();
-		Notice.Init(notices.Dequeue());
+		Notice.Init(notices[0]);
+		notices.RemoveAt(0);
 		return true;
 	}
 

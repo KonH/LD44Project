@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.Analytics;
 
 public class GameState {
+	public const int LowPriority = 4;
+	public const int MiddlePriority = 2;
+	public const int HighPriority = 0;
+	
 	class DelayedNotice {
 		public DecisionId Id;
 		public DateTime Time;
@@ -22,7 +26,7 @@ public class GameState {
 	public DateTime Date;
 	public bool Finished;
 	public int Money => Get(Trait.Money);
-	public Queue<NoticeAction> Notices = new Queue<NoticeAction>();
+	public List<NoticeAction> Notices = new List<NoticeAction>();
 	public Dictionary<Trait, int> Traits = new Dictionary<Trait, int>();
 	public WorkState WorkPlace = null;
 	public HashSet<string> Achievements = new HashSet<string>();
@@ -52,7 +56,7 @@ public class GameState {
 
 		_lastPayDate = Date;
 		
-		var startAct = new NoticeAction(_messages.Welcome);
+		var startAct = new NoticeAction(_messages.Welcome, HighPriority);
 		EnqueNoticeOnce(startAct);
 
 		Analytics.enabled = !Application.isEditor;
@@ -83,7 +87,7 @@ public class GameState {
 		while ((Date - _lastPayDate).TotalDays > 31 ) {
 			Inc(Trait.Money, _parameters.MonthMoney);
 			_lastPayDate = _lastPayDate.AddDays(31);
-			EnqueNoticeOnce(new NoticeAction(_messages.MonthPayment));
+			EnqueNoticeOnce(new NoticeAction(_messages.MonthPayment, HighPriority));
 		}
 	}
 
@@ -93,22 +97,21 @@ public class GameState {
 			if ( days > _parameters.MaxSkipWorkDays ) {
 				_decisionLogic.BanCompany(WorkPlace.Company);
 				WorkPlace = null;
-				EnqueNotice(new NoticeAction(_messages.LostJob));
+				EnqueNotice(new NoticeAction(_messages.LostJob, HighPriority));
 			}
 		}
 	}
 
 	void UpdateTraits() {
 		if ( Get(Trait.Money) == 0 ) {
-			EnqueNoticeOnce(new NoticeAction(_messages.LowMoney));
+			EnqueNoticeOnce(new NoticeAction(_messages.LowMoney, HighPriority));
 			Inc(Trait.Stress, _parameters.LowMoneyStress);
 		}
 		if ( Get(Trait.Stress) > _parameters.StressLimit * 0.6f ) {
-			EnqueNoticeOnce(new NoticeAction(_messages.StressWarning));
+			EnqueNoticeOnce(new NoticeAction(_messages.StressWarning, HighPriority));
 		}
 		if ( Get(Trait.Stress) > _parameters.StressLimit ) {
-			EnqueNotice(new NoticeAction(_messages.HeartAttack));
-			Finish(Trait.Stress.ToString());
+			Finish(_messages.HeartAttack, Trait.Stress.ToString());
 		}
 	}
 
@@ -121,7 +124,7 @@ public class GameState {
 			var ev = availableEvents[UnityEngine.Random.Range(0, availableEvents.Count)];
 			_usedEvents.Add(ev);
 			var msg = new Message(ev.Title, ev.Content);
-			var act = new NoticeAction(msg, ev.Cancelable, ok => {
+			var act = new NoticeAction(msg, LowPriority, ev.Cancelable, ok => {
 				if ( ok ) {
 					ApplyDecision(ev.Decision);
 				}
@@ -163,11 +166,13 @@ public class GameState {
 		}
 	}
 
-	void Finish(string reason) {
+	void Finish(Message explainMessage, string reason) {
 		var age = _parameters.StartAge + (Date - _startDate).TotalDays / 365;
 		age = Math.Round(age);
+		Notices.Clear();
+		EnqueNotice(new NoticeAction(explainMessage, HighPriority));
 		var msg = _messages.Finish.Format(age);
-		EnqueNotice(new NoticeAction(msg));
+		EnqueNotice(new NoticeAction(msg, HighPriority));
 		Finished = true;
 		if ( Achievements.Count == 0 ) {
 			Achievements.Add("Nothing");
@@ -194,7 +199,8 @@ public class GameState {
 	}
 
 	public void EnqueNotice(NoticeAction act) {
-		Notices.Enqueue(act);
+		Notices.Add(act);
+		Notices.Sort((a, b) => a.Priority.CompareTo(b.Priority));
 	}
 	
 	public void EnqueNoticeOnce(NoticeAction act) {
@@ -202,7 +208,7 @@ public class GameState {
 			return;
 		}
 		_oneTimeNotices.Add(act.Title);
-		Notices.Enqueue(act);
+		EnqueNotice(act);
 	}
 
 	public void DelayNotice(DecisionId id, NoticeAction act, TimeSpan span) {

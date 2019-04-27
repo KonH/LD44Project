@@ -59,9 +59,14 @@ public class DecisionLogic {
 			var curPayment = (_state.WorkPlace != null) ? _state.WorkPlace.Position.Payment : 0;
 			var addCount = (positon.Payment - curPayment);
 			var add = (addCount >= 0) ? "+" + addCount.ToString() : addCount.ToString();  
-			act = new NoticeAction(_messages.WorkInvite.Format(company.Name, positon.Name, add), true, b => OnInviteConfirm(company, positon, b));
+			act = new NoticeAction(
+				_messages.WorkInvite.Format(company.Name, positon.Name, add),
+				GameState.HighPriority,
+				true,
+				b => OnInviteConfirm(company, positon, b)
+			);
 		} else {
-			act = new NoticeAction(_messages.NoWorkInvites);
+			act = new NoticeAction(_messages.NoWorkInvites, GameState.MiddlePriority);
 		}
 		_state.DelayNotice(DecisionId.PublishResume, act, TimeSpan.FromDays(3));
 	}
@@ -71,7 +76,7 @@ public class DecisionLogic {
 		_state.Inc(Trait.Money, position.Payment);
 		_state.WorkPlace.Days++;
 		_state.WorkPlace.LastWorkDay = _state.Date;
-		_state.EnqueNoticeOnce(new NoticeAction(_messages.WorkProgressNotice));
+		_state.EnqueNoticeOnce(new NoticeAction(_messages.WorkProgressNotice, GameState.HighPriority));
 	}
 
 	void OnWorkPromotion() {
@@ -88,7 +93,7 @@ public class DecisionLogic {
 			msg = _messages.PromotionNone;
 			_state.WorkPlace.Days = 0;
 		}
-		_state.EnqueNotice(new NoticeAction(msg));
+		_state.EnqueNotice(new NoticeAction(msg, GameState.HighPriority));
 	}
 
 	(Company, Company.Position) FindSuitablePosition() {
@@ -126,16 +131,21 @@ public class DecisionLogic {
 			return;
 		}
 		var applied = IsApplyablePosition(position);
-		if ( applied ) {
-			_state.WorkPlace = new GameState.WorkState {
-				Company = company,
-				Position = position,
-				LastWorkDay = _state.Date
-			};
-		}
 		var msg = (applied ? _messages.NewJob : _messages.InterviewFailed).Format(company.Name, position.Name);
 		var delay = TimeSpan.FromDays(applied ? 1 : 3);
-		_state.DelayNotice(DecisionId.PublishResume, new NoticeAction(msg), delay);
+		_state.DelayNotice(
+			DecisionId.PublishResume, 
+			new NoticeAction(msg, GameState.MiddlePriority, callback: _ => {
+				if ( applied ) {
+					_state.WorkPlace = new GameState.WorkState {
+						Company     = company,
+						Position    = position,
+						LastWorkDay = _state.Date
+					};
+				}
+			}), 
+			delay
+		);
 	}
 	
 	bool IsApplyablePosition(Company.Position position) {
