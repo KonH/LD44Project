@@ -21,3 +21,4 @@ MonoBehaviour:
   MinPromotionDays: 15
   MinRecommendDays: 30
   RanomEventChance: 0.25
+  MaxSkipWorkDays: 14

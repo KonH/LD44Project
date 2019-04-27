@@ -117,7 +117,7 @@ MonoBehaviour:
     Decisions:
     - Name: Read algorythms book for dummies
       Id: 0
-      Days: 3
+      Days: 4
       Min:
       - Trait: 2
         Value: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
         Value: 1
     - Name: Read algorythms book
       Id: 0
-      Days: 3
+      Days: 5
       Min:
       - Trait: 2
         Value: 5
@@ -149,7 +149,7 @@ MonoBehaviour:
         Value: 1
     - Name: Take algorythms course
       Id: 0
-      Days: 10
+      Days: 7
       Min:
       - Trait: 2
         Value: 15
@@ -163,7 +163,7 @@ MonoBehaviour:
         Value: 5
     - Name: Create custom algorythm
       Id: 0
-      Days: 14
+      Days: 7
       Min:
       - Trait: 2
         Value: 25
@@ -177,7 +177,7 @@ MonoBehaviour:
         Value: 3
     - Name: Take advanced algorythm course
       Id: 0
-      Days: 21
+      Days: 10
       Min:
       - Trait: 2
         Value: 30
@@ -205,7 +205,7 @@ MonoBehaviour:
         Value: 1
     - Name: Read programming book
       Id: 0
-      Days: 7
+      Days: 4
       Min:
       - Trait: 3
         Value: 5
@@ -221,7 +221,7 @@ MonoBehaviour:
         Value: 1
     - Name: Read book about architecture
       Id: 0
-      Days: 14
+      Days: 5
       Min:
       - Trait: 3
         Value: 10
@@ -237,7 +237,7 @@ MonoBehaviour:
         Value: 2
     - Name: Read programming book for experts
       Id: 0
-      Days: 21
+      Days: 6
       Min:
       - Trait: 3
         Value: 20
@@ -253,7 +253,7 @@ MonoBehaviour:
         Value: 2
     - Name: Take programming course
       Id: 0
-      Days: 21
+      Days: 7
       Min:
       - Trait: 3
         Value: 30
@@ -269,7 +269,7 @@ MonoBehaviour:
         Value: 3
     - Name: Develop home project
       Id: 0
-      Days: 60
+      Days: 12
       Min:
       - Trait: 3
         Value: 40
@@ -283,7 +283,7 @@ MonoBehaviour:
         Value: 10
     - Name: Take expert programming course
       Id: 0
-      Days: 30
+      Days: 10
       Min:
       - Trait: 3
         Value: 50
@@ -309,7 +309,7 @@ MonoBehaviour:
         Value: 1
     - Name: Take interview course
       Id: 0
-      Days: 5
+      Days: 4
       Min:
       - Trait: 5
         Value: 5
@@ -325,7 +325,7 @@ MonoBehaviour:
         Value: 2
     - Name: Take expert interview course
       Id: 0
-      Days: 12
+      Days: 10
       Min:
       - Trait: 5
         Value: 10
@@ -341,7 +341,7 @@ MonoBehaviour:
         Value: 2
     - Name: Participate in coding challenge
       Id: 0
-      Days: 18
+      Days: 3
       Min:
       - Trait: 5
         Value: 20
@@ -355,7 +355,7 @@ MonoBehaviour:
         Value: 3
     - Name: Solve interview tasks
       Id: 0
-      Days: 24
+      Days: 7
       Min:
       - Trait: 5
         Value: 30
@@ -405,7 +405,7 @@ MonoBehaviour:
         Value: -250
     - Name: Take vacation
       Id: 0
-      Days: 14
+      Days: 7
       Min: []
       Max: []
       Changes:

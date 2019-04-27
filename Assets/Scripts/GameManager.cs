@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour {
 	DecisionTree.Category _selectedCategory = null;
 
 	void Start() {
-		_state = new GameState(Messages, Environment, Parameters, Events);
+		_state = new GameState(Messages, Environment, Parameters, Events, UpdateView);
 		MainUI.UpdateState(_state.Date, _state.Money, initial: true);
 	}
 
@@ -52,13 +52,11 @@ public class GameManager : MonoBehaviour {
 	[ContextMenu("AddDay")]
 	public void AddDay() {
 		_state.UpdateTime(TimeSpan.FromDays(1));
-		UpdateView();
 	}
 	
 	[ContextMenu("AddMonth")]
 	public void AdMonth() {
 		_state.UpdateTime(TimeSpan.FromDays(31));
-		UpdateView();
 	}
 
 	bool TryShowNoticeWindow() {
@@ -68,7 +66,6 @@ public class GameManager : MonoBehaviour {
 		}
 		TryResetDecideWindow();
 		Notice.Init(notices.Dequeue());
-		UpdateView();
 		return true;
 	}
 
@@ -116,7 +113,6 @@ public class GameManager : MonoBehaviour {
 	void ApplyDecision(DecisionTree.Decision decision) {
 		TryResetDecideWindow();
 		_state.ApplyDecision(decision);
-		UpdateView();
 	}
 
 	void TryResetDecideWindow() {
@@ -127,6 +123,7 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	void UpdateView() {
+		Debug.Log("UpdateView");
 		MainUI.UpdateState(_state.Date, _state.Money);
 	}
 }

@@ -7,11 +7,17 @@ public class DecisionLogic {
 	readonly Parameters _parameters;
 	readonly GameState _state;
 	
+	HashSet<Company> _bannedCompanies = new HashSet<Company>();
+	
 	public DecisionLogic(Messages messages, Environment environment, Parameters parameters, GameState state) {
 		_messages = messages;
 		_environment = environment;
 		_parameters = parameters;
 		_state = state;
+	}
+
+	public void BanCompany(Company company) {
+		_bannedCompanies.Add(company);
 	}
 
 	public bool IsDecisionAvailable(DecisionId id) {
@@ -64,6 +70,7 @@ public class DecisionLogic {
 		var position = _state.WorkPlace.Position;
 		_state.Inc(Trait.Money, position.Payment);
 		_state.WorkPlace.Days++;
+		_state.WorkPlace.LastWorkDay = _state.Date;
 		_state.EnqueNoticeOnce(new NoticeAction(_messages.WorkProgressNotice));
 	}
 
@@ -72,7 +79,11 @@ public class DecisionLogic {
 		var nextPosition = GetNextPosition();
 		if ( IsApplyablePosition(nextPosition) ) {
 			msg = _messages.PromotionOk.Format(nextPosition.Name);
-			_state.WorkPlace = new GameState.WorkState { Company = _state.WorkPlace.Company, Position = nextPosition };
+			_state.WorkPlace = new GameState.WorkState {
+				Company = _state.WorkPlace.Company,
+				Position = nextPosition,
+				LastWorkDay = _state.Date
+			};
 		} else {
 			msg = _messages.PromotionNone;
 			_state.WorkPlace.Days = 0;
@@ -85,6 +96,9 @@ public class DecisionLogic {
 		var positions = new List<(Company, Company.Position)>();
 		foreach ( var company in _environment.Companies ) {
 			if ( company == currentCompany ) {
+				continue;
+			}
+			if ( _bannedCompanies.Contains(company) ) {
 				continue;
 			}
 			for ( var i = company.Positions.Count - 1; i >= 0; i-- ) {
@@ -115,7 +129,8 @@ public class DecisionLogic {
 		if ( applied ) {
 			_state.WorkPlace = new GameState.WorkState {
 				Company = company,
-				Position = position
+				Position = position,
+				LastWorkDay = _state.Date
 			};
 		}
 		var msg = (applied ? _messages.NewJob : _messages.InterviewFailed).Format(company.Name, position.Name);

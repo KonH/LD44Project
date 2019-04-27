@@ -57,3 +57,7 @@ MonoBehaviour:
     Title: Promotions
     Content: If you working often, you can request promotion for better position.
       Also, you can get recommendation to improve your resume.
+  LostJob:
+    Title: New email!
+    Content: We're not satisfied by your work for for our company. It's sad to say,
+      but you're fired and in our black list now.

@@ -13,6 +13,7 @@ public class GameState {
 		public Company Company;
 		public Company.Position Position;
 		public int Days;
+		public DateTime LastWorkDay;
 	}
 	
 	static HashSet<string> _oneTimeNotices = new HashSet<string>();
@@ -29,16 +30,18 @@ public class GameState {
 	readonly Parameters _parameters;
 	readonly Events _events;
 	readonly DecisionLogic _decisionLogic;
+	readonly Action _onUpdated;
 
 	DateTime _startDate;
 	DateTime _lastPayDate;
 	List<DelayedNotice> _delayedNotices = new List<DelayedNotice>();
 	List<RandomEvent> _usedEvents = new List<RandomEvent>();
 
-	public GameState(Messages messges, Environment environment, Parameters parameters, Events events) {
+	public GameState(Messages messges, Environment environment, Parameters parameters, Events events, Action onUpdated) {
 		_messages = messges;
 		_parameters = parameters;
 		_events = events;
+		_onUpdated = onUpdated;
 		
 		_decisionLogic = new DecisionLogic(_messages, environment, _parameters, this);
 
@@ -64,10 +67,12 @@ public class GameState {
 	public void UpdateTime(TimeSpan span) {
 		Date = Date.Add(span);
 		UpdatePayment();
+		UpdateJob();
 		UpdateTraits();
 		UpdateEvents();
 		UpdateAchievements();
 		UpdateNotices();
+		_onUpdated.Invoke();
 	}
 
 	void UpdatePayment() {
@@ -75,6 +80,17 @@ public class GameState {
 			Inc(Trait.Money, _parameters.MonthMoney);
 			_lastPayDate = _lastPayDate.AddDays(31);
 			EnqueNoticeOnce(new NoticeAction(_messages.MonthPayment));
+		}
+	}
+
+	void UpdateJob() {
+		if ( WorkPlace != null ) {
+			var days = (Date - WorkPlace.LastWorkDay).TotalDays;
+			if ( days > _parameters.MaxSkipWorkDays ) {
+				_decisionLogic.BanCompany(WorkPlace.Company);
+				WorkPlace = null;
+				EnqueNotice(new NoticeAction(_messages.LostJob));
+			}
 		}
 	}
 
@@ -152,6 +168,7 @@ public class GameState {
 		if ( Achievements.Count == 0 ) {
 			Achievements.Add("Nothing");
 		}
+		_onUpdated.Invoke();
 	}
 
 	public int Get(Trait trait) {

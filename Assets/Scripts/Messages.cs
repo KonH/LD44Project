@@ -15,4 +15,5 @@ public class Messages : ScriptableObject {
 	public Message PromotionOk;
 	public Message PromotionNone;
 	public Message WorkProgressNotice;
+	public Message LostJob;
 }

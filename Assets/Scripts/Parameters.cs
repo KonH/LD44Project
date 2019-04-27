@@ -11,4 +11,5 @@ public class Parameters : ScriptableObject {
 	public int MinPromotionDays;
 	public int MinRecommendDays;
 	public float RanomEventChance;
+	public int MaxSkipWorkDays;
 }
