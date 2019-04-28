@@ -14,4 +14,13 @@
 	DishWasher,
 	GameJammer,
 	PoppularPerson,
+	Database,
+	MachineLearning,
+	BigData,
+	Cryptography,
+	Mobile,
+	Assembler,
+	GameDev,
+	Graphics,
+	Engine,
 }

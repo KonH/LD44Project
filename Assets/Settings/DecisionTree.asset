@@ -411,6 +411,690 @@ MonoBehaviour:
         Value: 5
       - Trait: 10
         Value: 5
+    - Name: Read database book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 15
+        Value: 5
+      Changes:
+      - Trait: 15
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read ML book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 16
+        Value: 5
+      Changes:
+      - Trait: 16
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read big data book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 17
+        Value: 5
+      Changes:
+      - Trait: 17
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read cryptography book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 18
+        Value: 5
+      Changes:
+      - Trait: 18
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read mobile book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 19
+        Value: 5
+      Changes:
+      - Trait: 19
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read assembler book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 20
+        Value: 5
+      Changes:
+      - Trait: 20
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read gamedev book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 21
+        Value: 5
+      Changes:
+      - Trait: 21
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -25
+    - Name: Read graphics book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 22
+        Value: 5
+      Changes:
+      - Trait: 22
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -40
+    - Name: Read engine book for dummies
+      Id: 0
+      Days: 3
+      Min: []
+      Max:
+      - Trait: 23
+        Value: 5
+      Changes:
+      - Trait: 23
+        Value: 5
+      - Trait: 1
+        Value: 1
+      - Trait: 0
+        Value: -35
+    - Name: Read database book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 15
+        Value: 5
+      Max:
+      - Trait: 15
+        Value: 10
+      Changes:
+      - Trait: 15
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -50
+    - Name: Read ML book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 16
+        Value: 5
+      Max:
+      - Trait: 16
+        Value: 10
+      Changes:
+      - Trait: 16
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read big data book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 17
+        Value: 5
+      Max:
+      - Trait: 17
+        Value: 10
+      Changes:
+      - Trait: 17
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read cryptography book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 18
+        Value: 5
+      Max:
+      - Trait: 18
+        Value: 10
+      Changes:
+      - Trait: 18
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read mobile book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 19
+        Value: 5
+      Max:
+      - Trait: 19
+        Value: 10
+      Changes:
+      - Trait: 19
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read assembler book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 20
+        Value: 5
+      Max:
+      - Trait: 20
+        Value: 10
+      Changes:
+      - Trait: 20
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read gamedev book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 21
+        Value: 5
+      Max:
+      - Trait: 21
+        Value: 10
+      Changes:
+      - Trait: 21
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read graphics book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 22
+        Value: 5
+      Max:
+      - Trait: 22
+        Value: 10
+      Changes:
+      - Trait: 22
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read engine book
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 23
+        Value: 5
+      Max:
+      - Trait: 23
+        Value: 10
+      Changes:
+      - Trait: 23
+        Value: 5
+      - Trait: 1
+        Value: 2
+      - Trait: 0
+        Value: -100
+    - Name: Read expert database book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 15
+        Value: 10
+      Max:
+      - Trait: 15
+        Value: 15
+      Changes:
+      - Trait: 15
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -100
+    - Name: Read expert ML book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 16
+        Value: 10
+      Max:
+      - Trait: 16
+        Value: 15
+      Changes:
+      - Trait: 16
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert big data book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 17
+        Value: 10
+      Max:
+      - Trait: 17
+        Value: 15
+      Changes:
+      - Trait: 17
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert cryptography book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 18
+        Value: 10
+      Max:
+      - Trait: 18
+        Value: 15
+      Changes:
+      - Trait: 18
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert mobile book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 19
+        Value: 10
+      Max:
+      - Trait: 19
+        Value: 15
+      Changes:
+      - Trait: 19
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert assembler book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 20
+        Value: 10
+      Max:
+      - Trait: 20
+        Value: 15
+      Changes:
+      - Trait: 20
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert gamedev book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 21
+        Value: 10
+      Max:
+      - Trait: 21
+        Value: 15
+      Changes:
+      - Trait: 21
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert graphics book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 22
+        Value: 10
+      Max:
+      - Trait: 22
+        Value: 15
+      Changes:
+      - Trait: 22
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Read expert engine book
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 23
+        Value: 10
+      Max:
+      - Trait: 23
+        Value: 15
+      Changes:
+      - Trait: 23
+        Value: 5
+      - Trait: 1
+        Value: 3
+      - Trait: 0
+        Value: -200
+    - Name: Take database course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 15
+        Value: 15
+      Max:
+      - Trait: 15
+        Value: 20
+      Changes:
+      - Trait: 15
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -500
+    - Name: Take ML course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 16
+        Value: 15
+      Max:
+      - Trait: 16
+        Value: 20
+      Changes:
+      - Trait: 16
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -1000
+    - Name: Take big data course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 17
+        Value: 15
+      Max:
+      - Trait: 17
+        Value: 20
+      Changes:
+      - Trait: 17
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -1000
+    - Name: Take cryptography course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 18
+        Value: 15
+      Max:
+      - Trait: 18
+        Value: 20
+      Changes:
+      - Trait: 18
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -1000
+    - Name: Take mobile course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 19
+        Value: 15
+      Max:
+      - Trait: 19
+        Value: 20
+      Changes:
+      - Trait: 19
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -1000
+    - Name: Take assembler course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 20
+        Value: 15
+      Max:
+      - Trait: 20
+        Value: 20
+      Changes:
+      - Trait: 20
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -1000
+    - Name: Take gamedev course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 21
+        Value: 15
+      Max:
+      - Trait: 21
+        Value: 20
+      Changes:
+      - Trait: 20
+        Value: 5
+      - Trait: 21
+        Value: 5
+      - Trait: 0
+        Value: -500
+    - Name: Take graphics course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 22
+        Value: 15
+      Max:
+      - Trait: 22
+        Value: 20
+      Changes:
+      - Trait: 22
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -500
+    - Name: Take engine course
+      Id: 0
+      Days: 9
+      Min:
+      - Trait: 23
+        Value: 15
+      Max:
+      - Trait: 23
+        Value: 20
+      Changes:
+      - Trait: 23
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -500
+    - Name: Take expert database course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 15
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 15
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -2000
+    - Name: Take expert ML course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 16
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 16
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -4000
+    - Name: Take expert big data course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 17
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 17
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -4000
+    - Name: Take expert cryptography course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 18
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 18
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -4000
+    - Name: Take expert mobile course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 19
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 19
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -4000
+    - Name: Take expert assembler course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 20
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 20
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -3000
+    - Name: Take expert gamedev course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 21
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 21
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -2000
+    - Name: Take expert graphics course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 22
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 22
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -2000
+    - Name: Take expert engine course
+      Id: 0
+      Days: 12
+      Min:
+      - Trait: 20
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 23
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: -2000
   - Name: Rest
     Decisions:
     - Name: Walking
