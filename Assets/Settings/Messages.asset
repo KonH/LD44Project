@@ -25,15 +25,15 @@ MonoBehaviour:
     Content: You're died in age {0}.
   LowMoney:
     Title: Out of money
-    Content: You're lost all your money. Now your stress is increased everyday. Maybe
+    Content: You've lost all your money. Now your stress increases every day. Maybe
       it's time to find a job?
   MonthPayment:
     Title: Rent
     Content: You need to pay for your home every month ({0}$).
   WorkInvite:
     Title: New email!
-    Content: Your resume is interesting! We're invite you for interview in '{0}' for
-      position {1} ({2}$).
+    Content: Your resume is interesting! We invite you for the interview in '{0}'
+      for position {1} ({2}$).
   NoWorkInvites:
     Title: Inbox is emply
     Content: Nobody cares about your resume.
@@ -43,20 +43,20 @@ MonoBehaviour:
       position {1}.
   NewJob:
     Title: New email!
-    Content: Congratulations! Now you're working in company '{0}' on position {1}.
+    Content: Congratulations! Now you work in company '{0}' on position {1}.
   StressWarning:
     Title: You're tired
-    Content: You need attention to your condition and rest sometimes.
+    Content: You need to pay attention on your condition and rest sometimes.
   PromotionOk:
     Title: New email!
-    Content: Congratulations! You're promoted to position {0}.
+    Content: Congratulations! You've been promoted to position {0}.
   PromotionNone:
     Title: New email!
-    Content: Sorry, you level is not enough to promote you to the next level.
+    Content: Sorry, your skills are not enough to promote you to the next level.
   WorkProgressNotice:
     Title: Promotions
-    Content: If you work often, you can request promotion for better position. Also,
-      you can get recommendation to improve your resume.
+    Content: If you work often, you can request a promotion for better position. Also
+      you can get a recommendation to improve your resume.
   LostJob:
     Title: New email!
     Content: We're not satisfied by your work for our company. It's sad to say, but
@@ -66,14 +66,15 @@ MonoBehaviour:
     Content: You feel yourself unhealthy. Sometimes it's nice to take medical examination.
   DiseaseDeath:
     Title: Fall dead
-    Content: Medics don't know what exactly happens to you, but your health condition
+    Content: Medics don't know what exactly happened to you, but your health condition
       was very bad and this is expected.
   MadWarning:
     Title: Cockroaches in your head
-    Content: You obsessed by strange thoughts. Maybe you need take care about it.
+    Content: You're obsessed by strange thoughts. Maybe you need to take care about
+      it.
   MadDeath:
-    Title: You're commited suicide
+    Title: You commited suicide
     Content: This world is useless, you need another one.
   NaturalDeath:
     Title: All gone
-    Content: You've beed found in your bed, death comes softly at night.
+    Content: You've been found in your bed, death came softly at night.

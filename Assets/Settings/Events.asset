@@ -35,17 +35,18 @@ MonoBehaviour:
         Value: 5
       - Trait: 3
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: 'Hello, long time no see! What about freelance job? It''s paid nice,
+      Content: 'Hello, long time no see! What about freelance job? It''s paid well,
         but needs to be done ASAP. '
     OkMessage:
       Title: Work is done
-      Content: It was hard, but you finished freelance job. Code is awful, but it
-        isn't your problem.
+      Content: It was hard, but you finished the freelance job. Code is awful, but
+        it isn't your problem now.
     CancelMessage:
       Title: New email!
-      Content: We failed our contract. It's bad that you can't help us.
+      Content: We failed our contract. It's bad that you didn't help us.
     Cancelable: 1
   - Name: Freelance 2
     Decision:
@@ -71,16 +72,17 @@ MonoBehaviour:
         Value: 10
       - Trait: 6
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: 'Hi! I have another freelance work. Of course, ASAP. '
     OkMessage:
       Title: Work is done
-      Content: It was hard, but you finished frelance job. Code is terrible, but it
-        isn't your problem.
+      Content: It was hard, but you finished freelance job. Code is terrible, but
+        it isn't your problem.
     CancelMessage:
       Title: New email!
-      Content: We failed our contract. It's bad that you can't help us.
+      Content: We failed our contract. It's bad that you didn't help us.
     Cancelable: 1
   - Name: Freelance 3
     Decision:
@@ -106,17 +108,18 @@ MonoBehaviour:
         Value: 10
       - Trait: 6
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: Hi, now we really need help! All deadlines are failed, only you can
-        help with this work!
+      Content: Hi, now we really need your help! All deadlines are failed, only you
+        can help with this work!
     OkMessage:
       Title: Work is done
       Content: It was hard, but you finished freelance job. Code is a mess, but it
         isn't your problem.
     CancelMessage:
       Title: New email!
-      Content: We failed our contract. It's bad that you can't help us.
+      Content: We failed our contract. We hate you because you refused to help us.
     Cancelable: 1
   - Name: Work overtime
     Decision:
@@ -130,9 +133,11 @@ MonoBehaviour:
         Value: 15
       - Trait: 9
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: On this weekend we need overtime work. No additional payment, of course.
+      Content: On this weekend we need some overtime work. No additional payments,
+        of course.
     OkMessage:
       Title: 
       Content: 
@@ -158,13 +163,14 @@ MonoBehaviour:
         Value: 20
       - Trait: 13
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: What about participation in next game jam? It will be fun!
     OkMessage:
       Title: It was fun
-      Content: On game jam your team made small game about crazy animals. It's nice,
-        but gameplay isn't polished.
+      Content: During the game jam your team made a small game about crazy animals.
+        It's nice, but gameplay isn't polished.
     CancelMessage:
       Title: 
       Content: 
@@ -191,13 +197,14 @@ MonoBehaviour:
         Value: 10
       - Trait: 14
         Value: 2
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: Do you're remember our last jam? We need to repeat it!
+      Content: Do you remember our last jam? We need to repeat it!
     OkMessage:
       Title: Painful, but funny
-      Content: You didin't sleep for three days, but you're happy about results. GIFs
-        are spreading in internet.
+      Content: You haven't slept for three days, but you're happy with the result.
+        GIFs are spreading in the internet.
     CancelMessage:
       Title: 
       Content: 
@@ -226,13 +233,14 @@ MonoBehaviour:
         Value: 1500
       - Trait: 14
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: Now we joined a jam with money reward, do you want to participate?
     OkMessage:
       Title: Awesome!
-      Content: You're won first place in the jam contest! You think that your game
-        isn't so good, but you proud about it.
+      Content: You won the first place in the jam contest! You think that your game
+        isn't so good, but you are proud about it.
     CancelMessage:
       Title: 
       Content: 
@@ -251,6 +259,7 @@ MonoBehaviour:
         Value: -250
       - Trait: 1
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Ouch...
       Content: You've been robbed on the street.
@@ -271,13 +280,14 @@ MonoBehaviour:
       Changes:
       - Trait: 0
         Value: -1500
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: Hello, dear friend! I'm from Nigeria and I want your help for some
-        financial operations. For good profit in future.
+      Content: Hello, deer friend! I'm from Negeria and do want your help for some
+        funancial operations. Send me sum money and get big profit in future.
     OkMessage:
-      Title: 
-      Content: 
+      Title: Nothing happens
+      Content: What did you expect?
     CancelMessage:
       Title: 
       Content: 
@@ -300,9 +310,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 9
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: Hm...
-      Content: You're accidentally go to a bar and drink additional beer.
+      Content: You accidentally go to a bar and drink some additional beer.
     OkMessage:
       Title: 
       Content: 
@@ -328,6 +339,7 @@ MonoBehaviour:
         Value: 20
       - Trait: 9
         Value: 20
+      Scaled: 0
     EventMessage:
       Title: Hm...
       Content: You don't remember last week. You've been drinking all the time.
@@ -358,10 +370,11 @@ MonoBehaviour:
         Value: 20
       - Trait: 4
         Value: -20
+      Scaled: 0
     EventMessage:
       Title: Hm...
-      Content: You've drinking before the work. It look like now you have black mark
-        in your personal card.
+      Content: You've been drinking before the work. It looks like now you have a
+        black mark in your personal card.
     OkMessage:
       Title: 
       Content: 
@@ -385,6 +398,7 @@ MonoBehaviour:
         Value: 5
       - Trait: 9
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Bad feelings
       Content: Your stomach worries you. You need some yoghurt!
@@ -411,6 +425,7 @@ MonoBehaviour:
         Value: 5
       - Trait: 9
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Bad feelings
       Content: Headache is annoying. You're going to internet to find pills, but it
@@ -436,9 +451,10 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: Bad feelings
-      Content: Pain is real strong. It seems like you really need a doctor!
+      Content: The pain is really strong. It seems like you need a doctor!
     OkMessage:
       Title: 
       Content: 
@@ -460,6 +476,7 @@ MonoBehaviour:
         Value: 10
       - Trait: 10
         Value: 25
+      Scaled: 0
     EventMessage:
       Title: Strange sounds
       Content: Something is scrapping in your door. Do you like to inspect it?
@@ -483,12 +500,13 @@ MonoBehaviour:
       Changes:
       - Trait: 10
         Value: 15
+      Scaled: 0
     EventMessage:
       Title: Sweet dreams
-      Content: You've see beautiful dream at night. Why do you need all this crazy
+      Content: You've seen a beautiful dream at night. Why do you need all this crazy
         world?
     OkMessage:
-      Title: Sweat dreams
+      Title: Sweet dreams
       Content: It looks like you life will change, if you find the silver key.
     CancelMessage:
       Title: 
@@ -510,6 +528,7 @@ MonoBehaviour:
         Value: 10
       - Trait: 14
         Value: 2
+      Scaled: 0
     EventMessage:
       Title: Marathon
       Content: You're well trained for long marathon, it will be interesting experiense.
@@ -539,13 +558,14 @@ MonoBehaviour:
         Value: 3000
       - Trait: 14
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: State marathon
-      Content: You've beed invited to biggest marathon in the state with money reward.
-        Do you want to participate?
+      Content: You've been invited to the biggest marathon in the state with money
+        reward. Do you want to participate?
     OkMessage:
       Title: State marathon
-      Content: Wow! You're got first place!
+      Content: Wow! You've got the first place!
     CancelMessage:
       Title: State marathon
       Content: It was great chance to improve your personal brand, but you lost it.
@@ -566,14 +586,15 @@ MonoBehaviour:
         Value: 500
       - Trait: 14
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: TV Show
-      Content: Do you want to be present on TV show with religious anti-technologic
-        persons for humble reward?
+      Content: Do you want to take part in a TV show with religious anti-technologic
+        people for humble reward?
     OkMessage:
       Title: TV Show
       Content: So annoying people. They think that all technologies are made by devil.
-        But they coming here not by donkey.
+        But they came here not by donkey.
     CancelMessage:
       Title: TV Show
       Content: You read about this show in Twizzer later. Crazy people!
@@ -594,6 +615,7 @@ MonoBehaviour:
         Value: 3
       - Trait: 2
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: Hello, I'm a student and I have problems with my university task. Can
@@ -619,6 +641,7 @@ MonoBehaviour:
         Value: 250
       - Trait: 1
         Value: 2
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: Friends said you're good in resume polishing. Can you help me?
@@ -645,9 +668,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Dispute
-      Content: You see that someone is arguing. You can try to cool situation.
+      Content: You see that someone is arguing. You can try to cool the situation.
     OkMessage:
       Title: Dispute
       Content: You've been beaten. But now you know how to behave in such situations.
@@ -667,10 +691,12 @@ MonoBehaviour:
       Changes:
       - Trait: 0
         Value: 250
+      Scaled: 0
     EventMessage:
       Title: What a surprise!
-      Content: When you've been working as dish washer, one of visitors give you money
-        for nothing. It's strange, but helpful!
+      Content: While you've been working as a dish washer, one of the visitors gave
+        you money for nothing. A minute ago you found it in a pocket of your old jeans.
+        It's strange, but helpful!
     OkMessage:
       Title: 
       Content: 
@@ -696,9 +722,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 15
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Database work
-      Content: Your friend asks you about contract job with database. Do you agree?
+      Content: Your friend asks you about a contract job with database. Do you agree?
     OkMessage:
       Title: 
       Content: 
@@ -722,13 +749,14 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Cat or bread?
-      Content: You have idea for machine learning experiment. Do you want to continue?
+      Content: You have an idea for machine learning experiment. Do you want to continue?
     OkMessage:
-      Title: It's cat
-      Content: Experiment ends successfully, I've created site to detect cats and
-        bread on photos.
+      Title: It's a cat
+      Content: Experiment ends successfully, you have created a site to detect cats
+        and bread on photos.
     CancelMessage:
       Title: 
       Content: 
@@ -749,13 +777,14 @@ MonoBehaviour:
         Value: 5
       - Trait: 17
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Idea!
       Content: You can use your big data skills in day-to-day life!
     OkMessage:
       Title: Idea!
-      Content: Opps. You configure replication incorrectly and now you need to buy
-        another hard drive.
+      Content: Oops. You configured a replication incorrectly and now you have to
+        buy another hard drive.
     CancelMessage:
       Title: 
       Content: 
@@ -776,12 +805,13 @@ MonoBehaviour:
         Value: 2500
       - Trait: 18
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: 1@(%$*+-!#^
-      Content: You found strange email in inbox. Do you want to decode it?
+      Content: You've found a strange email in inbox. Do you want to decode it?
     OkMessage:
       Title: 1@(%$*+-!#^
-      Content: You decode email and find link to the money account in internet.
+      Content: You decoded email and found a link to a money account in the internet.
     CancelMessage:
       Title: 
       Content: 
@@ -802,14 +832,15 @@ MonoBehaviour:
         Value: 1000
       - Trait: 1
         Value: 3
+      Scaled: 0
     EventMessage:
       Title: Interesting
-      Content: You found that mobile app, which you are using, send uncrypted traffic.
+      Content: You found that mobile app which you use sends the uncrypted traffic.
         Should you investigate it?
     OkMessage:
       Title: Interesting
-      Content: Mobile app contains security vulnerability. Developer pays you for
-        information.
+      Content: The mobile app contains security vulnerability. Developer pays you
+        for information.
     CancelMessage:
       Title: 
       Content: 
@@ -830,9 +861,10 @@ MonoBehaviour:
         Value: 2
       - Trait: 20
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: Reverse engineering
-      Content: You have contract for reverse engineering of some CPU. Do you want
+      Content: You have a contract for reverse engineering of some CPU. Do you want
         to do it?
     OkMessage:
       Title: 
@@ -855,9 +887,10 @@ MonoBehaviour:
         Value: 2
       - Trait: 22
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Shaders
-      Content: Friend asks your help to setup shaders in his game.
+      Content: A friend asks your help to setup shaders in his game.
     OkMessage:
       Title: 
       Content: 
@@ -881,9 +914,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 1
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: Your own engine
-      Content: You need to create new game engine! Starting with something simple.
+      Content: You need to create new game engine! Start with something simple.
     OkMessage:
       Title: Your own engine
       Content: It wasn't simple. But you wrote some basic classes for the engine.
@@ -907,12 +941,13 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Your own framework
-      Content: It's time to made your own web framework!
+      Content: It's time to make your own web framework!
     OkMessage:
       Title: Your own framework
-      Content: You've made our own framework. But your dependencies was updated and
+      Content: You've made our own framework. But your dependencies were updated and
         now it's broken.
     CancelMessage:
       Title: 
@@ -934,13 +969,14 @@ MonoBehaviour:
         Value: 15
       - Trait: 1
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Dataset
-      Content: You found interesting dataset. Do you want to inspect it?
+      Content: You found an interesting dataset. Do you want to inspect it?
     OkMessage:
       Title: Dataset
-      Content: Information is interesting, but correlations is really strange. Looks
-        like dataset is incorrect.
+      Content: Information is interesting, but correlations are really strange. Looks
+        like the dataset is incorrect.
     CancelMessage:
       Title: 
       Content: 
@@ -961,9 +997,10 @@ MonoBehaviour:
         Value: 2
       - Trait: 24
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: Hi! I know, where you're working and if can help me to get some information,
+      Content: Hi! I know where you work, and if you help me to get some information,
         I will pay you.
     OkMessage:
       Title: New email!
@@ -990,14 +1027,15 @@ MonoBehaviour:
         Value: 5
       - Trait: 14
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Possible issue
-      Content: You're found problem with library, which you are using. Do you want
-        to make patch for it?
+      Content: You've found a problem with the library which you use. Do you want
+        to make a patch for it?
     OkMessage:
       Title: Possible issue
-      Content: You're fixed issue. Library contributor post artcile about this change
-        and notice you.
+      Content: You've fixed the issue. Library contributor posted an artcile about
+        this change and mentioned you.
     CancelMessage:
       Title: 
       Content: 
@@ -1020,14 +1058,15 @@ MonoBehaviour:
         Value: 10
       - Trait: 14
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: Open source library
-      Content: You have nice idea for open source library. Do you want to work on
-        it?
+      Content: You have a nice idea for an open source library. Do you want to work
+        on it?
     OkMessage:
       Title: Open source library
-      Content: Your library usage starting to grow, now you is noticable person in
-        the community.
+      Content: Your library usage starts to grow, now you are a noticeable person
+        in the community.
     CancelMessage:
       Title: 
       Content: 
@@ -1048,9 +1087,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 0
         Value: 2500
+      Scaled: 0
     EventMessage:
       Title: Commanche contract
-      Content: Big software company started to use your library and provide financial
+      Content: Big software company started to use your library and provided financial
         support.
     OkMessage:
       Title: 
@@ -1075,6 +1115,7 @@ MonoBehaviour:
         Value: 10
       - Trait: 14
         Value: 5
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: Hello! I found your email recently, can you help me with my project
@@ -1104,10 +1145,11 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: 3
+      Scaled: 0
     EventMessage:
       Title: New email!
       Content: Hello! Can you help us with enterprise project consulting? It will
-        good paid.
+        be paid well.
     OkMessage:
       Title: 
       Content: 
@@ -1129,9 +1171,10 @@ MonoBehaviour:
         Value: 5000
       - Trait: 14
         Value: 10
+      Scaled: 0
     EventMessage:
       Title: New email!
-      Content: Hello! You're promoted for grant by Macrosoft.
+      Content: Hello! You're promoted for a grant by Macrosoft.
     OkMessage:
       Title: 
       Content: 
