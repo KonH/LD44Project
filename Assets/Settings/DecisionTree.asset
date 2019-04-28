@@ -31,6 +31,24 @@ MonoBehaviour:
         Value: 2
       - Trait: 12
         Value: 1
+    - Name: Take freelance offer
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 3
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 50
+      - Trait: 1
+        Value: 4
+      - Trait: 9
+        Value: 4
+      - Trait: 10
+        Value: 4
+      - Trait: 3
+        Value: 1
     - Name: Write resume
       Id: 0
       Days: 2
@@ -95,6 +113,8 @@ MonoBehaviour:
         Value: 2
       - Trait: 10
         Value: 2
+      - Trait: 3
+        Value: 1
     - Name: Work remotely
       Id: 2
       Days: 7
@@ -108,6 +128,8 @@ MonoBehaviour:
       - Trait: 9
         Value: 1
       - Trait: 10
+        Value: 2
+      - Trait: 3
         Value: 1
     - Name: Request promotion
       Id: 3
