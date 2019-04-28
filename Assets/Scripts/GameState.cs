@@ -98,6 +98,7 @@ public class GameState {
 				_decisionLogic.BanCompany(WorkPlace.Company);
 				WorkPlace = null;
 				EnqueNotice(new NoticeAction(_messages.LostJob, HighPriority));
+				Inc(Trait.BadWorker, 1);
 			}
 		}
 	}
@@ -182,7 +183,7 @@ public class GameState {
 		if ( Get(Trait.Alcohol) > 25 ) {
 			AddAchievement("Alcoholic");
 		}
-		if ( Get(Trait.Alcohol) > 25 ) {
+		if ( Get(Trait.Freelance) > 25 ) {
 			AddAchievement("Freelancer");
 		}
 		if ( Get(Trait.GameJammer) > 15 ) {
@@ -190,6 +191,50 @@ public class GameState {
 		}
 		if ( Get(Trait.PoppularPerson) > 15 ) {
 			AddAchievement("Popular person");
+		}
+		if ( Get(Trait.Skill) > 200 ) {
+			AddAchievement("Legendary Developer");
+		}
+		if ( Get(Trait.BadWorker) > 2 ) {
+			AddAchievement("Bad Worker");
+		}
+
+		if ( Get(Trait.Theory) > 30 ) {
+			AddAchievement("Computer Science Expert");
+		}
+		if ( Get(Trait.Resume) > 30 ) {
+			AddAchievement("Resume Writer");
+		}
+		if ( Get(Trait.Talking) > 30 ) {
+			AddAchievement("Interview Hacker");
+		}
+
+		if ( Get(Trait.Database) > 50 ) {
+			AddAchievement("Database Expert");
+		}
+		if ( Get(Trait.MachineLearning) > 50 ) {
+			AddAchievement("Machine Learning Expert");
+		}
+		if ( Get(Trait.BigData) > 50 ) {
+			AddAchievement("Big Data Expert");
+		}
+		if ( Get(Trait.Cryptography) > 50 ) {
+			AddAchievement("Cryptography Expert");
+		}
+		if ( Get(Trait.Mobile) > 50 ) {
+			AddAchievement("Mobile Expert");
+		}
+		if ( Get(Trait.Assembler) > 50 ) {
+			AddAchievement("Assembler Expert");
+		}
+		if ( Get(Trait.GameDev) > 50 ) {
+			AddAchievement("GameDev Expert");
+		}
+		if ( Get(Trait.Graphics) > 50 ) { 
+			AddAchievement("Graphics Expert");
+		}
+		if ( Get(Trait.Engine) > 50 ) {
+			AddAchievement("Engine Expert");
 		}
 	}
 	
