@@ -17,7 +17,7 @@ public class GameState {
 	public class WorkState {
 		public Company Company;
 		public Company.Position Position;
-		public int Days;
+		public int Times;
 		public DateTime LastWorkDay;
 	}
 	
@@ -30,6 +30,13 @@ public class GameState {
 	public Dictionary<Trait, int> Traits = new Dictionary<Trait, int>();
 	public WorkState WorkPlace = null;
 	public HashSet<string> Achievements = new HashSet<string>();
+
+	public int Age {
+		get {
+			var age = _parameters.StartAge + (Date - _startDate).TotalDays / 365;
+			return (int)Math.Round(age);
+		}
+	}
 
 	readonly Messages _messages;
 	readonly Parameters _parameters;
@@ -68,12 +75,16 @@ public class GameState {
 			Inc(change.Trait, change.Value);
 		}
 		_decisionLogic.Apply(decision.Id);
-		UpdateTime(TimeSpan.FromDays(decision.Days));
+		UpdateTime(TimeSpan.FromDays(decision.Days), decision.Scaled);
 		Debug.LogFormat("Applied decision: '{0}', {1}\n{2}", decision.Name, decision.Id, this);
 	}
 
-	public void UpdateTime(TimeSpan span) {
-		Date = Date.Add(span);
+	public void UpdateTime(TimeSpan span, bool scaled) {
+		var days = span.TotalDays;
+		if ( scaled ) {
+			days *= _parameters.TimeScale;
+		}
+		Date = Date.AddDays(days);
 		UpdatePayment();
 		UpdateJob();
 		UpdateTraits();
@@ -94,7 +105,7 @@ public class GameState {
 	void UpdateJob() {
 		if ( WorkPlace != null ) {
 			var days = (Date - WorkPlace.LastWorkDay).TotalDays;
-			if ( days > _parameters.MaxSkipWorkDays ) {
+			if ( days > _parameters.MaxSkipWorkDays * _parameters.TimeScale ) {
 				_decisionLogic.BanCompany(WorkPlace.Company);
 				WorkPlace = null;
 				EnqueNotice(new NoticeAction(_messages.LostJob, HighPriority));
@@ -130,6 +141,13 @@ public class GameState {
 		if ( Get(Trait.Mad) > _parameters.MadLimit ) {
 			AddAchievement("Psycho");
 			Finish(_messages.MadDeath, Trait.Mad.ToString());
+			return;
+		}
+		if ( Age > _parameters.MinDeathChanceAge ) {
+			if ( UnityEngine.Random.value < _parameters.DeathChance ) {
+				AddAchievement("Long life");
+				Finish(_messages.NaturalDeath, "NaturalDeath");
+			}
 		}
 	}
 
@@ -266,12 +284,10 @@ public class GameState {
 	}
 
 	void Finish(Message explainMessage, string reason) {
-		var age = _parameters.StartAge + (Date - _startDate).TotalDays / 365;
-		age = Math.Round(age);
 		Notices.Clear();
 		_delayedNotices.Clear();
 		EnqueNotice(new NoticeAction(explainMessage, HighPriority));
-		var msg = _messages.Finish.Format(age);
+		var msg = _messages.Finish.Format(Age);
 		EnqueNotice(new NoticeAction(msg, HighPriority));
 		Finished = true;
 		if ( Achievements.Count == 0 ) {
@@ -354,8 +370,8 @@ public class GameState {
 			traits.Add($"{t.Key} = {t.Value}");
 		}
 		return string.Format(
-			"Date: {0} Traits: {1}",
-			Date, string.Join(", ", traits)
+			"Date: {0} Age: {1} Traits: {2}",
+			Date, Age, string.Join(", ", traits)
 		);
 	}
 }

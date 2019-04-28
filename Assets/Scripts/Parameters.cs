@@ -10,8 +10,12 @@ public class Parameters : ScriptableObject {
 	public int DiseaseLimit;
 	public int MadLimit;
 	public int LowMoneyStress;
-	public int MinPromotionDays;
-	public int MinRecommendDays;
+	public int MinPromotionTimes;
+	public int MinRecommendTimes;
 	public float RanomEventChance;
 	public int MaxSkipWorkDays;
+	public float TimeScale;
+	public int MaxApplyAge;
+	public int MinDeathChanceAge;
+	public float DeathChance;
 }

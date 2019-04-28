@@ -74,3 +74,6 @@ MonoBehaviour:
   MadDeath:
     Title: You're commited suicide
     Content: This world is useless, you need another one.
+  NaturalDeath:
+    Title: All gone
+    Content: You've beed found in your bed, death comes softly at night.

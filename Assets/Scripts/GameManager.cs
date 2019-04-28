@@ -63,12 +63,12 @@ public class GameManager : MonoBehaviour {
 
 	[ContextMenu("AddDay")]
 	public void AddDay() {
-		_state.UpdateTime(TimeSpan.FromDays(1));
+		_state.UpdateTime(TimeSpan.FromDays(1), false);
 	}
 	
 	[ContextMenu("AddMonth")]
 	public void AdMonth() {
-		_state.UpdateTime(TimeSpan.FromDays(31));
+		_state.UpdateTime(TimeSpan.FromDays(31), false);
 	}
 
 	bool TryShowNoticeWindow() {

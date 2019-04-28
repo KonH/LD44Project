@@ -18,6 +18,7 @@ public class DecisionTree : ScriptableObject {
 		public List<TraitValue> Min;
 		public List<TraitValue> Max;
 		public List<TraitValue> Changes;
+		public bool Scaled;
 	}
 
 	public List<Category> Categories;

@@ -27,8 +27,8 @@ public class DecisionLogic {
 	public bool IsDecisionAvailable(DecisionId id) {
 		switch ( id ) {
 			case DecisionId.Work:          return (_state.WorkPlace != null);
-			case DecisionId.WorkPromotion: return (_state.WorkPlace?.Days > _parameters.MinPromotionDays) && (GetNextPosition() != null);
-			case DecisionId.WorkRecommend: return (_state.WorkPlace?.Days > _parameters.MinRecommendDays);
+			case DecisionId.WorkPromotion: return (_state.WorkPlace?.Times > _parameters.MinPromotionTimes) && (GetNextPosition() != null);
+			case DecisionId.WorkRecommend: return (_state.WorkPlace?.Times > _parameters.MinRecommendTimes);
 		}
 		return true;
 	}
@@ -55,7 +55,7 @@ public class DecisionLogic {
 				break;
 			
 			case DecisionId.WorkRecommend:
-				_state.WorkPlace.Days = 0;
+				_state.WorkPlace.Times = 0;
 				break;
 		}
 	}
@@ -82,7 +82,7 @@ public class DecisionLogic {
 	void OnWork() {
 		var position = _state.WorkPlace.Position;
 		_state.Inc(Trait.Money, position.Payment);
-		_state.WorkPlace.Days++;
+		_state.WorkPlace.Times++;
 		_state.WorkPlace.LastWorkDay = _state.Date;
 		_state.EnqueNoticeOnce(new NoticeAction(_messages.WorkProgressNotice, GameState.HighPriority));
 	}
@@ -99,12 +99,15 @@ public class DecisionLogic {
 			};
 		} else {
 			msg = _messages.PromotionNone;
-			_state.WorkPlace.Days = 0;
+			_state.WorkPlace.Times = 0;
 		}
 		_state.EnqueNotice(new NoticeAction(msg, GameState.HighPriority));
 	}
 
 	(Company, Company.Position) FindSuitablePosition() {
+		if ( _state.Age > _parameters.MaxApplyAge ) {
+			return (null, null);
+		}
 		var currentCompany = _state.WorkPlace?.Company;
 		var allPositions = new List<(Company, Company.Position)>();
 		foreach ( var company in _environment.Companies ) {

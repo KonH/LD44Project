@@ -20,4 +20,5 @@ public class Messages : ScriptableObject {
 	public Message DiseaseDeath;
 	public Message MadWarning;
 	public Message MadDeath;
+	public Message NaturalDeath;
 }

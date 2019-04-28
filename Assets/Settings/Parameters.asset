@@ -20,7 +20,11 @@ MonoBehaviour:
   DiseaseLimit: 50
   MadLimit: 60
   LowMoneyStress: -3
-  MinPromotionDays: 15
-  MinRecommendDays: 30
+  MinPromotionTimes: 12
+  MinRecommendTimes: 6
   RanomEventChance: 0.075
   MaxSkipWorkDays: 28
+  TimeScale: 4
+  MaxApplyAge: 50
+  MinDeathChanceAge: 55
+  DeathChance: 0.05
