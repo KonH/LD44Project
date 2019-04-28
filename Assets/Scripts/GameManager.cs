@@ -63,12 +63,12 @@ public class GameManager : MonoBehaviour {
 
 	[ContextMenu("AddDay")]
 	public void AddDay() {
-		_state.UpdateTime(TimeSpan.FromDays(1), false);
+		_state.UpdateTime(TimeSpan.FromDays(1), false, true);
 	}
 	
 	[ContextMenu("AddMonth")]
 	public void AdMonth() {
-		_state.UpdateTime(TimeSpan.FromDays(31), false);
+		_state.UpdateTime(TimeSpan.FromDays(31), false, true);
 	}
 
 	bool TryShowNoticeWindow() {
@@ -125,7 +125,7 @@ public class GameManager : MonoBehaviour {
 
 	void ApplyDecision(DecisionTree.Decision decision) {
 		TryResetDecideWindow();
-		_state.ApplyDecision(decision);
+		_state.ApplyDecision(decision, true);
 	}
 
 	void TryResetDecideWindow() {

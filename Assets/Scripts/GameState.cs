@@ -87,16 +87,16 @@ public class GameState {
 		return position.Payment + inflation;
 	}
 	
-	public void ApplyDecision(DecisionTree.Decision decision) {
+	public void ApplyDecision(DecisionTree.Decision decision, bool fromDecide) {
 		foreach ( var change in decision.Changes ) {
 			Inc(change.Trait, change.Value);
 		}
 		_decisionLogic.Apply(decision.Id);
-		UpdateTime(TimeSpan.FromDays(decision.Days), decision.Scaled);
+		UpdateTime(TimeSpan.FromDays(decision.Days), decision.Scaled, fromDecide);
 		Debug.LogFormat("Applied decision: '{0}', {1}\n{2}", decision.Name, decision.Id, this);
 	}
 
-	public void UpdateTime(TimeSpan span, bool scaled) {
+	public void UpdateTime(TimeSpan span, bool scaled, bool fromDecide) {
 		var days = span.TotalDays;
 		if ( scaled ) {
 			days *= _parameters.TimeScale;
@@ -105,7 +105,9 @@ public class GameState {
 		UpdatePayment();
 		UpdateJob();
 		UpdateTraits();
-		UpdateEvents();
+		if ( fromDecide ) {
+			UpdateEvents();
+		}
 		UpdateAchievements();
 		UpdateNotices();
 		UpdateInflation();
@@ -184,7 +186,7 @@ public class GameState {
 					if ( !string.IsNullOrWhiteSpace(ev.OkMessage.Title) ) {
 						EnqueNotice(new NoticeAction(ev.OkMessage, LowPriority));
 					}
-					ApplyDecision(ev.Decision);
+					ApplyDecision(ev.Decision, false);
 				} else {
 					if ( !string.IsNullOrWhiteSpace(ev.CancelMessage.Title) ) {
 						EnqueNotice(new NoticeAction(ev.CancelMessage, LowPriority));
