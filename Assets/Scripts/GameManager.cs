@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour {
 				var suffix = "";
 				var money = decision.Changes.Find(t => t.Trait == Trait.Money)?.Value;
 				if ( decision.Id == DecisionId.Work ) {
-					money = _state.WorkPlace.Position.Payment;
+					money = _state.GetPayment(_state.WorkPlace);
 				}
 				if ( money.HasValue ) {
 					suffix += $" ({money.Value}$)";

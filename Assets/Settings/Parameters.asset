@@ -28,3 +28,5 @@ MonoBehaviour:
   MaxApplyAge: 50
   MinDeathChanceAge: 55
   DeathChance: 0.05
+  InflateDays: 90
+  InflateValue: 5

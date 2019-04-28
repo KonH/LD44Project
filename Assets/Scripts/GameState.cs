@@ -30,6 +30,7 @@ public class GameState {
 	public Dictionary<Trait, int> Traits = new Dictionary<Trait, int>();
 	public WorkState WorkPlace = null;
 	public HashSet<string> Achievements = new HashSet<string>();
+	public Dictionary<string, int> SalaryInflation = new Dictionary<string, int>();
 
 	public int Age {
 		get {
@@ -39,6 +40,7 @@ public class GameState {
 	}
 
 	readonly Messages _messages;
+	readonly Environment _environment;
 	readonly Parameters _parameters;
 	readonly Events _events;
 	readonly DecisionLogic _decisionLogic;
@@ -46,11 +48,13 @@ public class GameState {
 
 	DateTime _startDate;
 	DateTime _lastPayDate;
+	DateTime _lastInflateDate;
 	List<DelayedNotice> _delayedNotices = new List<DelayedNotice>();
 	List<RandomEvent> _usedEvents = new List<RandomEvent>();
 
 	public GameState(Messages messges, Environment environment, Parameters parameters, Events events, Action onUpdated) {
 		_messages = messges;
+		_environment = environment;
 		_parameters = parameters;
 		_events = events;
 		_onUpdated = onUpdated;
@@ -62,12 +66,25 @@ public class GameState {
 		Traits[Trait.Money] = _parameters.StartMoney;
 
 		_lastPayDate = Date;
+		_lastInflateDate = Date;
 		
 		var startAct = new NoticeAction(_messages.Welcome, HighPriority);
 		EnqueNoticeOnce(startAct);
 
 		Analytics.enabled = !Application.isEditor;
 		AnalyticsEvent.GameStart();
+	}
+
+	public int GetPayment(WorkState state) {
+		return GetPayment(state.Company, state.Position);
+	}
+	
+	public int GetPayment(Company company, Company.Position position) {
+		if ( !SalaryInflation.TryGetValue(company.Name, out var inflation) ) {
+			inflation = 0;
+		}
+		Debug.LogFormat("GetPayment({0}, {1}) = {2} + {3}", company.Name, position.Name, position.Payment, inflation);
+		return position.Payment + inflation;
 	}
 	
 	public void ApplyDecision(DecisionTree.Decision decision) {
@@ -91,6 +108,7 @@ public class GameState {
 		UpdateEvents();
 		UpdateAchievements();
 		UpdateNotices();
+		UpdateInflation();
 		_onUpdated.Invoke();
 	}
 
@@ -280,6 +298,22 @@ public class GameState {
 		}
 		foreach ( var used in usedNotices ) {
 			_delayedNotices.Remove(used);
+		}
+	}
+
+	void UpdateInflation() {
+		var curCompany = WorkPlace?.Company;
+		while ((Date - _lastInflateDate).TotalDays > _parameters.InflateDays ) {
+			_lastInflateDate = _lastInflateDate.AddDays(_parameters.InflateDays);
+			foreach ( var company in _environment.Companies ) {
+				if ( company == curCompany ) {
+					continue;
+				}
+				if ( !SalaryInflation.TryGetValue(company.Name, out var initial) ) {
+					initial = 0;
+				}
+				SalaryInflation[company.Name] = initial + _parameters.InflateValue;
+			}
 		}
 	}
 

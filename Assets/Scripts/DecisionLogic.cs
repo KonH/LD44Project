@@ -64,8 +64,8 @@ public class DecisionLogic {
 		var (company, positon) = FindSuitablePosition();
 		NoticeAction act;
 		if ( positon != null ) {
-			var curPayment = (_state.WorkPlace != null) ? _state.WorkPlace.Position.Payment : 0;
-			var addCount = (positon.Payment - curPayment);
+			var curPayment = (_state.WorkPlace != null) ? _state.GetPayment(_state.WorkPlace) : 0;
+			var addCount = (_state.GetPayment(company, positon) - curPayment);
 			var add = (addCount >= 0) ? "+" + addCount.ToString() : addCount.ToString();  
 			act = new NoticeAction(
 				_messages.WorkInvite.Format(company.Name, positon.Name, add),
@@ -80,8 +80,7 @@ public class DecisionLogic {
 	}
 
 	void OnWork() {
-		var position = _state.WorkPlace.Position;
-		_state.Inc(Trait.Money, position.Payment);
+		_state.Inc(Trait.Money, _state.GetPayment(_state.WorkPlace));
 		_state.WorkPlace.Times++;
 		_state.WorkPlace.LastWorkDay = _state.Date;
 		_state.EnqueNoticeOnce(new NoticeAction(_messages.WorkProgressNotice, GameState.HighPriority));
@@ -156,9 +155,9 @@ public class DecisionLogic {
 				string.Join(", ", applyablePositions.Select(p => $"({p.Item1.Name}, {p.Item2.Name})"))
 			);
 			if ( applyablePositions.Count > 0 ) {
-				positions = applyablePositions.OrderByDescending(p => p.Item2.Payment).Take(5).ToList();
+				positions = applyablePositions.OrderByDescending(p => _state.GetPayment(p.Item1, p.Item2)).Take(5).ToList();
 			} else {
-				positions = positions.OrderBy(p => p.Item2.Payment).Take(10).ToList();
+				positions = positions.OrderBy(p => _state.GetPayment(p.Item1, p.Item2)).Take(10).ToList();
 			}
 			Debug.LogFormat(
 				"Positions to select ({0}): {1}",

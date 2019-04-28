@@ -18,4 +18,6 @@ public class Parameters : ScriptableObject {
 	public int MaxApplyAge;
 	public int MinDeathChanceAge;
 	public float DeathChance;
+	public int InflateDays;
+	public int InflateValue;
 }
