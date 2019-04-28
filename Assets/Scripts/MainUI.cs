@@ -30,6 +30,9 @@ public class MainUI : MonoBehaviour {
 			var dateDiff = Math.Round((dt - _lastDate).TotalDays, 2);
 			if ( dateDiff > 0.01 ) {
 				DateEffect.text = $"+{dateDiff.ToString()} Day";
+				if ( dateDiff > 1 ) {
+					DateEffect.text += "s";
+				}
 				DateAnimator.SetTrigger(Appear);
 			}
 			var moneyDiff = money - _lastMoney;

@@ -29,7 +29,7 @@ public class GameState {
 	public List<NoticeAction> Notices = new List<NoticeAction>();
 	public Dictionary<Trait, int> Traits = new Dictionary<Trait, int>();
 	public WorkState WorkPlace = null;
-	public HashSet<string> Achievements = new HashSet<string>();
+	public List<string> Achievements = new List<string>();
 	public Dictionary<string, int> SalaryInflation = new Dictionary<string, int>();
 
 	public int Age {
@@ -125,6 +125,7 @@ public class GameState {
 			var days = (Date - WorkPlace.LastWorkDay).TotalDays;
 			if ( days > _parameters.MaxSkipWorkDays * _parameters.TimeScale ) {
 				_decisionLogic.BanCompany(WorkPlace.Company);
+				AddAchievement($"Fired from '{WorkPlace.Company}'");
 				WorkPlace = null;
 				EnqueNotice(new NoticeAction(_messages.LostJob, HighPriority));
 				Inc(Trait.BadWorker, 1);
@@ -393,8 +394,9 @@ public class GameState {
 	}
 
 	void AddAchievement(string value) {
-		if ( Achievements.Add(value) ) {
+		if ( !Achievements.Contains(value) ) {
 			AnalyticsEvent.AchievementUnlocked(value);
+			Achievements.Add(value);
 		}
 	}
 	

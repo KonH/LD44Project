@@ -12,7 +12,7 @@ public class ResultWindow : MonoBehaviour {
 
 	Action _callback;
 	
-	public void Init(HashSet<string> achievements, Action callback) {
+	public void Init(List<string> achievements, Action callback) {
 		foreach ( var achivement in achievements ) {
 			var item = Instantiate(ItemPrefab, ItemRoot);
 			item.GetComponentInChildren<TMP_Text>().text = achivement;
