@@ -20,6 +20,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 1
+      - Trait: 3
+        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -30,6 +32,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 5
+      - Trait: 3
+        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -39,6 +43,8 @@ MonoBehaviour:
       Payment: 60
       Preconditions:
       - Trait: 4
+        Value: 10
+      - Trait: 3
         Value: 10
       Requirements:
       - Trait: 3
@@ -52,6 +58,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 3
+      - Trait: 3
+        Value: 3
       Requirements:
       - Trait: 3
         Value: 3
@@ -62,6 +70,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 7
+      - Trait: 3
+        Value: 7
       Requirements:
       - Trait: 3
         Value: 7
@@ -71,6 +81,8 @@ MonoBehaviour:
       Payment: 80
       Preconditions:
       - Trait: 4
+        Value: 12
+      - Trait: 3
         Value: 12
       Requirements:
       - Trait: 3
@@ -84,6 +96,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 13
+      - Trait: 3
+        Value: 3
       Requirements:
       - Trait: 3
         Value: 3
@@ -94,6 +108,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 17
+      - Trait: 3
+        Value: 7
       Requirements:
       - Trait: 3
         Value: 7
@@ -106,6 +122,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 22
+      - Trait: 3
+        Value: 12
       Requirements:
       - Trait: 3
         Value: 12
@@ -118,6 +136,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 22
+      - Trait: 3
+        Value: 15
       Requirements:
       - Trait: 3
         Value: 15
@@ -132,6 +152,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 10
+      - Trait: 3
+        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -144,6 +166,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 10
+      - Trait: 3
+        Value: 25
       Requirements:
       - Trait: 3
         Value: 25
@@ -156,6 +180,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 15
+      - Trait: 3
+        Value: 40
       Requirements:
       - Trait: 3
         Value: 40
@@ -168,6 +194,8 @@ MonoBehaviour:
       Preconditions:
       - Trait: 4
         Value: 20
+      - Trait: 3
+        Value: 50
       Requirements:
       - Trait: 3
         Value: 50
