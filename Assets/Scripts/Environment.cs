@@ -5,8 +5,8 @@ using UnityEngine;
 public class Environment : ScriptableObject {
 	public List<Company> Companies;
 
-	[ContextMenu("Increase Skill in non specific")]
-	public void Increase() {
+	[ContextMenu("Update positions")]
+	public void UpdatePositions() {
 		foreach ( var company in Companies ) {
 			for ( var i = 0; i < company.Positions.Count; i++ ) {
 				var pos = company.Positions[i];
@@ -23,7 +23,7 @@ public class Environment : ScriptableObject {
 				}
 				if ( !isSpecific ) {
 					foreach ( var req in pos.Requirements ) {
-						//req.Value += 5 + i * 5;
+						req.Value += 5 + i * 5;
 					}
 				} else {
 					pos.Payment += Random.Range(2 + i, (2 + i * 2) * 3) * 5;

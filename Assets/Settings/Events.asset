@@ -972,3 +972,170 @@ MonoBehaviour:
       Title: 
       Content: 
     Cancelable: 1
+  - Name: OpenSource 1
+    Decision:
+      Name: 
+      Id: 0
+      Days: 2
+      Min:
+      - Trait: 3
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 3
+        Value: 10
+      - Trait: 1
+        Value: 2
+      - Trait: 27
+        Value: 5
+      - Trait: 14
+        Value: 5
+    EventMessage:
+      Title: Possible issue
+      Content: You're found problem with library, which you are using. Do you want
+        to make patch for it?
+    OkMessage:
+      Title: Possible issue
+      Content: You've fixed issue. Library contributor post artcile about this change
+        and notice you.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: OpenSource 2
+    Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 27
+        Value: 5
+      Max: []
+      Changes:
+      - Trait: 3
+        Value: 10
+      - Trait: 1
+        Value: 3
+      - Trait: 27
+        Value: 10
+      - Trait: 14
+        Value: 5
+    EventMessage:
+      Title: Open source library
+      Content: You have nice idea for open source library. Do you want to work on
+        it?
+    OkMessage:
+      Title: Open source library
+      Content: Your library usage starting to grow, now you is noticable person in
+        the community.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: OpenSource 3
+    Decision:
+      Name: 
+      Id: 0
+      Days: 0.5
+      Min:
+      - Trait: 27
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 27
+        Value: 10
+      - Trait: 14
+        Value: 5
+      - Trait: 0
+        Value: 2500
+    EventMessage:
+      Title: Commanche contract
+      Content: Big software company started to use your library and provide financial
+        support.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 0
+  - Name: Popular Person 1
+    Decision:
+      Name: 
+      Id: 0
+      Days: 0.5
+      Min:
+      - Trait: 14
+        Value: 2
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 500
+      - Trait: 3
+        Value: 10
+      - Trait: 14
+        Value: 5
+    EventMessage:
+      Title: New email!
+      Content: Hello! I found your email recently, can you help me with my project
+        for humble payment?
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Popular Person 2
+    Decision:
+      Name: 
+      Id: 0
+      Days: 2
+      Min:
+      - Trait: 14
+        Value: 8
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 2500
+      - Trait: 3
+        Value: 15
+      - Trait: 14
+        Value: 10
+      - Trait: 1
+        Value: 3
+    EventMessage:
+      Title: New email!
+      Content: Hello! Can you help us with enterprise project consulting? It will
+        good paid.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Popular Person 3
+    Decision:
+      Name: 
+      Id: 0
+      Days: 0.5
+      Min:
+      - Trait: 14
+        Value: 15
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 5000
+      - Trait: 14
+        Value: 10
+    EventMessage:
+      Title: New email!
+      Content: Hello! You're promoted for grant by Macrosoft.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 0

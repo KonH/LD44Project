@@ -189,7 +189,10 @@ public class GameState {
 		if ( Get(Trait.GameJammer) > 15 ) {
 			AddAchievement("Game Jam enthusiast");
 		}
-		if ( Get(Trait.PoppularPerson) > 15 ) {
+		if ( Get(Trait.OpenSource) > 10 ) {
+			AddAchievement("Open Source enthusiast");
+		}
+		if ( Get(Trait.PopularPerson) > 15 ) {
 			AddAchievement("Popular person");
 		}
 		if ( Get(Trait.Skill) > 200 ) {

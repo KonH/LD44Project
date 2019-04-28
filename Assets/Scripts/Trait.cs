@@ -13,7 +13,7 @@
 	Bodybuilder,
 	DishWasher,
 	GameJammer,
-	PoppularPerson,
+	PopularPerson,
 	Database,
 	MachineLearning,
 	BigData,
@@ -26,4 +26,5 @@
 	BadWorker,
 	DataScience,
 	Frontend,
+	OpenSource,
 }
