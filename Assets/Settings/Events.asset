@@ -18,7 +18,9 @@ MonoBehaviour:
       Name: 
       Id: 0
       Days: 4
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 10
       Max: []
       Changes:
       - Trait: 0
@@ -53,6 +55,8 @@ MonoBehaviour:
       Min:
       - Trait: 6
         Value: 5
+      - Trait: 3
+        Value: 15
       Max: []
       Changes:
       - Trait: 0
@@ -86,6 +90,8 @@ MonoBehaviour:
       Min:
       - Trait: 6
         Value: 10
+      - Trait: 3
+        Value: 30
       Max: []
       Changes:
       - Trait: 0
@@ -139,12 +145,16 @@ MonoBehaviour:
       Name: 
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 21
+        Value: 5
       Max: []
       Changes:
       - Trait: 3
         Value: 20
-      - Trait: 3
+      - Trait: 21
+        Value: 10
+      - Trait: 1
         Value: 20
       - Trait: 13
         Value: 5
@@ -167,10 +177,14 @@ MonoBehaviour:
       Min:
       - Trait: 13
         Value: 5
+      - Trait: 21
+        Value: 10
       Max: []
       Changes:
       - Trait: 3
         Value: 25
+      - Trait: 21
+        Value: 10
       - Trait: 1
         Value: 20
       - Trait: 13
@@ -196,10 +210,14 @@ MonoBehaviour:
       Min:
       - Trait: 13
         Value: 10
+      - Trait: 21
+        Value: 20
       Max: []
       Changes:
       - Trait: 3
         Value: 30
+      - Trait: 21
+        Value: 20
       - Trait: 1
         Value: 20
       - Trait: 13
@@ -312,7 +330,7 @@ MonoBehaviour:
         Value: 20
     EventMessage:
       Title: Hm...
-      Content: You don't remember last week. You've drinking all the time.
+      Content: You don't remember last week. You've been drinking all the time.
     OkMessage:
       Title: 
       Content: 
@@ -344,32 +362,6 @@ MonoBehaviour:
       Title: Hm...
       Content: You've drinking before the work. It look like now you have black mark
         in your personal card.
-    OkMessage:
-      Title: 
-      Content: 
-    CancelMessage:
-      Title: 
-      Content: 
-    Cancelable: 0
-  - Name: Drink 4
-    Decision:
-      Name: 
-      Id: 0
-      Days: 7
-      Min:
-      - Trait: 8
-        Value: 15
-      Max: []
-      Changes:
-      - Trait: 0
-        Value: -200
-      - Trait: 8
-        Value: 10
-      - Trait: 1
-        Value: -20
-    EventMessage:
-      Title: Hm...
-      Content: You don't remember last week. You've drinking all the time.
     OkMessage:
       Title: 
       Content: 
@@ -563,7 +555,9 @@ MonoBehaviour:
       Name: 
       Id: 0
       Days: 5
-      Min: []
+      Min:
+      - Trait: 4
+        Value: 10
       Max: []
       Changes:
       - Trait: 1

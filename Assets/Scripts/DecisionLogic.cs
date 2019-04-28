@@ -51,6 +51,10 @@ public class DecisionLogic {
 			case DecisionId.WorkPromotion:
 				OnWorkPromotion();
 				break;
+			
+			case DecisionId.WorkRecommend:
+				_state.WorkPlace.Days = 0;
+				break;
 		}
 	}
 

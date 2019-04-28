@@ -196,7 +196,7 @@ MonoBehaviour:
       - Trait: 0
         Value: -40
       - Trait: 2
-        Value: 5
+        Value: 10
     - Name: Create custom algorythm
       Id: 0
       Days: 7
@@ -394,7 +394,7 @@ MonoBehaviour:
         Value: 30
       Changes:
       - Trait: 5
-        Value: 5
+        Value: 10
       - Trait: 1
         Value: 3
     - Name: Solve interview tasks
@@ -414,7 +414,9 @@ MonoBehaviour:
     - Name: Read database book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 5
       Max:
       - Trait: 15
         Value: 5
@@ -428,7 +430,11 @@ MonoBehaviour:
     - Name: Read ML book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 5
+      - Trait: 2
+        Value: 10
       Max:
       - Trait: 16
         Value: 5
@@ -442,7 +448,9 @@ MonoBehaviour:
     - Name: Read big data book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 5
       Max:
       - Trait: 17
         Value: 5
@@ -456,7 +464,9 @@ MonoBehaviour:
     - Name: Read cryptography book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 2
+        Value: 10
       Max:
       - Trait: 18
         Value: 5
@@ -470,7 +480,9 @@ MonoBehaviour:
     - Name: Read mobile book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 5
       Max:
       - Trait: 19
         Value: 5
@@ -484,7 +496,9 @@ MonoBehaviour:
     - Name: Read assembler book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 15
       Max:
       - Trait: 20
         Value: 5
@@ -498,7 +512,9 @@ MonoBehaviour:
     - Name: Read gamedev book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 5
       Max:
       - Trait: 21
         Value: 5
@@ -512,7 +528,9 @@ MonoBehaviour:
     - Name: Read graphics book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 10
       Max:
       - Trait: 22
         Value: 5
@@ -526,7 +544,9 @@ MonoBehaviour:
     - Name: Read engine book for dummies
       Id: 0
       Days: 3
-      Min: []
+      Min:
+      - Trait: 3
+        Value: 10
       Max:
       - Trait: 23
         Value: 5
