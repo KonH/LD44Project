@@ -1757,6 +1757,288 @@ MonoBehaviour:
         Value: 25
       - Trait: 23
         Value: 25
+  - Name: MyTube.com
+    Positions:
+    - Name: Junior Frontend Developer
+      Payment: 100
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      - Trait: 3
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+      - Trait: 26
+        Value: 5
+    - Name: Middle Frontend Developer
+      Payment: 250
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      - Trait: 3
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 26
+        Value: 15
+      - Trait: 5
+        Value: 5
+    - Name: Senior Frontend Developer
+      Payment: 380
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      - Trait: 3
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 26
+        Value: 25
+  - Name: Maidu.com
+    Positions:
+    - Name: Junior Frontend Developer
+      Payment: 105
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      - Trait: 3
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+      - Trait: 26
+        Value: 5
+    - Name: Middle Frontend Developer
+      Payment: 255
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      - Trait: 3
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 26
+        Value: 15
+      - Trait: 5
+        Value: 5
+    - Name: Senior Frontend Developer
+      Payment: 385
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      - Trait: 3
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 26
+        Value: 25
+  - Name: Kv.com
+    Positions:
+    - Name: Junior Frontend Developer
+      Payment: 90
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      - Trait: 3
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+      - Trait: 26
+        Value: 5
+    - Name: Middle Frontend Developer
+      Payment: 240
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      - Trait: 3
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 26
+        Value: 15
+      - Trait: 5
+        Value: 5
+    - Name: Senior Frontend Developer
+      Payment: 360
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      - Trait: 3
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 26
+        Value: 25
+  - Name: Deris Labs, Inc
+    Positions:
+    - Name: Junior Data Scientst
+      Payment: 70
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      - Trait: 3
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+      - Trait: 2
+        Value: 5
+      - Trait: 25
+        Value: 5
+    - Name: Middle Data Scientist
+      Payment: 220
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      - Trait: 3
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 2
+        Value: 15
+      - Trait: 25
+        Value: 15
+      - Trait: 5
+        Value: 5
+    - Name: Senior Data Scientist
+      Payment: 360
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      - Trait: 3
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 2
+        Value: 25
+      - Trait: 25
+        Value: 25
+  - Name: Data 0101 Corporation
+    Positions:
+    - Name: Junior Data Scientst
+      Payment: 85
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      - Trait: 3
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+      - Trait: 2
+        Value: 5
+      - Trait: 25
+        Value: 5
+    - Name: Middle Data Scientist
+      Payment: 240
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      - Trait: 3
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 2
+        Value: 15
+      - Trait: 25
+        Value: 15
+      - Trait: 5
+        Value: 5
+    - Name: Senior Data Scientist
+      Payment: 380
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      - Trait: 3
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 2
+        Value: 25
+      - Trait: 25
+        Value: 25
+  - Name: Scienceware, Inc
+    Positions:
+    - Name: Junior Data Scientst
+      Payment: 75
+      Preconditions:
+      - Trait: 4
+        Value: 1
+      - Trait: 3
+        Value: 1
+      Requirements:
+      - Trait: 3
+        Value: 1
+      - Trait: 5
+        Value: 1
+      - Trait: 2
+        Value: 5
+      - Trait: 25
+        Value: 5
+    - Name: Middle Data Scientist
+      Payment: 235
+      Preconditions:
+      - Trait: 4
+        Value: 5
+      - Trait: 3
+        Value: 5
+      Requirements:
+      - Trait: 3
+        Value: 5
+      - Trait: 2
+        Value: 15
+      - Trait: 25
+        Value: 15
+      - Trait: 5
+        Value: 5
+    - Name: Senior Data Scientist
+      Payment: 360
+      Preconditions:
+      - Trait: 4
+        Value: 10
+      - Trait: 3
+        Value: 10
+      Requirements:
+      - Trait: 3
+        Value: 10
+      - Trait: 5
+        Value: 10
+      - Trait: 2
+        Value: 25
+      - Trait: 25
+        Value: 25
   - Name: Bloody enterprise, LLC
     Positions:
     - Name: Junior Developer

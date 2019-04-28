@@ -24,4 +24,6 @@
 	Graphics,
 	Engine,
 	BadWorker,
+	DataScience,
+	Frontend,
 }

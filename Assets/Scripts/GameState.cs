@@ -236,6 +236,12 @@ public class GameState {
 		if ( Get(Trait.Engine) > 50 ) {
 			AddAchievement("Engine Expert");
 		}
+		if ( Get(Trait.DataScience) > 50 ) {
+			AddAchievement("Data Science Expert");
+		}
+		if ( Get(Trait.Frontend) > 50 ) {
+			AddAchievement("Frontend Expert");
+		}
 	}
 	
 	void UpdateNotices() {

@@ -891,6 +891,60 @@ MonoBehaviour:
       Title: 
       Content: 
     Cancelable: 1
+  - Name: Frontend
+    Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 26
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 3
+        Value: 10
+      - Trait: 26
+        Value: 10
+      - Trait: 1
+        Value: 5
+    EventMessage:
+      Title: Your own framework
+      Content: It's time to made your own web framework!
+    OkMessage:
+      Title: Your own framework
+      Content: You've made our own framework. But your dependencies was updated and
+        now it's broken.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: DataScience
+    Decision:
+      Name: 
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 25
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 25
+        Value: 15
+      - Trait: 3
+        Value: 15
+      - Trait: 1
+        Value: 5
+    EventMessage:
+      Title: Dataset
+      Content: You found interesting dataset. Do you want to inspect it?
+    OkMessage:
+      Title: Dataset
+      Content: Information is interesting, but correlations is really strange. Looks
+        like dataset is incorrect.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
   - Name: BadWorker
     Decision:
       Name: 
