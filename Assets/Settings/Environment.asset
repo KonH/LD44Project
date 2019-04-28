@@ -17,619 +17,438 @@ MonoBehaviour:
     Positions:
     - Name: Junior Developer
       Payment: 20
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
-      - Trait: 3
-        Value: 6
       - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 40
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 60
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Macrosoft Corporation
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
-      - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Accept, plc
     Positions:
     - Name: Junior Developer
       Payment: 15
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
+        Value: 5
       - Trait: 5
-        Value: 6
+        Value: 5
     - Name: Middle Developer
       Payment: 35
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Backbook, Inc
     Positions:
     - Name: Junior Developer
       Payment: 20
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
-      - Trait: 3
-        Value: 6
       - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 40
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 60
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Vision Corporation
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
-      - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: SBP SE
     Positions:
     - Name: Junior Developer
       Payment: 15
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
+        Value: 5
       - Trait: 5
-        Value: 6
+        Value: 5
     - Name: Middle Developer
       Payment: 35
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Letterset, Inc
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
-      - Trait: 3
-        Value: 6
       - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 75
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Fivecent Holding Limited
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
-      - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: TADA Limited
     Positions:
     - Name: Junior Developer
       Payment: 35
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
+        Value: 5
       - Trait: 5
-        Value: 6
+        Value: 5
     - Name: Middle Developer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 75
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Waifu, Inc
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
-      - Trait: 3
-        Value: 6
       - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Buyforce.com
     Positions:
     - Name: Junior Developer
       Payment: 35
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
-        Value: 6
-      - Trait: 5
-        Value: 6
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 15
       - Trait: 5
         Value: 15
+      - Trait: 4
+        Value: 5
     - Name: Senior Developer
       Payment: 85
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 25
       - Trait: 5
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Azoton.com
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
-        Value: 10
+        Value: 5
       - Trait: 5
-        Value: 10
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 20
       - Trait: 5
         Value: 20
+      - Trait: 4
+        Value: 10
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 15
-      - Trait: 3
-        Value: 15
       Requirements:
       - Trait: 3
         Value: 30
       - Trait: 5
         Value: 30
+      - Trait: 4
+        Value: 15
   - Name: Quadra
     Positions:
     - Name: Junior Developer
       Payment: 35
-      Preconditions:
+      Requirements:
+      - Trait: 5
+        Value: 5
       - Trait: 4
         Value: 5
-      - Trait: 3
-        Value: 5
-      Requirements:
-      - Trait: 3
-        Value: 10
-      - Trait: 5
-        Value: 10
     - Name: Middle Developer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 20
       - Trait: 5
         Value: 20
+      - Trait: 4
+        Value: 10
     - Name: Senior Developer
       Payment: 75
-      Preconditions:
-      - Trait: 4
-        Value: 15
-      - Trait: 3
-        Value: 15
       Requirements:
       - Trait: 3
         Value: 30
       - Trait: 5
         Value: 30
+      - Trait: 4
+        Value: 15
   - Name: Dope Systems
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
-        Value: 10
-      - Trait: 5
-        Value: 10
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 20
       - Trait: 5
         Value: 20
+      - Trait: 4
+        Value: 10
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 15
-      - Trait: 3
-        Value: 15
       Requirements:
       - Trait: 3
         Value: 30
       - Trait: 5
         Value: 30
+      - Trait: 4
+        Value: 15
   - Name: Widecom
     Positions:
     - Name: Junior Developer
       Payment: 35
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
-        Value: 10
+        Value: 5
       - Trait: 5
-        Value: 10
+        Value: 5
     - Name: Middle Developer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 20
       - Trait: 5
         Value: 20
+      - Trait: 4
+        Value: 10
     - Name: Senior Developer
       Payment: 80
-      Preconditions:
-      - Trait: 4
-        Value: 15
-      - Trait: 3
-        Value: 15
       Requirements:
       - Trait: 3
         Value: 30
       - Trait: 5
         Value: 30
+      - Trait: 4
+        Value: 15
   - Name: Pear, Inc
     Positions:
     - Name: Junior Developer
       Payment: 25
-      Preconditions:
+      Requirements:
+      - Trait: 5
+        Value: 5
       - Trait: 4
         Value: 5
-      - Trait: 3
-        Value: 5
-      Requirements:
-      - Trait: 3
-        Value: 10
-      - Trait: 5
-        Value: 10
     - Name: Middle Developer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 20
       - Trait: 5
         Value: 20
+      - Trait: 4
+        Value: 10
     - Name: Senior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 15
-      - Trait: 3
-        Value: 15
       Requirements:
       - Trait: 3
         Value: 30
       - Trait: 5
         Value: 30
+      - Trait: 4
+        Value: 15
   - Name: Jit Lab, Inc
     Positions:
     - Name: Junior Db Removal Engineer
       Payment: 70
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -637,13 +456,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 15
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Db Removal Engineer
       Payment: 130
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -651,13 +467,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Db Removal Engineer
       Payment: 180
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -665,15 +478,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 15
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Smartdog
     Positions:
     - Name: Junior ML Engineer
       Payment: 95
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -681,13 +491,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 16
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle ML Engineer
       Payment: 175
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -695,13 +502,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior ML Engineer
       Payment: 275
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -709,15 +513,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 16
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Markify Techology
     Positions:
     - Name: Junior Mobile Engineer
       Payment: 100
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -725,13 +526,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 19
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Mobile Engineer
       Payment: 215
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -739,13 +537,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Mobile Engineer
       Payment: 245
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -753,13 +548,10 @@ MonoBehaviour:
         Value: 10
       - Trait: 19
         Value: 25
+      - Trait: 4
+        Value: 10
     - Name: Head of Mobile
       Payment: 380
-      Preconditions:
-      - Trait: 4
-        Value: 30
-      - Trait: 3
-        Value: 30
       Requirements:
       - Trait: 3
         Value: 30
@@ -767,15 +559,12 @@ MonoBehaviour:
         Value: 30
       - Trait: 19
         Value: 50
+      - Trait: 4
+        Value: 30
   - Name: Twizzer, Inc
     Positions:
     - Name: Junior Mobile Engineer
       Payment: 100
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -783,13 +572,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 19
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Mobile Engineer
       Payment: 215
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -797,13 +583,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Mobile Engineer
       Payment: 295
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -811,13 +594,10 @@ MonoBehaviour:
         Value: 10
       - Trait: 19
         Value: 25
+      - Trait: 4
+        Value: 10
     - Name: Head of Mobile
       Payment: 375
-      Preconditions:
-      - Trait: 4
-        Value: 30
-      - Trait: 3
-        Value: 30
       Requirements:
       - Trait: 3
         Value: 30
@@ -825,15 +605,12 @@ MonoBehaviour:
         Value: 30
       - Trait: 19
         Value: 50
+      - Trait: 4
+        Value: 30
   - Name: Slowgram
     Positions:
     - Name: Junior Mobile Engineer
       Payment: 85
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -841,13 +618,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 19
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Mobile Engineer
       Payment: 185
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -855,13 +629,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Mobile Engineer
       Payment: 250
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -869,13 +640,10 @@ MonoBehaviour:
         Value: 10
       - Trait: 19
         Value: 25
+      - Trait: 4
+        Value: 10
     - Name: Head of Mobile
       Payment: 340
-      Preconditions:
-      - Trait: 4
-        Value: 30
-      - Trait: 3
-        Value: 30
       Requirements:
       - Trait: 3
         Value: 30
@@ -883,15 +651,12 @@ MonoBehaviour:
         Value: 30
       - Trait: 19
         Value: 50
+      - Trait: 4
+        Value: 30
   - Name: IVM
     Positions:
     - Name: Junior Big Data Engineer
       Payment: 70
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -899,13 +664,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 17
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Big Data Engineer
       Payment: 160
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -913,13 +675,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Big Data Engineer
       Payment: 220
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -927,15 +686,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 17
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Datatera Corporation
     Positions:
     - Name: Junior Big Data Engineer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -943,13 +699,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 17
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Big Data Engineer
       Payment: 140
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -957,13 +710,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Big Data Engineer
       Payment: 205
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -971,15 +721,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 17
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Old Relic
     Positions:
     - Name: Junior Big Data Engineer
       Payment: 75
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -987,13 +734,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 17
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Big Data Engineer
       Payment: 170
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1001,13 +745,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Big Data Engineer
       Payment: 280
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1015,15 +756,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 17
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Mind Corporation
     Positions:
     - Name: Junior Processor Engineer
       Payment: 75
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1031,13 +769,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 20
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Processor Engineer
       Payment: 170
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1045,13 +780,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Processor Engineer
       Payment: 220
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1059,15 +791,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 20
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: ADM, Inc
     Positions:
     - Name: Junior Processor Engineer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1075,13 +804,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 20
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Processor Engineer
       Payment: 140
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1089,13 +815,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Processor Engineer
       Payment: 205
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1103,15 +826,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 20
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Mind Corporation
     Positions:
     - Name: Junior Processor Engineer
       Payment: 60
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1119,13 +839,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 20
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Processor Engineer
       Payment: 165
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1133,13 +850,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Processor Engineer
       Payment: 235
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1147,13 +861,10 @@ MonoBehaviour:
         Value: 10
       - Trait: 20
         Value: 25
-    - Name: Cheaf Processor Engineer
-      Payment: 300
-      Preconditions:
       - Trait: 4
         Value: 10
-      - Trait: 3
-        Value: 30
+    - Name: Cheaf Processor Engineer
+      Payment: 300
       Requirements:
       - Trait: 3
         Value: 30
@@ -1161,15 +872,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 20
         Value: 35
+      - Trait: 4
+        Value: 10
   - Name: ByteGo
     Positions:
     - Name: Junior Cryptocurrency Engineer
       Payment: 50
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1177,13 +885,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 18
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Cryptocurrency Engineer
       Payment: 135
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1191,13 +896,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Cryptocurrency Engineer
       Payment: 235
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1205,15 +907,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 18
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Unisoft Entertainment
     Positions:
     - Name: Junior Gameplay Programmer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1221,13 +920,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 21
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Gameplay Programmer
       Payment: 135
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1235,13 +931,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Gameplay Programmer
       Payment: 215
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1249,15 +942,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 21
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Cyclone Entertainment
     Positions:
     - Name: Junior Gameplay Programmer
       Payment: 50
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1265,13 +955,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 21
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Gameplay Programmer
       Payment: 125
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1279,13 +966,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Gameplay Programmer
       Payment: 210
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1293,15 +977,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 21
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Queen.com Limited
     Positions:
     - Name: Junior Gameplay Programmer
       Payment: 45
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1309,13 +990,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 21
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Gameplay Programmer
       Payment: 170
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1323,13 +1001,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Gameplay Programmer
       Payment: 190
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1337,15 +1012,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 21
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: AE Mobile
     Positions:
     - Name: Junior Gameplay Programmer
       Payment: 60
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1353,13 +1025,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 21
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Gameplay Programmer
       Payment: 160
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1367,13 +1036,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Gameplay Programmer
       Payment: 245
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1381,15 +1047,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 21
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Absurd Development Studio
     Positions:
     - Name: Junior Gameplay Programmer
       Payment: 35
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1397,13 +1060,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 21
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Gameplay Programmer
       Payment: 140
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1411,13 +1071,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Gameplay Programmer
       Payment: 255
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1425,15 +1082,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 21
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Quadro Enix
     Positions:
     - Name: Junior Gameplay Programmer
       Payment: 55
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1441,13 +1095,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 21
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Gameplay Programmer
       Payment: 150
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1455,13 +1106,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Gameplay Programmer
       Payment: 265
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1469,15 +1117,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 21
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Industrial Graphics & Wizardry
     Positions:
     - Name: Junior Graphics Programmer
       Payment: 40
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1485,13 +1130,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 22
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Graphics Programmer
       Payment: 180
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1499,13 +1141,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Graphics Programmer
       Payment: 325
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1513,15 +1152,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 22
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Abody, Inc
     Positions:
     - Name: Junior Graphics Programmer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1529,13 +1165,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 22
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Graphics Programmer
       Payment: 170
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1543,13 +1176,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Graphics Programmer
       Payment: 270
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1557,15 +1187,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 22
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: 5B Games
     Positions:
     - Name: Junior Graphics Programmer
       Payment: 50
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1575,13 +1202,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 22
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Graphics Programmer
       Payment: 210
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1590,14 +1214,11 @@ MonoBehaviour:
       - Trait: 22
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Graphics Programmer
       Payment: 315
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1607,15 +1228,12 @@ MonoBehaviour:
         Value: 25
       - Trait: 22
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Santa Monica Studio
     Positions:
     - Name: Junior Graphics Programmer
       Payment: 40
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1625,13 +1243,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 22
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Graphics Programmer
       Payment: 190
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1640,14 +1255,11 @@ MonoBehaviour:
       - Trait: 22
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Graphics Programmer
       Payment: 335
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1657,15 +1269,12 @@ MonoBehaviour:
         Value: 25
       - Trait: 22
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: IC Software
     Positions:
     - Name: Junior Engine Programmer
       Payment: 100
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1675,13 +1284,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 23
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Engine Programmer
       Payment: 250
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1690,14 +1296,11 @@ MonoBehaviour:
       - Trait: 23
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Engine Programmer
       Payment: 405
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1707,15 +1310,12 @@ MonoBehaviour:
         Value: 25
       - Trait: 23
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Solidarity Technologies
     Positions:
     - Name: Junior Engine Programmer
       Payment: 110
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1725,13 +1325,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 23
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Engine Programmer
       Payment: 255
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1740,14 +1337,11 @@ MonoBehaviour:
       - Trait: 23
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Engine Programmer
       Payment: 425
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1757,15 +1351,12 @@ MonoBehaviour:
         Value: 25
       - Trait: 23
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: MyTube.com
     Positions:
     - Name: Junior Frontend Developer
       Payment: 120
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1773,13 +1364,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 26
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Frontend Developer
       Payment: 300
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1787,13 +1375,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Frontend Developer
       Payment: 435
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1801,15 +1386,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 26
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Maidu.com
     Positions:
     - Name: Junior Frontend Developer
       Payment: 130
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1817,13 +1399,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 26
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Frontend Developer
       Payment: 290
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1831,13 +1410,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Frontend Developer
       Payment: 450
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1845,15 +1421,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 26
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Kv.com
     Positions:
     - Name: Junior Frontend Developer
       Payment: 105
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1861,13 +1434,10 @@ MonoBehaviour:
         Value: 1
       - Trait: 26
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Frontend Developer
       Payment: 285
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1875,13 +1445,10 @@ MonoBehaviour:
         Value: 15
       - Trait: 5
         Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Senior Frontend Developer
       Payment: 445
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1889,15 +1456,12 @@ MonoBehaviour:
         Value: 10
       - Trait: 26
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Deris Labs, Inc
     Positions:
     - Name: Junior Data Scientst
       Payment: 95
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1907,13 +1471,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 25
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Data Scientist
       Payment: 260
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1922,14 +1483,11 @@ MonoBehaviour:
       - Trait: 25
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Data Scientist
       Payment: 410
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1939,15 +1497,12 @@ MonoBehaviour:
         Value: 25
       - Trait: 25
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Data 0101 Corporation
     Positions:
     - Name: Junior Data Scientst
       Payment: 95
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -1957,13 +1512,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 25
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Data Scientist
       Payment: 270
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -1972,14 +1524,11 @@ MonoBehaviour:
       - Trait: 25
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Data Scientist
       Payment: 460
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -1989,15 +1538,12 @@ MonoBehaviour:
         Value: 25
       - Trait: 25
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Scienceware, Inc
     Positions:
     - Name: Junior Data Scientst
       Payment: 95
-      Preconditions:
-      - Trait: 4
-        Value: 1
-      - Trait: 3
-        Value: 1
       Requirements:
       - Trait: 3
         Value: 1
@@ -2007,13 +1553,10 @@ MonoBehaviour:
         Value: 5
       - Trait: 25
         Value: 5
+      - Trait: 4
+        Value: 1
     - Name: Middle Data Scientist
       Payment: 255
-      Preconditions:
-      - Trait: 4
-        Value: 5
-      - Trait: 3
-        Value: 5
       Requirements:
       - Trait: 3
         Value: 5
@@ -2022,14 +1565,11 @@ MonoBehaviour:
       - Trait: 25
         Value: 15
       - Trait: 5
+        Value: 5
+      - Trait: 4
         Value: 5
     - Name: Senior Data Scientist
       Payment: 385
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
@@ -2039,65 +1579,46 @@ MonoBehaviour:
         Value: 25
       - Trait: 25
         Value: 25
+      - Trait: 4
+        Value: 10
   - Name: Bloody enterprise, LLC
     Positions:
     - Name: Junior Developer
       Payment: 20
-      Preconditions:
-      - Trait: 4
-        Value: 3
-      - Trait: 3
-        Value: 3
       Requirements:
       - Trait: 3
-        Value: 8
-      - Trait: 5
-        Value: 8
+        Value: 5
+      - Trait: 4
+        Value: 5
     - Name: Middle Developer
       Payment: 50
-      Preconditions:
-      - Trait: 4
-        Value: 7
-      - Trait: 3
-        Value: 7
       Requirements:
       - Trait: 3
         Value: 17
       - Trait: 5
         Value: 17
+      - Trait: 4
+        Value: 7
     - Name: Senior Developer
       Payment: 80
-      Preconditions:
-      - Trait: 4
-        Value: 12
-      - Trait: 3
-        Value: 12
       Requirements:
       - Trait: 3
         Value: 27
       - Trait: 5
         Value: 27
+      - Trait: 4
+        Value: 12
   - Name: Fancy startup, Inc
     Positions:
     - Name: Junior Developer
       Payment: 80
-      Preconditions:
-      - Trait: 4
-        Value: 13
-      - Trait: 3
-        Value: 3
       Requirements:
       - Trait: 3
-        Value: 8
+        Value: 5
       - Trait: 5
-        Value: 8
+        Value: 5
     - Name: Middle Developer
       Payment: 180
-      Preconditions:
-      - Trait: 4
-        Value: 17
-      - Trait: 3
-        Value: 7
       Requirements:
       - Trait: 3
         Value: 7
@@ -2105,13 +1626,10 @@ MonoBehaviour:
         Value: 7
       - Trait: 2
         Value: 2
+      - Trait: 4
+        Value: 17
     - Name: Senior Developer
       Payment: 275
-      Preconditions:
-      - Trait: 4
-        Value: 22
-      - Trait: 3
-        Value: 12
       Requirements:
       - Trait: 3
         Value: 12
@@ -2119,13 +1637,10 @@ MonoBehaviour:
         Value: 12
       - Trait: 2
         Value: 5
-    - Name: CTO
-      Payment: 425
-      Preconditions:
       - Trait: 4
         Value: 22
-      - Trait: 3
-        Value: 15
+    - Name: CTO
+      Payment: 425
       Requirements:
       - Trait: 3
         Value: 15
@@ -2133,57 +1648,45 @@ MonoBehaviour:
         Value: 15
       - Trait: 2
         Value: 10
+      - Trait: 4
+        Value: 22
   - Name: Hoogle, LLC
     Positions:
     - Name: Junior Developer
       Payment: 65
-      Preconditions:
-      - Trait: 4
-        Value: 10
-      - Trait: 3
-        Value: 10
       Requirements:
       - Trait: 3
         Value: 10
       - Trait: 5
         Value: 10
       - Trait: 2
+        Value: 10
+      - Trait: 4
         Value: 10
     - Name: Middle Developer
       Payment: 140
-      Preconditions:
+      Requirements:
+      - Trait: 3
+        Value: 25
+      - Trait: 5
+        Value: 15
+      - Trait: 2
+        Value: 15
       - Trait: 4
         Value: 10
-      - Trait: 3
-        Value: 25
-      Requirements:
-      - Trait: 3
-        Value: 25
-      - Trait: 5
-        Value: 15
-      - Trait: 2
-        Value: 15
     - Name: Senior Developer
       Payment: 245
-      Preconditions:
+      Requirements:
+      - Trait: 3
+        Value: 40
+      - Trait: 5
+        Value: 20
+      - Trait: 2
+        Value: 20
       - Trait: 4
         Value: 15
-      - Trait: 3
-        Value: 40
-      Requirements:
-      - Trait: 3
-        Value: 40
-      - Trait: 5
-        Value: 20
-      - Trait: 2
-        Value: 20
     - Name: Software Architect
       Payment: 320
-      Preconditions:
-      - Trait: 4
-        Value: 20
-      - Trait: 3
-        Value: 50
       Requirements:
       - Trait: 3
         Value: 50
@@ -2191,3 +1694,5 @@ MonoBehaviour:
         Value: 30
       - Trait: 2
         Value: 30
+      - Trait: 4
+        Value: 20

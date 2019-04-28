@@ -117,17 +117,8 @@ public class DecisionLogic {
 			if ( _bannedCompanies.Contains(company) ) {
 				continue;
 			}
-			for ( var i = company.Positions.Count - 1; i >= 0; i-- ) {
-				var position = company.Positions[i];
-				var satisfied = true;
-				foreach ( var precond in position.Preconditions ) {
-					if ( _state.Get(precond.Trait) < precond.Value ) {
-						satisfied = false;
-					}
-				}
-				if ( satisfied ) {
-					allPositions.Add((company, position));
-				}
+			foreach ( var pos in company.Positions) {
+				allPositions.Add((company, pos));
 			}
 		}
 		if ( allPositions.Count > 0 ) {
@@ -164,22 +155,10 @@ public class DecisionLogic {
 				applyablePositions.Count,
 				string.Join(", ", applyablePositions.Select(p => $"({p.Item1.Name}, {p.Item2.Name})"))
 			);
-			positions = (applyablePositions.Count > 0) ? applyablePositions : positions;
-			var topPositions = new List<(Company, Company.Position)>();
-			foreach ( var pos in positions ) {
-				var sameCompany = topPositions.Find(p => p.Item1 == pos.Item1);
-				if ( sameCompany.Item1 != null ) {
-					if ( pos.Item2.Payment > sameCompany.Item2.Payment ) {
-						topPositions.Remove(sameCompany);
-						topPositions.Add(pos);
-					}
-				} else {
-					topPositions.Add(pos);
-				}
-			}
-			positions = topPositions;
-			if ( positions.Count > 5 ) {
-				positions = positions.OrderByDescending(p => p.Item2.Payment).Take(5).ToList();
+			if ( applyablePositions.Count > 0 ) {
+				positions = applyablePositions.OrderByDescending(p => p.Item2.Payment).Take(5).ToList();
+			} else {
+				positions = positions.OrderBy(p => p.Item2.Payment).Take(10).ToList();
 			}
 			Debug.LogFormat(
 				"Positions to select ({0}): {1}",

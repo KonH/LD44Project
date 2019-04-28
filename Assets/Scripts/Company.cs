@@ -7,7 +7,6 @@ public class Company {
 	public class Position {
 		public string Name;
 		public int Payment;
-		public List<TraitValue> Preconditions;
 		public List<TraitValue> Requirements;
 	}
 	public string Name;
