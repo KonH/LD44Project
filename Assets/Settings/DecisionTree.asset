@@ -34,7 +34,7 @@ MonoBehaviour:
       Scaled: 1
     - Name: Take freelance offer
       Id: 0
-      Days: 7
+      Days: 3.5
       Min:
       - Trait: 3
         Value: 10

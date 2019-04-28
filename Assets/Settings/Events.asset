@@ -1034,7 +1034,7 @@ MonoBehaviour:
         to make a patch for it?
     OkMessage:
       Title: Possible issue
-      Content: You've fixed the issue. Library contributor posted an artcile about
+      Content: You've fixed the issue. Library contributor posted an article about
         this change and mentioned you.
     CancelMessage:
       Title: 
