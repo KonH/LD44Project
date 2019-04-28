@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Events
   m_EditorClassIdentifier: 
   RandomEvents:
-  - Decision:
+  - Name: Freelance 1
+    Decision:
       Name: 
       Id: 0
       Days: 4
@@ -32,11 +33,20 @@ MonoBehaviour:
         Value: 5
       - Trait: 3
         Value: 5
-    Title: New email!
-    Content: 'Hello, long time no see! What about freelance job? It''s paid nice,
-      but needs to be done ASAP. '
+    EventMessage:
+      Title: New email!
+      Content: 'Hello, long time no see! What about freelance job? It''s paid nice,
+        but needs to be done ASAP. '
+    OkMessage:
+      Title: Work is done
+      Content: It was hard, but you finished frelance job. Code is awful, but it isn't
+        your problem.
+    CancelMessage:
+      Title: New email!
+      Content: We failed our contract. It's bad that you can't help us.
     Cancelable: 1
-  - Decision:
+  - Name: Freelance 2
+    Decision:
       Name: 
       Id: 0
       Days: 7
@@ -57,10 +67,19 @@ MonoBehaviour:
         Value: 10
       - Trait: 6
         Value: 5
-    Title: New email!
-    Content: 'Hi! I have another freelance work. Of course, ASAP. '
+    EventMessage:
+      Title: New email!
+      Content: 'Hi! I have another freelance work. Of course, ASAP. '
+    OkMessage:
+      Title: Work is done
+      Content: It was hard, but you finished frelance job. Code is terrible, but it
+        isn't your problem.
+    CancelMessage:
+      Title: New email!
+      Content: We failed our contract. It's bad that you can't help us.
     Cancelable: 1
-  - Decision:
+  - Name: Freelance 3
+    Decision:
       Name: 
       Id: 0
       Days: 9
@@ -81,14 +100,23 @@ MonoBehaviour:
         Value: 10
       - Trait: 6
         Value: 10
-    Title: New email!
-    Content: Hi, now we really need help! All deadlines are failed, only you can help
-      with this work!
+    EventMessage:
+      Title: New email!
+      Content: Hi, now we really need help! All deadlines are failed, only you can
+        help with this work!
+    OkMessage:
+      Title: Work is done
+      Content: It was hard, but you finished frelance job. Code is a mess, but it
+        isn't your problem.
+    CancelMessage:
+      Title: New email!
+      Content: We failed our contract. It's bad that you can't help us.
     Cancelable: 1
-  - Decision:
+  - Name: Work overtime
+    Decision:
       Name: 
       Id: 2
-      Days: 0
+      Days: 1
       Min: []
       Max: []
       Changes:
@@ -96,13 +124,21 @@ MonoBehaviour:
         Value: 15
       - Trait: 9
         Value: 10
-    Title: New email!
-    Content: On this weekend we need onvertime work. No additional payment, of course.
+    EventMessage:
+      Title: New email!
+      Content: On this weekend we need onvertime work. No additional payment, of course.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Game Jam 1
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 3
       Min: []
       Max: []
       Changes:
@@ -112,13 +148,22 @@ MonoBehaviour:
         Value: 20
       - Trait: 13
         Value: 5
-    Title: New email!
-    Content: What about participation in next game jam? It will be fun!
+    EventMessage:
+      Title: New email!
+      Content: What about participation in next game jam? It will be fun!
+    OkMessage:
+      Title: It was fun
+      Content: On game jab your team made small about crazy animals. It's nice, but
+        gameplay isn't polished.
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 1
-  - Decision:
+  - Name: Game Jam 2
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 3
       Min:
       - Trait: 13
         Value: 5
@@ -132,10 +177,19 @@ MonoBehaviour:
         Value: 10
       - Trait: 14
         Value: 2
-    Title: New email!
-    Content: Do you're remember our last jam? We need to repeat it!
+    EventMessage:
+      Title: New email!
+      Content: Do you're remember our last jam? We need to repeat it!
+    OkMessage:
+      Title: Painful, but funny
+      Content: You didin't sleep for three days, but you're happy about results. GIFs
+        are spreading in internet.
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 1
-  - Decision:
+  - Name: Game Jam 3
+    Decision:
       Name: 
       Id: 0
       Days: 0
@@ -154,13 +208,22 @@ MonoBehaviour:
         Value: 1500
       - Trait: 14
         Value: 5
-    Title: New email!
-    Content: Now we joined a jam with money reward, do you want to participate?
+    EventMessage:
+      Title: New email!
+      Content: Now we joined a jam with money reward, do you want to participate?
+    OkMessage:
+      Title: Awesome!
+      Content: You're won first place in the jam contest! You think that your game
+        isn't so good, but you proud about it.
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 1
-  - Decision:
+  - Name: Robbed
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 0.5
       Min:
       - Trait: 7
         Value: 5
@@ -170,23 +233,39 @@ MonoBehaviour:
         Value: -250
       - Trait: 1
         Value: 5
-    Title: Ouch...
-    Content: You've been robbed on the street.
+    EventMessage:
+      Title: Ouch...
+      Content: You've been robbed on the street.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Nigeria letter
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 0.1
       Min: []
       Max: []
       Changes:
       - Trait: 0
         Value: -1500
-    Title: New email!
-    Content: Hello, dear friend! I'm from Nigeria and I want your help for some financial
-      operations. For good profit in future.
+    EventMessage:
+      Title: New email!
+      Content: Hello, dear friend! I'm from Nigeria and I want your help for some
+        financial operations. For good profit in future.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 1
-  - Decision:
+  - Name: Drink 1
+    Decision:
       Name: 
       Id: 0
       Days: 1
@@ -203,10 +282,18 @@ MonoBehaviour:
         Value: 5
       - Trait: 9
         Value: 10
-    Title: Hm...
-    Content: You're accidentally go to a bar and drink additional beer.
+    EventMessage:
+      Title: Hm...
+      Content: You're accidentally go to a bar and drink additional beer.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Drink 2
+    Decision:
       Name: 
       Id: 0
       Days: 7
@@ -223,10 +310,49 @@ MonoBehaviour:
         Value: 20
       - Trait: 9
         Value: 20
-    Title: Hm...
-    Content: You don't remember last week. You've drinking all the time.
+    EventMessage:
+      Title: Hm...
+      Content: You don't remember last week. You've drinking all the time.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Drink 3
+    Decision:
+      Name: 
+      Id: 2
+      Days: 1
+      Min:
+      - Trait: 8
+        Value: 20
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -200
+      - Trait: 8
+        Value: 10
+      - Trait: 1
+        Value: 20
+      - Trait: 9
+        Value: 20
+      - Trait: 4
+        Value: -20
+    EventMessage:
+      Title: Hm...
+      Content: You've drinking before the work. It look like now you have black mark
+        in your personal card.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 0
+  - Name: Drink 4
+    Decision:
       Name: 
       Id: 0
       Days: 7
@@ -241,13 +367,21 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: -20
-    Title: Hm...
-    Content: You don't remember last week. You've drinking all the time.
+    EventMessage:
+      Title: Hm...
+      Content: You don't remember last week. You've drinking all the time.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Health 1
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 0.5
       Min:
       - Trait: 9
         Value: 10
@@ -259,11 +393,18 @@ MonoBehaviour:
         Value: 5
       - Trait: 9
         Value: 5
-    Title: Bad feelings
-    Content: Your stomach worries you. Yoghurt, which you use in such cases, doesn't
-      help.
+    EventMessage:
+      Title: Bad feelings
+      Content: Your stomach worries you. You need some yoghurt!
+    OkMessage:
+      Title: Bad feelings
+      Content: Yoghurt, which you use in stomach cases, doesn't help. It's bad.
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Health 2
+    Decision:
       Name: 
       Id: 0
       Days: 0
@@ -278,14 +419,22 @@ MonoBehaviour:
         Value: 5
       - Trait: 9
         Value: 5
-    Title: Bad feelings
-    Content: Headache is annoying. You're going to internet to find pills, but it
-      only leads to harder pain.
+    EventMessage:
+      Title: Bad feelings
+      Content: Headache is annoying. You're going to internet to find pills, but it
+        only leads to harder pain.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Health 3
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 1
       Min:
       - Trait: 9
         Value: 25
@@ -295,13 +444,21 @@ MonoBehaviour:
         Value: 10
       - Trait: 1
         Value: 10
-    Title: Bad feelings
-    Content: Pain is real strong. It seems like you really need a doctor!
+    EventMessage:
+      Title: Bad feelings
+      Content: Pain is real strong. It seems like you really need a doctor!
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Mad 1
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 0.5
       Min:
       - Trait: 10
         Value: 10
@@ -311,13 +468,22 @@ MonoBehaviour:
         Value: 10
       - Trait: 10
         Value: 25
-    Title: Strange sounds
-    Content: Something is scrapping in your door. Do you like to inspect it?
+    EventMessage:
+      Title: Strange sounds
+      Content: Something is scrapping in your door. Do you like to inspect it?
+    OkMessage:
+      Title: Strange sounds
+      Content: Terrible shings are coming! Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl
+        fhtagn.
+    CancelMessage:
+      Title: Strange sounds
+      Content: It's just your imagination, nothing more.
     Cancelable: 1
-  - Decision:
+  - Name: Mad 2
+    Decision:
       Name: 
       Id: 0
-      Days: 0
+      Days: 1
       Min:
       - Trait: 10
         Value: 20
@@ -325,10 +491,19 @@ MonoBehaviour:
       Changes:
       - Trait: 10
         Value: 15
-    Title: Sweet dreams
-    Content: You've see beautiful dream at night. Why do you need all this crazy world?
+    EventMessage:
+      Title: Sweet dreams
+      Content: You've see beautiful dream at night. Why do you need all this crazy
+        world?
+    OkMessage:
+      Title: Sweat dreams
+      Content: It looks like you life will change, if you find the silver key.
+    CancelMessage:
+      Title: 
+      Content: 
     Cancelable: 0
-  - Decision:
+  - Name: Runner 1
+    Decision:
       Name: 
       Id: 0
       Days: 3
@@ -343,11 +518,19 @@ MonoBehaviour:
         Value: 10
       - Trait: 14
         Value: 2
-    Title: Marathon
-    Content: You're well trained for long marathon, it will be interesting experiense.
-      Do you want to join?
+    EventMessage:
+      Title: Marathon
+      Content: You're well trained for long marathon, it will be interesting experiense.
+        Do you want to join?
+    OkMessage:
+      Title: Marathon
+      Content: You have finished at 2th place! It's nice.
+    CancelMessage:
+      Title: Marathon
+      Content: Unfortunately, your sport career is over.
     Cancelable: 1
-  - Decision:
+  - Name: Runner 2
+    Decision:
       Name: 
       Id: 0
       Days: 5
@@ -364,11 +547,19 @@ MonoBehaviour:
         Value: 3000
       - Trait: 14
         Value: 5
-    Title: State marathon
-    Content: You've beed invited to biggest marathon in the state with money reward.
-      Do you want to participate?
+    EventMessage:
+      Title: State marathon
+      Content: You've beed invited to biggest marathon in the state with money reward.
+        Do you want to participate?
+    OkMessage:
+      Title: State marathon
+      Content: Wow! You're got first place!
+    CancelMessage:
+      Title: State marathon
+      Content: It was great chance to improve your personal brand, but you lost it.
     Cancelable: 1
-  - Decision:
+  - Name: TV Show
+    Decision:
       Name: 
       Id: 0
       Days: 5
@@ -381,7 +572,15 @@ MonoBehaviour:
         Value: 500
       - Trait: 14
         Value: 10
-    Title: TV Show
-    Content: Do you want to be present on TV show with religious anti-technologic
-      persons for humble reward?
+    EventMessage:
+      Title: TV Show
+      Content: Do you want to be present on TV show with religious anti-technologic
+        persons for humble reward?
+    OkMessage:
+      Title: TV Show
+      Content: So annoying people. They think that all technologies are made by devil.
+        But they coming here not by donkey.
+    CancelMessage:
+      Title: TV Show
+      Content: You read about this show in Twizzer later. Crazy people!
     Cancelable: 1

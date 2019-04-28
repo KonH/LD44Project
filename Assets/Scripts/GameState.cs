@@ -135,10 +135,17 @@ public class GameState {
 		if ( availableEvents.Count > 0 ) {
 			var ev = availableEvents[UnityEngine.Random.Range(0, availableEvents.Count)];
 			_usedEvents.Add(ev);
-			var msg = new Message(ev.Title, ev.Content);
+			var msg = ev.EventMessage;
 			var act = new NoticeAction(msg, LowPriority, ev.Cancelable, ok => {
 				if ( ok ) {
+					if ( !string.IsNullOrWhiteSpace(ev.OkMessage.Title) ) {
+						EnqueNotice(new NoticeAction(ev.OkMessage, LowPriority));
+					}
 					ApplyDecision(ev.Decision);
+				} else {
+					if ( !string.IsNullOrWhiteSpace(ev.CancelMessage.Title) ) {
+						EnqueNotice(new NoticeAction(ev.CancelMessage, LowPriority));
+					}
 				}
 			});
 			EnqueNotice(act);

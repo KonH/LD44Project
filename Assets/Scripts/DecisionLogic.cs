@@ -8,6 +8,7 @@ public class DecisionLogic {
 	readonly GameState _state;
 	
 	HashSet<Company> _bannedCompanies = new HashSet<Company>();
+	(Company, Company.Position) _lastProposedPosition;
 	
 	public DecisionLogic(Messages messages, Environment environment, Parameters parameters, GameState state) {
 		_messages = messages;
@@ -121,7 +122,12 @@ public class DecisionLogic {
 			}
 		}
 		if ( positions.Count > 0 ) {
-			return positions[UnityEngine.Random.Range(0, positions.Count)];
+			if ( positions.Count > 1 ) {
+				positions.Remove(_lastProposedPosition);
+			}
+			var result = positions[UnityEngine.Random.Range(0, positions.Count)];
+			_lastProposedPosition = result;
+			return result;
 		}
 		return (null, null);
 	}
