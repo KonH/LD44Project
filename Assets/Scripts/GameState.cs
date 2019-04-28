@@ -127,7 +127,7 @@ public class GameState {
 			var days = (Date - WorkPlace.LastWorkDay).TotalDays;
 			if ( days > _parameters.MaxSkipWorkDays * _parameters.TimeScale ) {
 				_decisionLogic.BanCompany(WorkPlace.Company);
-				AddAchievement($"Fired from '{WorkPlace.Company}'");
+				AddAchievement($"Fired from '{WorkPlace.Company.Name}'");
 				WorkPlace = null;
 				EnqueNotice(new NoticeAction(_messages.LostJob, HighPriority));
 				Inc(Trait.BadWorker, 1);
