@@ -8,6 +8,7 @@ public class DecisionLogic {
 	readonly GameState _state;
 	
 	HashSet<Company> _bannedCompanies = new HashSet<Company>();
+	HashSet<Company> _alreadyAppliedCompanies = new HashSet<Company>();
 	(Company, Company.Position) _lastProposedPosition;
 	
 	public DecisionLogic(Messages messages, Environment environment, Parameters parameters, GameState state) {
@@ -99,7 +100,7 @@ public class DecisionLogic {
 
 	(Company, Company.Position) FindSuitablePosition() {
 		var currentCompany = _state.WorkPlace?.Company;
-		var positions = new List<(Company, Company.Position)>();
+		var allPositions = new List<(Company, Company.Position)>();
 		foreach ( var company in _environment.Companies ) {
 			if ( company == currentCompany ) {
 				continue;
@@ -116,15 +117,31 @@ public class DecisionLogic {
 					}
 				}
 				if ( satisfied ) {
-					positions.Add((company, position));
+					allPositions.Add((company, position));
 					break;
 				}
 			}
 		}
-		if ( positions.Count > 0 ) {
-			if ( positions.Count > 1 ) {
-				positions.Remove(_lastProposedPosition);
+		if ( allPositions.Count > 0 ) {
+			if ( allPositions.Count > 1 ) {
+				allPositions.Remove(_lastProposedPosition);
 			}
+			var nonAppliedPositions = new List<(Company, Company.Position)>();
+			foreach ( var pos in allPositions ) {
+				var (company, _) = pos;
+				if ( !_alreadyAppliedCompanies.Contains(company) ) {
+					nonAppliedPositions.Add(pos);
+				}
+			}
+			var positions = (nonAppliedPositions.Count > 0) ? nonAppliedPositions : allPositions;
+			var applyablePositions = new List<(Company, Company.Position)>();
+			foreach ( var pos in positions ) {
+				var (_, position) = pos;
+				if ( IsApplyablePosition(position) ) {
+					applyablePositions.Add(pos);
+				}
+			}
+			positions = (applyablePositions.Count > 0) ? applyablePositions : positions;
 			var result = positions[UnityEngine.Random.Range(0, positions.Count)];
 			_lastProposedPosition = result;
 			return result;
@@ -143,6 +160,9 @@ public class DecisionLogic {
 			DecisionId.PublishResume, 
 			new NoticeAction(msg, GameState.MiddlePriority, callback: _ => {
 				if ( applied ) {
+					if ( _state.WorkPlace != null ) {
+						_alreadyAppliedCompanies.Add(_state.WorkPlace.Company);
+					}
 					_state.WorkPlace = new GameState.WorkState {
 						Company     = company,
 						Position    = position,
