@@ -22,5 +22,5 @@ MonoBehaviour:
   LowMoneyStress: -3
   MinPromotionDays: 15
   MinRecommendDays: 30
-  RanomEventChance: 0.1
+  RanomEventChance: 0.075
   MaxSkipWorkDays: 28

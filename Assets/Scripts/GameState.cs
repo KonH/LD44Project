@@ -87,7 +87,7 @@ public class GameState {
 		while ((Date - _lastPayDate).TotalDays > 31 ) {
 			Inc(Trait.Money, _parameters.MonthMoney);
 			_lastPayDate = _lastPayDate.AddDays(31);
-			EnqueNoticeOnce(new NoticeAction(_messages.MonthPayment, HighPriority));
+			EnqueNoticeOnce(new NoticeAction(_messages.MonthPayment.Format(_parameters.MonthMoney.ToString()), HighPriority));
 		}
 	}
 
@@ -112,18 +112,23 @@ public class GameState {
 			EnqueNoticeOnce(new NoticeAction(_messages.StressWarning, HighPriority));
 		}
 		if ( Get(Trait.Stress) > _parameters.StressLimit ) {
+			AddAchievement("Weak heart");
 			Finish(_messages.HeartAttack, Trait.Stress.ToString());
+			return;
 		}
 		if ( Get(Trait.Disease) > _parameters.DiseaseLimit * 0.6f ) {
 			EnqueNoticeOnce(new NoticeAction(_messages.DiseaseWarning, HighPriority));
 		}
 		if ( Get(Trait.Disease) > _parameters.DiseaseLimit ) {
+			AddAchievement("Bad health");
 			Finish(_messages.DiseaseDeath, Trait.Disease.ToString());
+			return;
 		}
 		if ( Get(Trait.Mad) > _parameters.MadLimit * 0.6f ) {
 			EnqueNoticeOnce(new NoticeAction(_messages.MadWarning, HighPriority));
 		}
 		if ( Get(Trait.Mad) > _parameters.MadLimit ) {
+			AddAchievement("Psycho");
 			Finish(_messages.MadDeath, Trait.Mad.ToString());
 		}
 	}
@@ -264,6 +269,7 @@ public class GameState {
 		var age = _parameters.StartAge + (Date - _startDate).TotalDays / 365;
 		age = Math.Round(age);
 		Notices.Clear();
+		_delayedNotices.Clear();
 		EnqueNotice(new NoticeAction(explainMessage, HighPriority));
 		var msg = _messages.Finish.Format(age);
 		EnqueNotice(new NoticeAction(msg, HighPriority));

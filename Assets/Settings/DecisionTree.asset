@@ -211,13 +211,15 @@ MonoBehaviour:
         Value: 5
       - Trait: 1
         Value: 3
-    - Name: Take advanced algorythm course
+    - Name: Take expert algorythm course
       Id: 0
       Days: 10
       Min:
       - Trait: 2
         Value: 30
-      Max: []
+      Max:
+      - Trait: 2
+        Value: 40
       Changes:
       - Trait: 2
         Value: 10
@@ -327,7 +329,9 @@ MonoBehaviour:
       Min:
       - Trait: 3
         Value: 50
-      Max: []
+      Max:
+      - Trait: 3
+        Value: 65
       Changes:
       - Trait: 0
         Value: -2000
@@ -403,7 +407,9 @@ MonoBehaviour:
       Min:
       - Trait: 5
         Value: 30
-      Max: []
+      Max:
+      - Trait: 5
+        Value: 35
       Changes:
       - Trait: 5
         Value: 5
@@ -561,8 +567,8 @@ MonoBehaviour:
       Id: 0
       Days: 3
       Min:
-      - Trait: 26
-        Value: 10
+      - Trait: 3
+        Value: 5
       Max:
       - Trait: 26
         Value: 5
@@ -1123,7 +1129,9 @@ MonoBehaviour:
       Min:
       - Trait: 15
         Value: 20
-      Max: []
+      Max:
+      - Trait: 15
+        Value: 25
       Changes:
       - Trait: 15
         Value: 5
@@ -1137,7 +1145,9 @@ MonoBehaviour:
       Min:
       - Trait: 16
         Value: 20
-      Max: []
+      Max:
+      - Trait: 16
+        Value: 25
       Changes:
       - Trait: 16
         Value: 5
@@ -1151,7 +1161,9 @@ MonoBehaviour:
       Min:
       - Trait: 17
         Value: 20
-      Max: []
+      Max:
+      - Trait: 17
+        Value: 25
       Changes:
       - Trait: 17
         Value: 5
@@ -1165,7 +1177,9 @@ MonoBehaviour:
       Min:
       - Trait: 18
         Value: 20
-      Max: []
+      Max:
+      - Trait: 18
+        Value: 25
       Changes:
       - Trait: 18
         Value: 5
@@ -1179,7 +1193,9 @@ MonoBehaviour:
       Min:
       - Trait: 19
         Value: 20
-      Max: []
+      Max:
+      - Trait: 19
+        Value: 25
       Changes:
       - Trait: 19
         Value: 5
@@ -1193,7 +1209,9 @@ MonoBehaviour:
       Min:
       - Trait: 20
         Value: 20
-      Max: []
+      Max:
+      - Trait: 20
+        Value: 25
       Changes:
       - Trait: 20
         Value: 5
@@ -1207,7 +1225,9 @@ MonoBehaviour:
       Min:
       - Trait: 21
         Value: 20
-      Max: []
+      Max:
+      - Trait: 21
+        Value: 25
       Changes:
       - Trait: 21
         Value: 5
@@ -1221,7 +1241,9 @@ MonoBehaviour:
       Min:
       - Trait: 22
         Value: 20
-      Max: []
+      Max:
+      - Trait: 22
+        Value: 25
       Changes:
       - Trait: 22
         Value: 5
@@ -1235,7 +1257,9 @@ MonoBehaviour:
       Min:
       - Trait: 23
         Value: 20
-      Max: []
+      Max:
+      - Trait: 23
+        Value: 25
       Changes:
       - Trait: 23
         Value: 5
@@ -1249,7 +1273,9 @@ MonoBehaviour:
       Min:
       - Trait: 26
         Value: 20
-      Max: []
+      Max:
+      - Trait: 26
+        Value: 25
       Changes:
       - Trait: 26
         Value: 5
@@ -1263,7 +1289,9 @@ MonoBehaviour:
       Min:
       - Trait: 25
         Value: 20
-      Max: []
+      Max:
+      - Trait: 25
+        Value: 25
       Changes:
       - Trait: 25
         Value: 5

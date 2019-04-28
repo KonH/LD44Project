@@ -29,7 +29,7 @@ MonoBehaviour:
       it's time to find a job?
   MonthPayment:
     Title: Rent
-    Content: You need to pay for your home every month.
+    Content: You need to pay for your home every month ({0}$).
   WorkInvite:
     Title: New email!
     Content: Your resume is interesting! We're invite you for interview in '{0}' for
@@ -55,8 +55,8 @@ MonoBehaviour:
     Content: Sorry, you level is not enough to promote you to the next level.
   WorkProgressNotice:
     Title: Promotions
-    Content: If you working often, you can request promotion for better position.
-      Also, you can get recommendation to improve your resume.
+    Content: If you work often, you can request promotion for better position. Also,
+      you can get recommendation to improve your resume.
   LostJob:
     Title: New email!
     Content: We're not satisfied by your work for our company. It's sad to say, but

@@ -132,7 +132,7 @@ MonoBehaviour:
         Value: 10
     EventMessage:
       Title: New email!
-      Content: On this weekend we need onvertime work. No additional payment, of course.
+      Content: On this weekend we need overtime work. No additional payment, of course.
     OkMessage:
       Title: 
       Content: 
@@ -163,8 +163,8 @@ MonoBehaviour:
       Content: What about participation in next game jam? It will be fun!
     OkMessage:
       Title: It was fun
-      Content: On game jam your team made small about crazy animals. It's nice, but
-        gameplay isn't polished.
+      Content: On game jam your team made small game about crazy animals. It's nice,
+        but gameplay isn't polished.
     CancelMessage:
       Title: 
       Content: 
@@ -465,7 +465,7 @@ MonoBehaviour:
       Content: Something is scrapping in your door. Do you like to inspect it?
     OkMessage:
       Title: Strange sounds
-      Content: Terrible shings are coming! Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl
+      Content: Terrible things are coming! Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl
         fhtagn.
     CancelMessage:
       Title: Strange sounds
@@ -668,7 +668,7 @@ MonoBehaviour:
       - Trait: 0
         Value: 250
     EventMessage:
-      Title: What is surprise!
+      Title: What a surprise!
       Content: When you've been working as dish washer, one of visitors give you money
         for nothing. It's strange, but helpful!
     OkMessage:
@@ -996,7 +996,7 @@ MonoBehaviour:
         to make patch for it?
     OkMessage:
       Title: Possible issue
-      Content: You've fixed issue. Library contributor post artcile about this change
+      Content: You're fixed issue. Library contributor post artcile about this change
         and notice you.
     CancelMessage:
       Title: 
