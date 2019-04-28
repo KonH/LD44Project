@@ -578,3 +578,343 @@ MonoBehaviour:
       Title: TV Show
       Content: You read about this show in Twizzer later. Crazy people!
     Cancelable: 1
+  - Name: Theory
+    Decision:
+      Name: 
+      Id: 0
+      Days: 2
+      Min:
+      - Trait: 2
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 100
+      - Trait: 1
+        Value: 3
+      - Trait: 2
+        Value: 5
+    EventMessage:
+      Title: New email!
+      Content: Hello, I'm a student and I have problems with my university task. Can
+        you please help with it?
+    OkMessage:
+      Title: New email!
+      Content: Thanks! Now I can send resume to NASA.
+    CancelMessage:
+      Title: New email!
+      Content: I was deducted from the unversity. Now I'm homeless.
+    Cancelable: 1
+  - Name: Resume
+    Decision:
+      Name: 
+      Id: 0
+      Days: 2
+      Min:
+      - Trait: 4
+        Value: 15
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 250
+      - Trait: 1
+        Value: 2
+    EventMessage:
+      Title: New email!
+      Content: Friends said you're good in resume polishing. Can you help me?
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Talking
+    Decision:
+      Name: 
+      Id: 0
+      Days: 0.5
+      Min:
+      - Trait: 5
+        Value: 15
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 5
+      - Trait: 9
+        Value: 15
+      - Trait: 5
+        Value: 5
+    EventMessage:
+      Title: Dispute
+      Content: You see that someone is arguing. You can try to cool situation.
+    OkMessage:
+      Title: Dispute
+      Content: You've been beaten. But now you know how to behave in such situations.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: DishWasher
+    Decision:
+      Name: 
+      Id: 0
+      Days: 0.5
+      Min:
+      - Trait: 12
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 250
+    EventMessage:
+      Title: What is surprise!
+      Content: When you've been working as dish washer, one of visitors give you money
+        for nothing. It's strange, but helpful!
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 0
+  - Name: Database
+    Decision:
+      Name: 
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 15
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 1200
+      - Trait: 3
+        Value: 5
+      - Trait: 1
+        Value: 5
+      - Trait: 15
+        Value: 5
+    EventMessage:
+      Title: Database work
+      Content: Your friend asks you about contract job with database. Do you agree?
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: MachineLearning
+    Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 16
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 1000
+      - Trait: 16
+        Value: 10
+      - Trait: 1
+        Value: 5
+    EventMessage:
+      Title: Cat or bread?
+      Content: You have idea for machine learning experiment. Do you want to continue?
+    OkMessage:
+      Title: It's cat
+      Content: Experiment ends successfully, I've created site to detect cats and
+        bread on photos.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: BigData
+    Decision:
+      Name: 
+      Id: 0
+      Days: 2
+      Min:
+      - Trait: 17
+        Value: 5
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: -100
+      - Trait: 1
+        Value: 5
+      - Trait: 17
+        Value: 5
+    EventMessage:
+      Title: Idea!
+      Content: You can use your big data skills in day-to-day life!
+    OkMessage:
+      Title: Idea!
+      Content: Opps. You configure replication incorrectly and now you need to buy
+        another hard drive.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Cryptography
+    Decision:
+      Name: 
+      Id: 0
+      Days: 5
+      Min:
+      - Trait: 18
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 5
+      - Trait: 0
+        Value: 2500
+      - Trait: 18
+        Value: 5
+    EventMessage:
+      Title: 1@(%$*+-!#^
+      Content: You found strange email in inbox. Do you want to decode it?
+    OkMessage:
+      Title: 1@(%$*+-!#^
+      Content: You decode email and find link to the money account in internet.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Mobile
+    Decision:
+      Name: 
+      Id: 0
+      Days: 3
+      Min:
+      - Trait: 19
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 19
+        Value: 10
+      - Trait: 0
+        Value: 1000
+      - Trait: 1
+        Value: 3
+    EventMessage:
+      Title: Interesting
+      Content: You found that mobile app, which you are using, send uncrypted traffic.
+        Should you investigate it?
+    OkMessage:
+      Title: Interesting
+      Content: Mobile app contains security vulnerability. Developer pays you for
+        information.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Assembler
+    Decision:
+      Name: 
+      Id: 0
+      Days: 7
+      Min:
+      - Trait: 20
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 500
+      - Trait: 1
+        Value: 2
+      - Trait: 20
+        Value: 10
+    EventMessage:
+      Title: Reverse engineering
+      Content: You have contract for reverse engineering of some CPU. Do you want
+        to do it?
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Graphics
+    Decision:
+      Name: 
+      Id: 0
+      Days: 3
+      Min:
+      - Trait: 22
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 1
+        Value: 2
+      - Trait: 22
+        Value: 5
+    EventMessage:
+      Title: Shaders
+      Content: Friend asks your help to setup shaders in his game.
+    OkMessage:
+      Title: 
+      Content: 
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: Engine
+    Decision:
+      Name: 
+      Id: 0
+      Days: 14
+      Min:
+      - Trait: 23
+        Value: 10
+      Max: []
+      Changes:
+      - Trait: 3
+        Value: 15
+      - Trait: 23
+        Value: 15
+      - Trait: 1
+        Value: 10
+    EventMessage:
+      Title: Your own engine
+      Content: You need to create new game engine! Starting with something simple.
+    OkMessage:
+      Title: Your own engine
+      Content: It wasn't simple. But you wrote some basic classes for the engine.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
+  - Name: BadWorker
+    Decision:
+      Name: 
+      Id: 2
+      Days: 3
+      Min:
+      - Trait: 24
+        Value: 2
+      Max: []
+      Changes:
+      - Trait: 0
+        Value: 1500
+      - Trait: 1
+        Value: 2
+      - Trait: 24
+        Value: 10
+    EventMessage:
+      Title: New email!
+      Content: Hi! I know, where you're working and if can help me to get some information,
+        I will pay you.
+    OkMessage:
+      Title: New email!
+      Content: Thanks! We can use this account database to improve our spam base.
+    CancelMessage:
+      Title: 
+      Content: 
+    Cancelable: 1
