@@ -1282,13 +1282,13 @@ MonoBehaviour:
         Value: 25
       Changes:
       - Trait: 1
-        Value: -3
+        Value: -7
       - Trait: 7
         Value: 1
       - Trait: 9
-        Value: -3
+        Value: -5
       - Trait: 10
-        Value: -3
+        Value: -5
     - Name: Go to the gym
       Id: 0
       Days: 0.5
@@ -1296,9 +1296,9 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -2
+        Value: -3
       - Trait: 9
-        Value: -10
+        Value: -12
       - Trait: 0
         Value: -25
       - Trait: 11
@@ -1322,11 +1322,11 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -8
+        Value: -10
       - Trait: 9
-        Value: 2
+        Value: 3
       - Trait: 10
-        Value: 2
+        Value: 3
     - Name: Go to the wild nature
       Id: 0
       Days: 3
@@ -1334,13 +1334,13 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: -25
+        Value: -35
       - Trait: 0
         Value: -250
       - Trait: 9
-        Value: -15
+        Value: -25
       - Trait: 10
-        Value: -10
+        Value: -20
     - Name: Take vacation
       Id: 0
       Days: 7
@@ -1354,7 +1354,7 @@ MonoBehaviour:
       - Trait: 9
         Value: -50
       - Trait: 10
-        Value: -25
+        Value: -35
     - Name: Go to the bar
       Id: 0
       Days: 0.5
@@ -1378,7 +1378,7 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: 5
+        Value: 2
       - Trait: 0
         Value: -1000
       - Trait: 9
@@ -1390,7 +1390,7 @@ MonoBehaviour:
       Max: []
       Changes:
       - Trait: 1
-        Value: 5
+        Value: 2
       - Trait: 0
         Value: -500
       - Trait: 10

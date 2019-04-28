@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public class DecisionLogic {
 	readonly Messages _messages;
@@ -122,7 +124,6 @@ public class DecisionLogic {
 				}
 				if ( satisfied ) {
 					allPositions.Add((company, position));
-					break;
 				}
 			}
 		}
@@ -130,6 +131,11 @@ public class DecisionLogic {
 			if ( allPositions.Count > 1 ) {
 				allPositions.Remove(_lastProposedPosition);
 			}
+			Debug.LogFormat(
+				"All positions ({0}): {1}",
+				allPositions.Count,
+				string.Join(", ", allPositions.Select(p => $"({p.Item1.Name}, {p.Item2.Name})"))
+			);
 			var nonAppliedPositions = new List<(Company, Company.Position)>();
 			foreach ( var pos in allPositions ) {
 				var (company, _) = pos;
@@ -137,6 +143,11 @@ public class DecisionLogic {
 					nonAppliedPositions.Add(pos);
 				}
 			}
+			Debug.LogFormat(
+				"Non-applied positions: ({0}): {1}",
+				nonAppliedPositions.Count,
+				string.Join(", ", nonAppliedPositions.Select(p => $"({p.Item1.Name}, {p.Item2.Name})"))
+			);
 			var positions = (nonAppliedPositions.Count > 0) ? nonAppliedPositions : allPositions;
 			var applyablePositions = new List<(Company, Company.Position)>();
 			foreach ( var pos in positions ) {
@@ -145,7 +156,33 @@ public class DecisionLogic {
 					applyablePositions.Add(pos);
 				}
 			}
+			Debug.LogFormat(
+				"Applicable positions ({0}): {1}",
+				applyablePositions.Count,
+				string.Join(", ", applyablePositions.Select(p => $"({p.Item1.Name}, {p.Item2.Name})"))
+			);
 			positions = (applyablePositions.Count > 0) ? applyablePositions : positions;
+			var topPositions = new List<(Company, Company.Position)>();
+			foreach ( var pos in positions ) {
+				var sameCompany = topPositions.Find(p => p.Item1 == pos.Item1);
+				if ( sameCompany.Item1 != null ) {
+					if ( pos.Item2.Payment > sameCompany.Item2.Payment ) {
+						topPositions.Remove(sameCompany);
+						topPositions.Add(pos);
+					}
+				} else {
+					topPositions.Add(pos);
+				}
+			}
+			positions = topPositions;
+			if ( positions.Count > 5 ) {
+				positions = positions.OrderByDescending(p => p.Item2.Payment).Take(5).ToList();
+			}
+			Debug.LogFormat(
+				"Positions to select ({0}): {1}",
+				positions.Count,
+				string.Join(", ", positions.Select(p => $"({p.Item1.Name}, {p.Item2.Name})"))
+			);
 			var result = positions[UnityEngine.Random.Range(0, positions.Count)];
 			_lastProposedPosition = result;
 			return result;

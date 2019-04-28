@@ -16,9 +16,9 @@ MonoBehaviour:
   StartDay: 737175
   StartMoney: 150
   MonthMoney: -50
-  StressLimit: 50
+  StressLimit: 75
   DiseaseLimit: 50
-  MadLimit: 50
+  MadLimit: 60
   LowMoneyStress: -3
   MinPromotionDays: 15
   MinRecommendDays: 30
